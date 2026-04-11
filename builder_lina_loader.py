@@ -3,15 +3,38 @@ builder_lina_loader.py – Component 1: data loading.
 
 Responsibilities:
   - Create the local data directory if it does not exist.
-  - Call the scraper placeholder (lina_scraper) to populate raw data.
-  - Return a DataFrame in the canonical output format:
-      * Row  = one Linear-A list (one archaeological tablet finding).
-      * Col 0 = 'date' (YYYY as nullable integer, or empty).
-      * Col 1+ = words found on the tablet (word_1, word_2, …).
+  - Build the sign catalog (341 Unicode Linear A signs).
+  - Load the embedded tablet corpus and convert each record to the
+    canonical DataFrame format.
+  - Future: replace / supplement the embedded corpus with a live web scraper.
+
+Output DataFrame schema (one row per tablet)
+--------------------------------------------
+  tablet_id             str        e.g. 'HT 1'
+  site                  str        e.g. 'Hagia Triada'
+  date_est              Int64      approximate BCE year (negative), nullable
+  material              str        'clay' | 'stone' | …
+  transliteration       str        original scholarly transliteration string
+  sign_groups           str        pipe-separated sign group tokens
+                                   e.g. 'A-DU|GRA|KU-RO|GRA'
+  sign_sequence_unicode str        Unicode Linear A string, groups space-separated
+  sign_sequence_ids     str        comma-separated sign IDs (cp − 0x10600)
+  sign_group_count      int        number of sign groups (words)
+  sign_count            int        total individual Linear A signs (excl. '?')
 """
 
 import os
+
 import pandas as pd
+
+from lina_sign_catalog import (
+    build_sign_catalog,
+    build_label_to_char_map,
+    build_char_to_id_map,
+    parse_sign_groups,
+    sign_group_to_unicode,
+)
+from lina_corpus_embedded import CORPUS
 
 
 # ---------------------------------------------------------------------------
@@ -19,13 +42,10 @@ import pandas as pd
 # ---------------------------------------------------------------------------
 
 def load_data(data_dir: str) -> pd.DataFrame:
-    """
-    Ensure *data_dir* exists, attempt to scrape / load data, and return
-    a DataFrame in the canonical format.
-    """
+    """Ensure *data_dir* exists, build the corpus DataFrame, and return it."""
     _ensure_directory(data_dir)
-    df = _lina_scraper(data_dir)
-    print(f"[loader] loaded {len(df)} record(s) from '{data_dir}'.")
+    df = _build_dataframe()
+    print(f"[loader] loaded {len(df)} record(s).")
     return df
 
 
@@ -39,26 +59,58 @@ def _ensure_directory(path: str) -> None:
         os.makedirs(path, exist_ok=True)
         print(f"[loader] created data directory: {path}")
     else:
-        print(f"[loader] data directory already exists: {path}")
+        print(f"[loader] data directory exists: {path}")
 
 
 # ---------------------------------------------------------------------------
-# Helper: web scraper – placeholder
+# Helper: build the full DataFrame from the embedded corpus
 # ---------------------------------------------------------------------------
 
-def _lina_scraper(data_dir: str) -> pd.DataFrame:
-    """
-    Placeholder scraper.
+def _build_dataframe() -> pd.DataFrame:
+    """Convert the embedded CORPUS list into the canonical DataFrame."""
+    catalog    = build_sign_catalog()
+    label_map  = build_label_to_char_map(catalog)
+    char_to_id = build_char_to_id_map(catalog)
 
-    Future development: retrieve Linear-A tablet data from web-based sources
-    (e.g. DĀMOS, the Mycenaean Atlas, or dedicated Linear-A corpora) and
-    return a populated DataFrame.
+    print(f"[loader] sign catalog: {len(catalog)} signs (Unicode Linear A block).")
 
-    For now this returns an empty DataFrame that matches the output schema:
-      date (Int64 nullable), word_1 (str), word_2 (str), …
-    """
-    print("[scraper] placeholder – returning empty dataset.")
-    df = pd.DataFrame(columns=["date"])
-    # Ensure 'date' uses a nullable integer type so it can hold NaN values.
-    df["date"] = df["date"].astype("Int64")
+    rows = []
+    for tablet in CORPUS:
+        raw    = tablet["transliteration"]
+        groups = parse_sign_groups(raw)
+
+        # Pipe-separated list of sign group strings (human-readable)
+        sign_groups_str = "|".join(groups)
+
+        # Unicode Linear A string – sign groups separated by a space
+        uni_parts = [sign_group_to_unicode(g, label_map) for g in groups]
+        sign_unicode = " ".join(uni_parts)
+
+        # Collect recognised Unicode characters (exclude '?' placeholders)
+        recognised_chars = [
+            ch for part in uni_parts for ch in part if ch != '?'
+        ]
+
+        # Flat comma-separated sign-ID list
+        sign_ids_str = ",".join(
+            str(char_to_id[ch]) for ch in recognised_chars if ch in char_to_id
+        )
+
+        sign_count = len(recognised_chars)
+
+        rows.append({
+            "tablet_id":             tablet["tablet_id"],
+            "site":                  tablet["site"],
+            "date_est":              tablet.get("date_est"),
+            "material":              tablet.get("material", "clay"),
+            "transliteration":       raw,
+            "sign_groups":           sign_groups_str,
+            "sign_sequence_unicode": sign_unicode,
+            "sign_sequence_ids":     sign_ids_str,
+            "sign_group_count":      len(groups),
+            "sign_count":            sign_count,
+        })
+
+    df = pd.DataFrame(rows)
+    df["date_est"] = df["date_est"].astype("Int64")
     return df
