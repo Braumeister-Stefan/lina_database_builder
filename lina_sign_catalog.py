@@ -211,7 +211,10 @@ def parse_sign_groups(transliteration: str) -> List[str]:
         if re.fullmatch(r'\d+([./]\d+)?', tok):
             continue
         # Strip trailing digits only when the token is NOT an AB/A sign label
-        if not re.match(r'^(AB|A)\d', tok):
+        # and does NOT contain a hyphen (hyphenated compound sign groups may have
+        # meaningful numeric qualifiers such as KU-PA3, TA-RA2, DU-PU2, A-RO2,
+        # SA-RA2 — stripping those digits would collapse distinct graphemes).
+        if not re.match(r'^(AB|A)\d', tok) and '-' not in tok:
             tok = re.sub(r'\d+$', '', tok).strip()
         if tok:
             groups.append(tok)

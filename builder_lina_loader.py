@@ -15,9 +15,13 @@ Output DataFrame schema (one row per tablet)
   tablet_id             str        e.g. 'HT 1'
   site                  str        e.g. 'Hagia Triada'
   date_est              Int64      approximate BCE year (negative), nullable
+  date_uncertainty_yrs  Int64      ± years around date_est (NULL = unknown)
   material              str        'clay' | 'stone' | …
   source_strategy       str        key from builder_qcs_registry
   qcs                   float      Quality Confidence Score [0, 1]
+  is_synthetic          bool       True if the row was programmatically generated
+                                   by cycling a fixed formula list (not a distinct
+                                   attested object); False for manually curated rows
   transliteration       str        original scholarly transliteration string
   sign_groups           str        pipe-separated sign group tokens
                                    e.g. 'A-DU|GRA|KU-RO|GRA'
@@ -127,9 +131,11 @@ def _build_dataframe() -> pd.DataFrame:
             "tablet_id":             tablet["tablet_id"],
             "site":                  tablet["site"],
             "date_est":              tablet.get("date_est"),
+            "date_uncertainty_yrs":  tablet.get("date_uncertainty_yrs"),
             "material":              tablet.get("material", "clay"),
             "source_strategy":       strategy["key"],
             "qcs":                   strategy["qcs"],
+            "is_synthetic":          bool(tablet.get("is_synthetic", False)),
             "transliteration":       raw,
             "sign_groups":           sign_groups_str,
             "sign_sequence_unicode": sign_unicode,
@@ -140,4 +146,5 @@ def _build_dataframe() -> pd.DataFrame:
 
     df = pd.DataFrame(rows)
     df["date_est"] = df["date_est"].astype("Int64")
+    df["date_uncertainty_yrs"] = df["date_uncertainty_yrs"].astype("Int64")
     return df
