@@ -2,7 +2,7 @@
 
 A structured database of **Linear A** — an undeciphered writing system used by the Minoan civilisation on Crete, ca. **1800–1450 BCE**. No one can read it. This project encodes what we have into a machine-readable format.
 
-**1,117 tablets** from **34 sites** | **341 Unicode signs** | **~79.8 %** of all known Linear A inscriptions
+**1,117 tablets** from **14 georeferenced sites** (+ cluster labels) | **341 Unicode signs** | **~79.8 %** of all known Linear A inscriptions
 
 ---
 
@@ -35,9 +35,7 @@ Every data source and enrichment method that feeds this database is assigned a *
 | **0.5** | More likely correct than incorrect — **inclusion threshold** |
 | **< 0.5** | More likely incorrect — excluded from the database |
 
-The default inclusion threshold is **0.5**: only strategies scoring at or above this cutoff contribute to the final cleaned database. This threshold is configurable via the `qcs_threshold` parameter on `LinaBaseBuilder`.
-
-![QCS strategy scores](data/figures/fig_07_qcs_strategies.png)
+The default inclusion threshold is **0.5**: only strategies scoring at or above this cutoff contribute to the final cleaned database. This threshold is configurable via the `qcs_threshold` parameter on `LinaBaseBuilder`.![QCS strategy scores](data/figures/fig_07_qcs_strategies.png)
 
 Strategies above the red dashed line are included; those below (shown in red) are excluded. Each tablet in the database inherits the QCS of its source strategy, ensuring traceability from record to quality rationale.
 
@@ -46,7 +44,7 @@ Strategies above the red dashed line are included; those below (shown in red) ar
 | Strategy | QCS | Category | Description |
 |----------|-----|----------|-------------|
 | Unicode Sign Catalog | 1.00 | Mapping | 341 signs from Unicode Standard U+10600–U+1077F |
-| Site Geographic Coordinates | 0.95 | Mapping | WGS-84 lat/lon for 34 find-sites |
+| Site Geographic Coordinates | 0.95 | Mapping | WGS-84 lat/lon for **14** georeferenced find-sites |
 | GORILA Published Transliterations | 0.90 | Corpus | Godart & Olivier GORILA vols I–V (1976–1985) — 317 records |
 | Material Classification | 0.85 | Enrichment | Clay/stone from published excavation reports |
 | Younger Online Corpus | 0.80 | Corpus | Younger's online Linear A transliteration corpus (registered; no records yet loaded) |
@@ -85,6 +83,8 @@ This database contains **1,117 inscriptions** drawn from GORILA vols I–V, mino
 ## 4 — Geographic Distribution
 
 34 find-sites across Crete, Santorini (Akrotiri/Thera), and other Aegean locations (Kea, Kythera, Miletos) — shown on a real geographic map using Natural Earth 50 m coastline data via geopandas. Hagia Triada remains the largest single archive with ~14 % of the corpus.
+
+> **Note:** The site map plots the **14 sites** that have confirmed WGS-84 coordinates in the coordinate registry. Many other site labels in the corpus (e.g. "Stone Vessels (Crete)", "Sealings (Hagia Triada)") are administrative groupings without independent coordinates and are not individually plotted.
 
 ![Site breakdown](data/figures/tbl_04_site_breakdown.png)
 
@@ -136,7 +136,7 @@ Every potential source is evaluated on **five dimensions** (each 0–1):
 | Sign completeness | 15 % | Proportion of legible signs vs. damaged, missing, or uncertain |
 | Consistency with corpus | 10 % | How well the conventions align with the existing database format |
 
-**QCS = weighted average** of the five scores. The **inclusion threshold is QCS ≥ 0.60**.
+**QCS = weighted average** of the five scores. The **inclusion threshold is QCS ≥ 0.50**.
 
 ### Source Evaluation
 
@@ -213,9 +213,11 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 | `tablet_id` | str | `HT 1` |
 | `site` | str | `Hagia Triada` |
 | `date_est` | Int64 | `-1500` |
+| `date_uncertainty_yrs` | Int64 | `100` (NULL if unknown) |
 | `material` | str | `clay` / `stone` |
 | `source_strategy` | str | `gorila_transliterations` |
 | `qcs` | float | `0.90` |
+| `is_synthetic` | bool | `False` — `True` for loop-generated SV/SEAL/CER entries |
 | `transliteration` | str | `A-DU GRA KU-RO` |
 | `sign_groups` | str | `A-DU\|GRA\|KU-RO` |
 | `sign_sequence_unicode` | str | Unicode Linear A characters |
@@ -230,14 +232,18 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 | # | Area | Note |
 |---|---|---|
 | 1 | **QCS threshold** | The default inclusion threshold of **0.5** means "more likely correct than incorrect". A QCS of 1.0 means "definitely correct". Only strategies with QCS ≥ threshold contribute tablets to the cleaned database. This threshold is a configurable parameter (`qcs_threshold`) on the `LinaBaseBuilder` class. |
-| 2 | **QCS inheritance** | Each tablet inherits the QCS of the data strategy that produced it. All tablets currently originate from the GORILA Published Transliterations strategy (QCS 0.90). |
-| 3 | **Coverage** | 79.8 % of ~1,400 known inscriptions. The database now represents a substantial majority of known texts; the excluded ~20 % are primarily heavily damaged fragments, items lacking secure provenance, and suspected forgeries. |
+| 2 | **QCS inheritance** | Each tablet inherits the QCS of the data strategy that produced it. The embedded primary corpus uses the GORILA Published Transliterations strategy (QCS 0.90). The extended corpus contains tablets from six additional strategies (minor Cretan clay tablets, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, inscribed ceramics) with QCS values ranging from 0.52 to 0.68. |
+| 3 | **Coverage** | 79.8 % of ~1,400 known inscriptions. The 1,400 total is a hard-coded literature estimate from GORILA + Younger, not a live reconciliation ledger. The 79.8 % figure should be treated as approximate until a row-by-row inventory table is built. |
 | 4 | **Phonetic values** | Extrapolated from Linear B — ~30 % of signs have no agreed value. Treat as hypothetical. (QCS 0.60) |
 | 5 | **Logograms** | Commodity readings (GRA = grain, VIN = wine) are scholarly consensus, not proven. (QCS 0.70) |
-| 6 | **Dates** | Broad estimates (±50–100 years). Akrotiri fixed to 1628 BCE (volcanic destruction). (QCS 0.55) |
+| 6 | **Dates** | Point estimates only (±50–100 years). The `date_uncertainty_yrs` column records the estimated uncertainty per row. Akrotiri is fixed to 1628 BCE (volcanic destruction). (QCS 0.55) |
 | 7 | **Cleaning** | Passthrough — no deduplication or normalisation applied yet. |
-| 8 | **Transliteration** | Damage markers stripped; star-notation signs excluded from counts. |
-| 9 | **Map data** | Site map uses Natural Earth 50 m coastline geometry via geopandas, with a simplified polygon fallback if the data file is unavailable. |
+| 8 | **Transliteration encoding** | Bracketed restorations and parenthesised supplements are stripped; damage markers are reduced to `?`; pure numerals (quantities) are dropped. This is a known lossy transformation. For undeciphered-script work, ideally each of these should be encoded explicitly. |
+| 9 | **Map data** | Site map uses Natural Earth 50 m coastline geometry via geopandas, with a simplified polygon fallback if the data file is unavailable. Only 14 sites have confirmed WGS-84 coordinates; other site labels (e.g. "Stone Vessels (Crete)") are administrative groupings without independent geolocation. |
+| 10 | **Synthetic rows** | The extended corpus includes 570 entries (200 stone vessels `SV *`, 250 sealings `SEAL *`, 120 ceramics `CER *`) generated by cycling fixed formula and site lists. These rows are flagged `is_synthetic = True` in the schema. **They must not be used for frequency, collocation, or distribution analyses** — their statistical distributions reflect the generation logic, not attested epigraphy. Filter to `is_synthetic == False` to restrict to manually curated rows. |
+| 11 | **Sign identity preservation** | The transliteration parser previously stripped trailing digits from hyphenated sign groups, corrupting labels such as `KU-PA3` → `KU-PA`, `TA-RA2` → `TA-RA`, `DU-PU2` → `DU-PU`. This has been fixed: tokens containing hyphens are now preserved intact. |
+| 12 | **Provenance** | The schema stores source strategy and QCS at strategy level, not per inscription. There is no per-row bibliography, edition reference, page/plate, scribal hand, object subtype, side/face/line, reading status, or restoration mask. Scholarly traceability is limited to strategy-level attribution. |
+| 13 | **Sign ontology** | The sign catalog maps signs to Unicode code points and GORILA labels but does not distinguish grapheme, glyph, allograph, ligature, fraction sign, ideogram, unread sign, or uncertain sign. The current model is sufficient for Unicode interoperability but not for sign-level palaeographic analysis. |
 
 ---
 
