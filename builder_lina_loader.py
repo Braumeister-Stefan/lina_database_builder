@@ -6,6 +6,8 @@ Responsibilities:
   - Build the sign catalog (341 Unicode Linear A signs).
   - Load the embedded tablet corpus and convert each record to the
     canonical DataFrame format.
+  - Assign a *source_strategy* and *qcs* (Quality Confidence Score) to
+    every tablet so downstream components can filter by quality.
   - Future: replace / supplement the embedded corpus with a live web scraper.
 
 Output DataFrame schema (one row per tablet)
@@ -14,6 +16,8 @@ Output DataFrame schema (one row per tablet)
   site                  str        e.g. 'Hagia Triada'
   date_est              Int64      approximate BCE year (negative), nullable
   material              str        'clay' | 'stone' | …
+  source_strategy       str        key from builder_qcs_registry
+  qcs                   float      Quality Confidence Score [0, 1]
   transliteration       str        original scholarly transliteration string
   sign_groups           str        pipe-separated sign group tokens
                                    e.g. 'A-DU|GRA|KU-RO|GRA'
@@ -35,6 +39,7 @@ from lina_sign_catalog import (
     sign_group_to_unicode,
 )
 from lina_corpus_embedded import CORPUS
+from builder_qcs_registry import get_strategy
 
 
 # ---------------------------------------------------------------------------
@@ -67,12 +72,20 @@ def _ensure_directory(path: str) -> None:
 # ---------------------------------------------------------------------------
 
 def _build_dataframe() -> pd.DataFrame:
-    """Convert the embedded CORPUS list into the canonical DataFrame."""
+    """Convert the embedded CORPUS list into the canonical DataFrame.
+
+    Each tablet is tagged with the ``source_strategy`` that produced it
+    and inherits that strategy's QCS so downstream filters can select by
+    quality.
+    """
     catalog    = build_sign_catalog()
     label_map  = build_label_to_char_map(catalog)
     char_to_id = build_char_to_id_map(catalog)
 
     print(f"[loader] sign catalog: {len(catalog)} signs (Unicode Linear A block).")
+
+    # Look up the corpus strategy once – every embedded tablet inherits it.
+    gorila_strategy = get_strategy("gorila_transliterations")
 
     rows = []
     for tablet in CORPUS:
@@ -98,11 +111,14 @@ def _build_dataframe() -> pd.DataFrame:
 
         sign_count = len(recognised_chars)
 
+        # Tablets inherit the QCS of their source strategy
         rows.append({
             "tablet_id":             tablet["tablet_id"],
             "site":                  tablet["site"],
             "date_est":              tablet.get("date_est"),
             "material":              tablet.get("material", "clay"),
+            "source_strategy":       gorila_strategy["key"],
+            "qcs":                   gorila_strategy["qcs"],
             "transliteration":       raw,
             "sign_groups":           sign_groups_str,
             "sign_sequence_unicode": sign_unicode,
