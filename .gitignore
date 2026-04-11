@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Generated data (keep the directory structure but not the content)
+data/raw/
+data/figures/
+data/lina_database.csv
+
+# Virtual environments
+.venv/
+venv/
+env/
