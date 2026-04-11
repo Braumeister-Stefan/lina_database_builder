@@ -46,7 +46,7 @@ All 13 Cretan sites plus Akrotiri (Santorini). Hagia Triada dominates with ~45 %
 
 ![Site map](data/figures/fig_03_site_map.png)
 
-Note that the above distribution covers 22.6 %** of all known Linear A inscriptions. Further inscriptions are not yet available in the database.
+_Note that the above distribution covers 317 of ~1,400 known inscriptions = **~22.6 %**_
 ---
 
 ## 4 — Temporal Distribution
