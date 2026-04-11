@@ -86,7 +86,7 @@ This database contains **656 inscriptions** drawn from GORILA vols I–V, minor 
 
 34 find-sites across Crete, Santorini (Akrotiri/Thera), and other Aegean locations (Kea, Kythera, Miletos) — shown on a real geographic map using Natural Earth 50 m coastline data via geopandas. Hagia Triada remains the largest single archive with ~14 % of the corpus.
 
-> **Note:** The site map plots the **14 sites** that have confirmed WGS-84 coordinates in the coordinate registry. Many other site labels in the corpus (e.g. "Stone Vessels (Crete)", "Sealings (Hagia Triada)") are administrative groupings without independent coordinates and are not individually plotted.
+> **Note:** The site map plots the **14 sites** that have confirmed WGS-84 coordinates in the coordinate registry. Many other site labels in the corpus (e.g. "Stone Vessels (Crete)", "Sealings (Hagia Triada)") are administrative groupings without independent coordinates and are not individually plotted — they are counted in the site breakdown table but omitted from the geographic map.
 
 ![Site breakdown](data/figures/tbl_04_site_breakdown.png)
 
@@ -124,7 +124,7 @@ Tablets typically carry **1–16 recognised signs** (average ~7). The distributi
 
 ### The Problem
 
-There are roughly **~1,400 known Linear A inscriptions** and this database now covers **656 (~46.9 %)**. Each row is a distinct, individually documented physical object. The remaining ~744 inscriptions either fall below the QCS threshold or have not yet been individually encoded (stone vessels, sealings, and ceramics beyond those already listed).
+There are roughly **~1,400 known Linear A inscriptions** and this database now covers **656 (~46.9 %)**. Each row is a distinct, individually documented physical object. The remaining ~744 inscriptions (1,400 − 656; note: the 1,400 total is itself a literature estimate, so both figures are approximate) either fall below the QCS threshold or have not yet been individually encoded (stone vessels, sealings, and ceramics beyond those already listed).
 
 ### Quality Confidence Score (QCS)
 

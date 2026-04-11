@@ -741,7 +741,7 @@ _STONE_VESSELS = [
      "material": "stone", "source_strategy": "stone_libation_vessels",
      "transliteration": "A-SA-SA-RA-ME I-DA-MA-TE"},
 
-    # ── Apodoulou (AP Za) ── 2 libation tables ─────────────────────────────
+    # ── Apodioulou (AP Za) ── 2 libation tables ────────────────────────────
     {"tablet_id": "AP Za 1",  "site": "Apodioulou", "date_est": -1600,
      "material": "stone", "source_strategy": "stone_libation_vessels",
      "transliteration": _LIBATION_FORMULA_A},
