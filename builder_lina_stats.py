@@ -9,34 +9,32 @@ Responsibilities
 
 Outputs (saved to data/figures/)
 ---------------------------------
-  tbl_01_catalog_overview.png      – sign catalog counts by category
-  tbl_02_sign_group_types.png      – sign group type taxonomy from literature
-  fig_01_catalog_categories.png    – pie: sign categories
-  fig_02_sign_group_frequencies.png – horizontal bar: top-15 sign groups
-  tbl_03_corpus_overview.png       – corpus headline stats
-  tbl_04_site_breakdown.png        – tablets per find-site with coordinates
-  fig_03_site_map.png              – map of Crete showing find-sites
-  fig_04_timeline.png              – tablets by estimated date × site
-  fig_05_signs_per_tablet.png      – histogram: sign count distribution
+  tbl_01_catalog_overview.png        – sign catalog counts by category
+  tbl_02_sign_group_types.png        – sign group type taxonomy from literature
+  fig_01_catalog_categories.png      – pie: sign categories
+  fig_02_sign_group_frequencies.png  – horizontal bar: top-15 sign groups
+  tbl_03_corpus_overview.png         – corpus headline stats
+  tbl_04_site_breakdown.png          – tablets per find-site with coordinates
+  fig_03_site_map.png                – map of Crete showing find-sites
+  fig_04_timeline.png                – tablets by estimated date × site
+  fig_05_signs_per_tablet.png        – histogram: sign count distribution
+  fig_07_qcs_strategies.png          – QCS bar chart with inclusion threshold
 """
 
 import os
 import textwrap
 from collections import Counter
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import matplotlib
 matplotlib.use("Agg")                            # non-interactive backend
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
-from matplotlib.patches import Polygon
-from matplotlib.collections import PatchCollection
 import numpy as np
 import pandas as pd
 
 from lina_sign_catalog import build_sign_catalog
 from lina_site_coordinates import (
-    CRETE_OUTLINE, GREECE_OUTLINE, TURKEY_W_OUTLINE,
     SITE_COORDINATES, get_site_summary_df,
 )
 
@@ -95,7 +93,11 @@ _COLORS = {
 # Public entry-point
 # ---------------------------------------------------------------------------
 
-def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
+def report_stats(
+        df: pd.DataFrame,
+        qcs_threshold: float = 0.5,
+        all_strategies: Optional[List[Dict]] = None,
+) -> List[Tuple[str, str, str]]:
     """Compute statistics, generate all PNGs, return (tab_name, title, path) list."""
     os.makedirs(FIGURES_DIR, exist_ok=True)
 
@@ -109,6 +111,10 @@ def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
         return []
 
     figures: List[Tuple[str, str, str]] = []
+
+    # ── QCS strategy bar chart (always first for prominence) ─────────────
+    if all_strategies:
+        figures.append(_fig_qcs_strategies(all_strategies, qcs_threshold))
 
     # ── Sign catalog tables & figures ────────────────────────────────────
     figures.append(_tbl_catalog_overview(catalog))
@@ -157,6 +163,116 @@ def _print_corpus_stats(df: pd.DataFrame) -> None:
     gf = Counter(all_groups)
     print(f"  total sign groups: {len(all_groups)}  |  unique: {len(gf)}")
     print(f"  top group: {gf.most_common(1)[0][0]}  ({gf.most_common(1)[0][1]} occurrences)")
+
+
+# ---------------------------------------------------------------------------
+# Figure 7 – QCS Strategy Bar Chart with Inclusion Threshold
+# ---------------------------------------------------------------------------
+
+def _fig_qcs_strategies(
+        strategies: List[Dict],
+        threshold: float,
+) -> Tuple[str, str, str]:
+    """Horizontal bar chart of all data strategies sorted by QCS.
+
+    Strategies above the threshold are coloured in blue; those below are
+    shown in a fat red strip to visually communicate the cutoff.
+    """
+    # Sort strategies by QCS descending
+    sorted_strats = sorted(strategies, key=lambda s: s["qcs"], reverse=True)
+
+    labels = [s["label"] for s in sorted_strats]
+    scores = [s["qcs"] for s in sorted_strats]
+    cats   = [s["category"] for s in sorted_strats]
+
+    # Colour: included = blue tones by category, excluded = red
+    cat_colors = {
+        "corpus":     "#2E86AB",
+        "enrichment": "#55A868",
+        "mapping":    "#4C72B0",
+    }
+    colors = []
+    for s in sorted_strats:
+        if s["qcs"] >= threshold:
+            colors.append(cat_colors.get(s["category"], "#4C72B0"))
+        else:
+            colors.append("#D32F2F")   # fat red for excluded
+
+    fig_h = max(5, len(labels) * 0.6 + 2.5)
+    fig, ax = plt.subplots(figsize=(_FIG_W, fig_h))
+
+    y_pos = np.arange(len(labels))
+    bars = ax.barh(y_pos, scores, color=colors, edgecolor="white", height=0.7)
+
+    # Score label on each bar
+    for bar, score in zip(bars, scores):
+        x = bar.get_width()
+        color = "white" if x > 0.15 else "#333333"
+        ax.text(x - 0.02 if x > 0.15 else x + 0.01,
+                bar.get_y() + bar.get_height() / 2,
+                f"{score:.2f}", va="center",
+                ha="right" if x > 0.15 else "left",
+                fontsize=10, fontweight="bold", color=color)
+
+    # Red shaded region for excluded zone
+    # Find the y-position boundary between included and excluded
+    first_excluded_idx = None
+    for i, s in enumerate(sorted_strats):
+        if s["qcs"] < threshold:
+            first_excluded_idx = i
+            break
+
+    if first_excluded_idx is not None:
+        ax.axhspan(
+            first_excluded_idx - 0.5, len(labels) - 0.5,
+            color="#D32F2F", alpha=0.08, zorder=0,
+        )
+        # Red horizontal divider line
+        ax.axhline(
+            first_excluded_idx - 0.5,
+            color="#D32F2F", linewidth=3, linestyle="-", zorder=4,
+        )
+        # Label the exclusion zone
+        mid_y = (first_excluded_idx + len(labels) - 1) / 2
+        ax.text(
+            0.05, mid_y,
+            f"EXCLUDED (QCS < {threshold})",
+            fontsize=9, color="#D32F2F", fontweight="bold",
+            va="center", ha="left", alpha=0.7, zorder=5,
+        )
+
+    # Vertical threshold line
+    ax.axvline(threshold, color="#D32F2F", linewidth=2.5, linestyle="--",
+               zorder=4, label=f"Inclusion threshold = {threshold}")
+
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=10)
+    ax.invert_yaxis()
+    ax.set_xlabel("Quality Confidence Score (QCS)", fontsize=11)
+    ax.set_xlim(0, 1.08)
+    ax.set_title(
+        "Data Strategy Quality Confidence Scores (QCS)\n"
+        f"Inclusion threshold: {threshold}  |  "
+        f"0.5 = more likely correct  |  1.0 = definitely correct",
+        fontsize=_TITLE_FONTSIZE, fontweight="bold",
+    )
+
+    # Legend
+    legend_patches = [
+        mpatches.Patch(color="#4C72B0", label="Mapping"),
+        mpatches.Patch(color="#2E86AB", label="Corpus"),
+        mpatches.Patch(color="#55A868", label="Enrichment"),
+        mpatches.Patch(color="#D32F2F", label="Excluded (below threshold)"),
+    ]
+    ax.legend(handles=legend_patches, loc="lower right", fontsize=9, frameon=True)
+    ax.grid(axis="x", linestyle="--", alpha=0.3)
+
+    fig.tight_layout()
+    path = os.path.join(FIGURES_DIR, "fig_07_qcs_strategies.png")
+    fig.savefig(path, dpi=_DPI, bbox_inches="tight")
+    plt.close(fig)
+    print("[stats] saved fig_07_qcs_strategies.png")
+    return ("QCS Strategies", "Data Strategy Quality Confidence Scores", path)
 
 
 # ---------------------------------------------------------------------------
@@ -438,22 +554,45 @@ def _tbl_site_breakdown(df: pd.DataFrame) -> Tuple[str, str, str]:
 
 
 # ---------------------------------------------------------------------------
-# Figure 3 – Map of Crete with find-sites
+# Figure 3 – Map of Crete with find-sites (real coastline via geopandas)
 # ---------------------------------------------------------------------------
 
 def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
-    site_df  = get_site_summary_df(df)
-    fig, ax  = plt.subplots(figsize=(14, 6))
+    site_df = get_site_summary_df(df)
+
+    # ── Load real coastline geometry ─────────────────────────────────────
+    land_path = os.path.join(
+        os.path.dirname(__file__), "data", "ne_50m_land.geojson"
+    )
+    try:
+        import geopandas as gpd
+        from shapely.geometry import box as shapely_box
+
+        world = gpd.read_file(land_path)
+        # Clip to Aegean region (Crete + Santorini area)
+        aegean_box = shapely_box(23.0, 34.5, 27.0, 36.5)
+        land = world.clip(aegean_box)
+        use_real_map = len(land) > 0
+    except Exception:
+        use_real_map = False
+
+    fig, ax = plt.subplots(figsize=(14, 6))
 
     # Sea background
     ax.set_facecolor("#A8D5E2")
 
-    # Crete only
-    xs = [p[0] for p in CRETE_OUTLINE]
-    ys = [p[1] for p in CRETE_OUTLINE]
-    ax.fill(xs, ys, color="#E8DEC0", zorder=2)
-    ax.plot(xs + [xs[0]], ys + [ys[0]], color="#888888",
-            linewidth=0.8, zorder=3)
+    if use_real_map:
+        # Plot real coastline from Natural Earth
+        land.plot(ax=ax, color="#E8DEC0", edgecolor="#888888",
+                  linewidth=0.8, zorder=2)
+    else:
+        # Fallback: simple polygon from lina_site_coordinates
+        from lina_site_coordinates import CRETE_OUTLINE
+        xs = [p[0] for p in CRETE_OUTLINE]
+        ys = [p[1] for p in CRETE_OUTLINE]
+        ax.fill(xs, ys, color="#E8DEC0", zorder=2)
+        ax.plot(xs + [xs[0]], ys + [ys[0]], color="#888888",
+                linewidth=0.8, zorder=3)
 
     # Map extent: tight around Crete with padding
     ax.set_xlim(23.2, 26.7)
@@ -520,10 +659,12 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     ax.text(24.9, 35.77, "Sea of Crete", fontsize=9, color="#6AA3B8",
             ha="center", style="italic", zorder=4)
 
+    map_source = "Natural Earth 50m" if use_real_map else "simplified polygon"
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
-    ax.set_title("Linear A Tablet Find-Sites on Crete\n"
-                 "Circle size proportional to tablet count.",
+    ax.set_title(f"Linear A Tablet Find-Sites on Crete\n"
+                 f"Circle size proportional to tablet count.  "
+                 f"Coastline: {map_source}",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.grid(linestyle="--", alpha=0.25, zorder=1)
 
@@ -531,7 +672,7 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     path = os.path.join(FIGURES_DIR, "fig_03_site_map.png")
     fig.savefig(path, dpi=_DPI, bbox_inches="tight")
     plt.close(fig)
-    print("[stats] saved fig_03_site_map.png")
+    print(f"[stats] saved fig_03_site_map.png (coastline: {map_source})")
     return ("Map", "Tablet Find-Sites – Crete", path)
 
 
