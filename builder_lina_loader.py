@@ -38,7 +38,8 @@ from lina_sign_catalog import (
     parse_sign_groups,
     sign_group_to_unicode,
 )
-from lina_corpus_embedded import CORPUS
+from lina_corpus_embedded import CORPUS as _CORPUS_EMBEDDED
+from lina_corpus_extended import CORPUS_EXTENDED as _CORPUS_EXTENDED
 from builder_qcs_registry import get_strategy
 
 
@@ -72,11 +73,12 @@ def _ensure_directory(path: str) -> None:
 # ---------------------------------------------------------------------------
 
 def _build_dataframe() -> pd.DataFrame:
-    """Convert the embedded CORPUS list into the canonical DataFrame.
+    """Convert the embedded and extended CORPUS lists into the canonical DataFrame.
 
     Each tablet is tagged with the ``source_strategy`` that produced it
     and inherits that strategy's QCS so downstream filters can select by
-    quality.
+    quality.  The embedded corpus always uses the GORILA strategy; the
+    extended corpus records carry an explicit ``source_strategy`` key.
     """
     catalog    = build_sign_catalog()
     label_map  = build_label_to_char_map(catalog)
@@ -84,11 +86,21 @@ def _build_dataframe() -> pd.DataFrame:
 
     print(f"[loader] sign catalog: {len(catalog)} signs (Unicode Linear A block).")
 
-    # Look up the corpus strategy once – every embedded tablet inherits it.
+    # Default strategy for the primary embedded corpus
     gorila_strategy = get_strategy("gorila_transliterations")
 
+    # Combine both corpora; embedded records use gorila strategy by default
+    all_tablets = [
+        (tablet, gorila_strategy["key"])
+        for tablet in _CORPUS_EMBEDDED
+    ] + [
+        (tablet, tablet.get("source_strategy", gorila_strategy["key"]))
+        for tablet in _CORPUS_EXTENDED
+    ]
+
     rows = []
-    for tablet in CORPUS:
+    for tablet, strategy_key in all_tablets:
+        strategy = get_strategy(strategy_key)
         raw    = tablet["transliteration"]
         groups = parse_sign_groups(raw)
 
@@ -111,14 +123,13 @@ def _build_dataframe() -> pd.DataFrame:
 
         sign_count = len(recognised_chars)
 
-        # Tablets inherit the QCS of their source strategy
         rows.append({
             "tablet_id":             tablet["tablet_id"],
             "site":                  tablet["site"],
             "date_est":              tablet.get("date_est"),
             "material":              tablet.get("material", "clay"),
-            "source_strategy":       gorila_strategy["key"],
-            "qcs":                   gorila_strategy["qcs"],
+            "source_strategy":       strategy["key"],
+            "qcs":                   strategy["qcs"],
             "transliteration":       raw,
             "sign_groups":           sign_groups_str,
             "sign_sequence_unicode": sign_unicode,
