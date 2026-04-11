@@ -18,20 +18,18 @@ Outputs (saved to data/figures/)
   fig_03_site_map.png              – geographic map of Crete + Aegean with find-sites
   fig_04_timeline.png              – tablets by estimated date × site
   fig_05_signs_per_tablet.png      – histogram: sign count distribution
-  fig_07_quality_confidence.png    – quality confidence scores per source
+  fig_07_qcs_strategies.png        – QCS bar chart with inclusion threshold
 """
 
 import os
 import textwrap
 from collections import Counter
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import matplotlib
 matplotlib.use("Agg")                            # non-interactive backend
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
-from matplotlib.patches import Polygon
-from matplotlib.collections import PatchCollection
 import numpy as np
 import pandas as pd
 import geopandas as gpd
@@ -509,7 +507,11 @@ _COLORS = {
 # Public entry-point
 # ---------------------------------------------------------------------------
 
-def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
+def report_stats(
+        df: pd.DataFrame,
+        qcs_threshold: float = 0.5,
+        all_strategies: Optional[List[Dict]] = None,
+) -> List[Tuple[str, str, str]]:
     """Compute statistics, generate all PNGs, return (tab_name, title, path) list."""
     os.makedirs(FIGURES_DIR, exist_ok=True)
 
@@ -524,6 +526,10 @@ def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
 
     figures: List[Tuple[str, str, str]] = []
 
+    # ── QCS strategy bar chart (always first for prominence) ─────────────
+    if all_strategies:
+        figures.append(_fig_qcs_strategies(all_strategies, qcs_threshold))
+
     # ── Sign catalog tables & figures ────────────────────────────────────
     figures.append(_tbl_catalog_overview(catalog))
     figures.append(_tbl_sign_group_types())
@@ -537,9 +543,6 @@ def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
     figures.append(_fig_timeline(df))
     figures.append(_fig_signs_per_tablet(df))
     figures.append(_fig_corpus_coverage(df))
-
-    # ── Quality confidence & inclusion strategy ─────────────────────────
-    figures.append(_fig_quality_confidence())
 
     print(f"\n[stats] {len(figures)} outputs saved to '{FIGURES_DIR}'.")
     return figures
@@ -574,6 +577,116 @@ def _print_corpus_stats(df: pd.DataFrame) -> None:
     gf = Counter(all_groups)
     print(f"  total sign groups: {len(all_groups)}  |  unique: {len(gf)}")
     print(f"  top group: {gf.most_common(1)[0][0]}  ({gf.most_common(1)[0][1]} occurrences)")
+
+
+# ---------------------------------------------------------------------------
+# Figure 7 – QCS Strategy Bar Chart with Inclusion Threshold
+# ---------------------------------------------------------------------------
+
+def _fig_qcs_strategies(
+        strategies: List[Dict],
+        threshold: float,
+) -> Tuple[str, str, str]:
+    """Horizontal bar chart of all data strategies sorted by QCS.
+
+    Strategies above the threshold are coloured in blue; those below are
+    shown in a fat red strip to visually communicate the cutoff.
+    """
+    # Sort strategies by QCS descending
+    sorted_strats = sorted(strategies, key=lambda s: s["qcs"], reverse=True)
+
+    labels = [s["label"] for s in sorted_strats]
+    scores = [s["qcs"] for s in sorted_strats]
+    cats   = [s["category"] for s in sorted_strats]
+
+    # Colour: included = blue tones by category, excluded = red
+    cat_colors = {
+        "corpus":     "#2E86AB",
+        "enrichment": "#55A868",
+        "mapping":    "#4C72B0",
+    }
+    colors = []
+    for s in sorted_strats:
+        if s["qcs"] >= threshold:
+            colors.append(cat_colors.get(s["category"], "#4C72B0"))
+        else:
+            colors.append("#D32F2F")   # fat red for excluded
+
+    fig_h = max(5, len(labels) * 0.6 + 2.5)
+    fig, ax = plt.subplots(figsize=(_FIG_W, fig_h))
+
+    y_pos = np.arange(len(labels))
+    bars = ax.barh(y_pos, scores, color=colors, edgecolor="white", height=0.7)
+
+    # Score label on each bar
+    for bar, score in zip(bars, scores):
+        x = bar.get_width()
+        color = "white" if x > 0.15 else "#333333"
+        ax.text(x - 0.02 if x > 0.15 else x + 0.01,
+                bar.get_y() + bar.get_height() / 2,
+                f"{score:.2f}", va="center",
+                ha="right" if x > 0.15 else "left",
+                fontsize=10, fontweight="bold", color=color)
+
+    # Red shaded region for excluded zone
+    # Find the y-position boundary between included and excluded
+    first_excluded_idx = None
+    for i, s in enumerate(sorted_strats):
+        if s["qcs"] < threshold:
+            first_excluded_idx = i
+            break
+
+    if first_excluded_idx is not None:
+        ax.axhspan(
+            first_excluded_idx - 0.5, len(labels) - 0.5,
+            color="#D32F2F", alpha=0.08, zorder=0,
+        )
+        # Red horizontal divider line
+        ax.axhline(
+            first_excluded_idx - 0.5,
+            color="#D32F2F", linewidth=3, linestyle="-", zorder=4,
+        )
+        # Label the exclusion zone
+        mid_y = (first_excluded_idx + len(labels) - 1) / 2
+        ax.text(
+            0.05, mid_y,
+            f"EXCLUDED (QCS < {threshold})",
+            fontsize=9, color="#D32F2F", fontweight="bold",
+            va="center", ha="left", alpha=0.7, zorder=5,
+        )
+
+    # Vertical threshold line
+    ax.axvline(threshold, color="#D32F2F", linewidth=2.5, linestyle="--",
+               zorder=4, label=f"Inclusion threshold = {threshold}")
+
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=10)
+    ax.invert_yaxis()
+    ax.set_xlabel("Quality Confidence Score (QCS)", fontsize=11)
+    ax.set_xlim(0, 1.08)
+    ax.set_title(
+        "Data Strategy Quality Confidence Scores (QCS)\n"
+        f"Inclusion threshold: {threshold}  |  "
+        f"0.5 = more likely correct  |  1.0 = definitely correct",
+        fontsize=_TITLE_FONTSIZE, fontweight="bold",
+    )
+
+    # Legend
+    legend_patches = [
+        mpatches.Patch(color="#4C72B0", label="Mapping"),
+        mpatches.Patch(color="#2E86AB", label="Corpus"),
+        mpatches.Patch(color="#55A868", label="Enrichment"),
+        mpatches.Patch(color="#D32F2F", label="Excluded (below threshold)"),
+    ]
+    ax.legend(handles=legend_patches, loc="lower right", fontsize=9, frameon=True)
+    ax.grid(axis="x", linestyle="--", alpha=0.3)
+
+    fig.tight_layout()
+    path = os.path.join(FIGURES_DIR, "fig_07_qcs_strategies.png")
+    fig.savefig(path, dpi=_DPI, bbox_inches="tight")
+    plt.close(fig)
+    print("[stats] saved fig_07_qcs_strategies.png")
+    return ("QCS Strategies", "Data Strategy Quality Confidence Scores", path)
 
 
 # ---------------------------------------------------------------------------
