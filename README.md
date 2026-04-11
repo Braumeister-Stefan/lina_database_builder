@@ -17,7 +17,7 @@ lina_database_builder/
 ├── builder_lina_stats.py        Component 3 – statistics, PNG figures and tables
 ├── builder_lina_saver.py        Component 4 – saves CSVs and assembles xlsx report
 ├── lina_sign_catalog.py         Sign catalog (341 Unicode Linear A signs) + converters
-├── lina_corpus_embedded.py      Embedded seed corpus (48 tablets, 9 Cretan sites)
+├── lina_corpus_embedded.py      Embedded corpus (317 tablets, 14 sites)
 ├── lina_site_coordinates.py     WGS-84 coordinates for each find-site + map outlines
 ├── requirements.txt             Python dependencies
 └── data/                        Generated output (created on first run)
@@ -33,7 +33,8 @@ lina_database_builder/
         ├── tbl_04_site_breakdown.png
         ├── fig_03_site_map.png
         ├── fig_04_timeline.png
-        └── fig_05_signs_per_tablet.png
+        ├── fig_05_signs_per_tablet.png
+        └── fig_06_corpus_coverage.png
 ```
 
 ---
@@ -104,9 +105,9 @@ All outputs are written to the `data/` directory.
 **Outputs**
 | File | Contents |
 |---|---|
-| `data/lina_database_raw.csv` | Full corpus DataFrame (48 tablets × 10 columns) |
+| `data/lina_database_raw.csv` | Full corpus DataFrame (317 tablets × 10 columns) |
 | `data/lina_database_clean.csv` | Identical to raw (cleaning is a passthrough for now) |
-| `data/lina_report.xlsx` | 12-tab xlsx: Raw Database, Clean Database, Sign Catalog, + 9 figure/table tabs |
+| `data/lina_report.xlsx` | 13-tab xlsx: Raw Database, Clean Database, Sign Catalog, + 10 figure/table tabs |
 | `data/figures/*.png` | Individual PNG for each figure and formatted table |
 
 **DataFrame columns**
@@ -158,20 +159,27 @@ requests        – HTTP utilities (future scraper)
 - Phonetic values assigned in `PHONETIC_TO_SIGN_LABEL` follow the Linear B correspondence convention, which is widely used in scholarship but not definitively proven for Linear A.
 
 ### Corpus (embedded dataset)
-- The 48 tablets are a representative sample drawn from the main published corpora. They cover the most-studied sites and document types (administrative clay tablets and stone libation formulae). They are **not** an exhaustive record of all ~1,500 known Linear A inscriptions.
-- Date estimates are approximate centuries (e.g. −1500 for all HT clay tablets) rather than precise dates. Real tablets often lack secure stratigraphy.
+- The **317 tablets** cover 14 find-sites (13 Cretan + Akrotiri/Thera) and represent the most-studied sites and document types (administrative clay tablets and stone libation formulae). They are **not** an exhaustive record of all ~1,400 known Linear A inscriptions (~22.6% coverage).
+- Date estimates are approximate centuries (e.g. −1500 for most HT clay tablets) rather than precise dates. Real tablets often lack secure stratigraphy.
 - Transliterations follow GORILA conventions but have been simplified for machine readability: damage markers (lacunae, brackets) are stripped, and numeric quantities are dropped during tokenisation.
+- **Damage markers stripped**: Lacunae `[ ]`, restored readings `( )`, and uncertain sign-dots are removed before tokenisation. Partially preserved tablets are included using surviving sign-groups only.
+- **Multi-sided tablets encoded separately**: Tablets with distinct a/b sides would be encoded as separate rows (e.g. `HT 31a`, `HT 31b`); no multi-sided tablets are present in the current sample.
+- **Unresolved star-notation signs**: Signs with no Unicode mapping are excluded from sign counts but retained in the raw transliteration string.
+- **Akrotiri date fixed to −1628 BCE**: The volcanic destruction horizon provides the only absolute date in the entire Linear A corpus; all Akrotiri inscriptions use this terminus ante quem.
+- **Minor sites included individually**: Sites with fewer than 5 inscriptions (Nirou Khani, Apodioulou) are labelled individually in the DB; summary visualisations may pool them in an "Other" category as needed.
 
 ### Geographic coordinates
 - Coordinates are approximate centroids for each site, accurate to ±0.1°. They are sufficient for the map figure but should not be used for precise spatial analysis.
 - The coastline polygons (Crete, Greece, Turkey) are manually simplified; they are suitable for visualisation at ~1:2 000 000 scale only.
+- Akrotiri (Santorini/Thera) plots north of Crete in the Aegean Sea area on the map, outside the Cretan landmass.
 
 ### Weaknesses and areas of low scientific confidence
 | Area | Issue |
 |---|---|
 | Phonetic values | Most Linear A phonetic assignments are extrapolated from Linear B; ~30% of signs have no agreed value. The `PHONETIC_TO_SIGN_LABEL` mapping should be treated as hypothetical. |
 | Logogram-to-commodity mapping | Commodity logograms (GRA = grain, VIN = wine, etc.) are consensus readings but not fully proven; a minority of scholars dispute some identifications. |
-| Corpus completeness | 48 tablets represent ~3% of the known Linear A corpus. Statistics derived from this sample may not generalise. |
+| Corpus completeness | 317 tablets represent ~22.6% of the known Linear A corpus (~1,400 inscriptions). Statistics derived from this sample may not fully generalise to the complete corpus, particularly for rare sign groups and minor sites. |
 | Date estimates | All BCE dates are broad estimates (±50–100 years); the corpus shows limited temporal variation by design. |
+| KH transliteration conventions | Khania (LM IIIB, ~1350 BCE) tablets use a higher proportion of unidentified signs. KH-specific personal names (KA-PA, DU-WA-TO, SE-TO-I-JA, etc.) are drawn from the GORILA record; some assignments remain debated. |
 | Cleaning pipeline | The cleaner is a passthrough. No deduplication, normalisation or error-correction has been applied. |
 
