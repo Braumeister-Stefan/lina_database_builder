@@ -466,206 +466,70 @@ VRY 4,Vrysinas,-1650,,clay,minor_cretan_clay_tablets,0.68,False,A-TA-I-*301-WA-J
 VRY 5,Vrysinas,-1650,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA GRA 14 OVS 4 KU-RO GRA 14,SA-MA|GRA|OVS|KU-RO|GRA,𐘞𐙁 𐙕 𐙝 𐙂𐘁 𐙕,"30,65,85,93,66,1,85",5,7
 VRY 6,Vrysinas,-1650,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO VIN 8 KU-RO VIN 8,PA-I-TO|VIN|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐙂𐘁 𐙗,"2,26,4,87,66,1,87",4,7
 VRY 7,Vrysinas,-1650,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2-RE GRA 18 KI-RO GRA 3 KU-RO GRA 15,DU-PU2-RE|GRA|KI-RO|GRA|KU-RO|GRA,𐘬𐙄𐘙 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"44,68,25,85,56,1,85,66,1,85",6,10
-SV 1,Stone Vessels (Crete),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 2,Hagia Triada,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 3,Palaikastro,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 4,Knossos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 5,Phaistos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 6,Mallia,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 7,Arkhanes,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 8,Stone Vessels (Crete),-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 9,Hagia Triada,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 10,Palaikastro,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 11,Knossos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 12,Phaistos,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 13,Mallia,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 14,Arkhanes,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 15,Stone Vessels (Crete),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 16,Hagia Triada,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 17,Palaikastro,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 18,Knossos,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 19,Phaistos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 20,Mallia,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 21,Arkhanes,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 22,Stone Vessels (Crete),-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 23,Hagia Triada,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 24,Palaikastro,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 25,Knossos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 26,Phaistos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 27,Mallia,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 28,Arkhanes,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 29,Stone Vessels (Crete),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 30,Hagia Triada,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 31,Palaikastro,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 32,Knossos,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 33,Phaistos,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 34,Mallia,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 35,Arkhanes,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 36,Stone Vessels (Crete),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 37,Hagia Triada,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 38,Palaikastro,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 39,Knossos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 40,Phaistos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 41,Mallia,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 42,Arkhanes,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 43,Stone Vessels (Crete),-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 44,Hagia Triada,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 45,Palaikastro,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 46,Knossos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 47,Phaistos,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 48,Mallia,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 49,Arkhanes,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 50,Stone Vessels (Crete),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 51,Hagia Triada,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 52,Palaikastro,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 53,Knossos,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 54,Phaistos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 55,Mallia,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 56,Arkhanes,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 57,Stone Vessels (Crete),-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 58,Hagia Triada,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 59,Palaikastro,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 60,Knossos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 61,Phaistos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 62,Mallia,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 63,Arkhanes,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 64,Stone Vessels (Crete),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 65,Hagia Triada,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 66,Palaikastro,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 67,Knossos,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 68,Phaistos,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 69,Mallia,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 70,Arkhanes,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 71,Stone Vessels (Crete),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 72,Hagia Triada,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 73,Palaikastro,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 74,Knossos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 75,Phaistos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 76,Mallia,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 77,Arkhanes,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 78,Stone Vessels (Crete),-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 79,Hagia Triada,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 80,Palaikastro,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 81,Knossos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 82,Phaistos,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 83,Mallia,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 84,Arkhanes,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 85,Stone Vessels (Crete),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 86,Hagia Triada,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 87,Palaikastro,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 88,Knossos,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 89,Phaistos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 90,Mallia,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 91,Arkhanes,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 92,Stone Vessels (Crete),-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 93,Hagia Triada,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 94,Palaikastro,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 95,Knossos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 96,Phaistos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 97,Mallia,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 98,Arkhanes,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 99,Stone Vessels (Crete),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 100,Hagia Triada,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 101,Palaikastro,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 102,Knossos,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 103,Phaistos,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 104,Mallia,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 105,Arkhanes,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 106,Stone Vessels (Crete),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 107,Hagia Triada,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 108,Palaikastro,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 109,Knossos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 110,Phaistos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 111,Mallia,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 112,Arkhanes,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 113,Stone Vessels (Crete),-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 114,Hagia Triada,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 115,Palaikastro,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 116,Knossos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 117,Phaistos,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 118,Mallia,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 119,Arkhanes,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 120,Stone Vessels (Crete),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 121,Hagia Triada,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 122,Palaikastro,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 123,Knossos,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 124,Phaistos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 125,Mallia,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 126,Arkhanes,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 127,Stone Vessels (Crete),-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 128,Hagia Triada,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 129,Palaikastro,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 130,Knossos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 131,Phaistos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 132,Mallia,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 133,Arkhanes,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 134,Stone Vessels (Crete),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 135,Hagia Triada,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 136,Palaikastro,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 137,Knossos,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 138,Phaistos,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 139,Mallia,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 140,Arkhanes,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 141,Stone Vessels (Crete),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 142,Hagia Triada,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 143,Palaikastro,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 144,Knossos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 145,Phaistos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 146,Mallia,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 147,Arkhanes,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 148,Stone Vessels (Crete),-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 149,Hagia Triada,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 150,Palaikastro,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 151,Knossos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 152,Phaistos,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 153,Mallia,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 154,Arkhanes,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 155,Stone Vessels (Crete),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 156,Hagia Triada,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 157,Palaikastro,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 158,Knossos,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 159,Phaistos,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 160,Mallia,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 161,Arkhanes,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 162,Stone Vessels (Crete),-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 163,Hagia Triada,-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 164,Palaikastro,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 165,Knossos,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 166,Phaistos,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 167,Mallia,-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 168,Arkhanes,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 169,Stone Vessels (Aegean),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 170,Akrotiri,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 171,Kea (Haghia Irini),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 172,Other Aegean,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 173,Stone Vessels (Aegean),-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 174,Akrotiri,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 175,Kea (Haghia Irini),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 176,Other Aegean,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 177,Stone Vessels (Aegean),-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 178,Akrotiri,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 179,Kea (Haghia Irini),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 180,Other Aegean,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 181,Stone Vessels (Aegean),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 182,Akrotiri,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 183,Kea (Haghia Irini),-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 184,Other Aegean,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 185,Stone Vessels (Aegean),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 186,Akrotiri,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 187,Kea (Haghia Irini),-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 188,Other Aegean,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 189,Stone Vessels (Aegean),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 190,Akrotiri,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
-SV 191,Kea (Haghia Irini),-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
-SV 192,Other Aegean,-1650,100,stone,stone_libation_vessels,0.62,True,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
-SV 193,Stone Vessels (Aegean),-1600,100,stone,stone_libation_vessels,0.62,True,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
-SV 194,Akrotiri,-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
-SV 195,Kea (Haghia Irini),-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
-SV 196,Other Aegean,-1700,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
-SV 197,Stone Vessels (Aegean),-1650,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SV 198,Akrotiri,-1600,100,stone,stone_libation_vessels,0.62,True,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
-SV 199,Kea (Haghia Irini),-1550,100,stone,stone_libation_vessels,0.62,True,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
-SV 200,Other Aegean,-1500,100,stone,stone_libation_vessels,0.62,True,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
+HT Za 1,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+HT Za 2,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+HT Za 3,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+HT Za 4,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+HT Za 5,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+HT Za 6,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+HT Za 7,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+HT Za 8,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
+HT Za 9,Hagia Triada,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+KN Za 1,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+KN Za 2,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+KN Za 3,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+KN Za 4,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+KN Za 5,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+KN Za 6,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+KN Za 7,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+KN Za 8,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+KN Za 9,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
+KN Za 10,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+KN Za 11,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+KN Za 12,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
+MA Za 1,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+MA Za 2,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+MA Za 3,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+MA Za 4,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+MA Za 5,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+MA Za 6,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+MA Za 7,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+MA Za 8,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI I-PI-NA-MI-NA,A-RE-NE-SI|I-PI-NA-MI-NA,𐘀𐘙𐘗𐘜 𐘚𐘢𐘅𐘒𐘅,"0,25,23,28,26,34,5,18,5",2,9
+MA Za 9,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA I-DA-MA-TE,SU-PU2-WA|I-DA-MA-TE,𐘲𐙄𐘮 𐘚𐘦𐙁𐘃,"50,68,46,26,38,65,3",2,7
+MA Za 10,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+PH Za 1,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+PH Za 2,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+PH Za 3,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+PH Za 4,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+PH Za 5,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+PH Za 6,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+PH Za 7,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+PH Za 8,Phaistos,-1700,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+PK Za 1,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+PK Za 2,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+PK Za 3,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+PK Za 4,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+PK Za 5,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+PK Za 6,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+PK Za 7,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+GOU Za 1,Gournia,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+GOU Za 2,Gournia,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+GOU Za 3,Gournia,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+AR Za 1,Arkhanes,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+AR Za 2,Arkhanes,-1650,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+AR Za 3,Arkhanes,-1650,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+AR Za 4,Arkhanes,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+AK Za 1,Akrotiri,-1628,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+AK Za 2,Akrotiri,-1628,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+VRY Za 1,Vrysinas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+VRY Za 2,Vrysinas,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+VRY Za 3,Vrysinas,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+VRY Za 4,Vrysinas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+VRY Za 5,Vrysinas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+AP Za 1,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+AP Za 2,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+NI Za 1,Nirou Khani,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+PSE Za 1,Pseira,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
 KEA 1,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,A-DU GRA 15 KU-RO GRA 15,A-DU|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐙂𐘁 𐙕,"0,44,85,66,1,85",4,6
 KEA 2,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,PA-I-TO VIN 8 OLE 3 KU-RO VIN 8,PA-I-TO|VIN|OLE|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐙚 𐙂𐘁 𐙗,"2,26,4,87,90,66,1,87",5,8
 KEA 3,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,KU-PA3-NU GRA 20 KI-RO GRA 2 KU-RO GRA 18,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
@@ -746,373 +610,48 @@ AEG 27,Other Aegean,-1600,,clay,aegean_non_cretan,0.62,False,PA-TA-NE VIN 8 KU-R
 AEG 28,Other Aegean,-1600,,clay,aegean_non_cretan,0.62,False,KU-PA3 GRA 6 OLE 3 KU-RO GRA 6,KU-PA3|GRA|OLE|KU-RO|GRA,𐙂𐘰 𐙕 𐙚 𐙂𐘁 𐙕,"66,48,85,90,66,1,85",5,7
 AEG 29,Other Aegean,-1600,,clay,aegean_non_cretan,0.62,False,DU-RA GRA 14 VIN 5 KU-RO GRA 14,DU-RA|GRA|VIN|KU-RO|GRA,𐘬𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"44,52,85,87,66,1,85",5,7
 AEG 30,Other Aegean,-1600,,clay,aegean_non_cretan,0.62,False,SA-PA GRA 8 KU-RO GRA 8,SA-PA|GRA|KU-RO|GRA,𐘞𐘂 𐙕 𐙂𐘁 𐙕,"30,2,85,66,1,85",4,6
-SEAL 1,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 2,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 3,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 4,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 5,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-SEAL 6,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-SEAL 7,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
-SEAL 8,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,TA-NA,TA-NA,𐘳𐘅,"51,5",1,2
-SEAL 9,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,WA-TI,WA-TI,𐘮𐘠,"46,32",1,2
-SEAL 10,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,RE-DI,RE-DI,𐘙𐘆,"25,6",1,2
-SEAL 11,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,KU-MI,KU-MI,𐙂𐘒,"66,18",1,2
-SEAL 12,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,A-SI,A-SI,𐘀𐘜,"0,28",1,2
-SEAL 13,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,PI-TA,PI-TA,𐘢𐘳,"34,51",1,2
-SEAL 14,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,SA-RA2,SA-RA2,𐘞𐘱,"30,49",1,2
-SEAL 15,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-KA,A-KA,𐘀𐘾,"0,62",1,2
-SEAL 16,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,I-NA,I-NA,𐘚𐘅,"26,5",1,2
-SEAL 17,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
-SEAL 18,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,KU-RA,KU-RA,𐙂𐘴,"66,52",1,2
-SEAL 19,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,A-MI,A-MI,𐘀𐘒,"0,18",1,2
-SEAL 20,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
-SEAL 21,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,GRA,GRA,𐙕,85,1,1
-SEAL 22,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,VIN,VIN,𐙗,87,1,1
-SEAL 23,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,OLE,OLE,𐙚,90,1,1
-SEAL 24,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,OVS,OVS,𐙝,93,1,1
-SEAL 25,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,BOS,BOS,𐙠,96,1,1
-SEAL 26,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,CAP,CAP,𐙜,92,1,1
-SEAL 27,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 28,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 29,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-SEAL 30,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-SEAL 31,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,I-DA OVS,I-DA|OVS,𐘚𐘦 𐙝,"26,38,93",2,3
-SEAL 32,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
-SEAL 33,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,DU-PU2 VIN,DU-PU2|VIN,𐘬𐙄 𐙗,"44,68,87",2,3
-SEAL 34,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,TA-NA GRA,TA-NA|GRA,𐘳𐘅 𐙕,"51,5,85",2,3
-SEAL 35,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SEAL 36,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-SEAL 37,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,KU-RO GRA,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
-SEAL 38,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,A-DU GRA 2,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 39,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,SA-MA VIN 3,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 40,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,KU-PA3 GRA 1,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
-SEAL 41,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
-SEAL 42,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
-SEAL 43,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,SA-MA-RA GRA,SA-MA-RA|GRA,𐘞𐙁𐘴 𐙕,"30,65,52,85",2,4
-SEAL 44,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,I-NA-JA VIN,I-NA-JA|VIN,𐘚𐘅𐘧 𐙗,"26,5,39,87",2,4
-SEAL 45,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,RE-KU GRA,RE-KU|GRA,𐘙𐙂 𐙕,"25,66,85",2,3
-SEAL 46,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,TA-RA2 OVS,TA-RA2|OVS,𐘳𐘱 𐙝,"51,49,93",2,3
-SEAL 47,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,WA-NA GRA,WA-NA|GRA,𐘮𐘅 𐙕,"46,5,85",2,3
-SEAL 48,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,A-SI-DA VIN,A-SI-DA|VIN,𐘀𐘜𐘦 𐙗,"0,28,38,87",2,4
-SEAL 49,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,DI-KI-SE GRA,DI-KI-SE|GRA,𐘆𐘸𐘈 𐙕,"6,56,8,85",2,4
-SEAL 50,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 51,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 52,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 53,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 54,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-SEAL 55,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-SEAL 56,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
-SEAL 57,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,TA-NA,TA-NA,𐘳𐘅,"51,5",1,2
-SEAL 58,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,WA-TI,WA-TI,𐘮𐘠,"46,32",1,2
-SEAL 59,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,RE-DI,RE-DI,𐘙𐘆,"25,6",1,2
-SEAL 60,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,KU-MI,KU-MI,𐙂𐘒,"66,18",1,2
-SEAL 61,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,A-SI,A-SI,𐘀𐘜,"0,28",1,2
-SEAL 62,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,PI-TA,PI-TA,𐘢𐘳,"34,51",1,2
-SEAL 63,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,SA-RA2,SA-RA2,𐘞𐘱,"30,49",1,2
-SEAL 64,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-KA,A-KA,𐘀𐘾,"0,62",1,2
-SEAL 65,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,I-NA,I-NA,𐘚𐘅,"26,5",1,2
-SEAL 66,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
-SEAL 67,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,KU-RA,KU-RA,𐙂𐘴,"66,52",1,2
-SEAL 68,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,A-MI,A-MI,𐘀𐘒,"0,18",1,2
-SEAL 69,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
-SEAL 70,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,GRA,GRA,𐙕,85,1,1
-SEAL 71,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,VIN,VIN,𐙗,87,1,1
-SEAL 72,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,OLE,OLE,𐙚,90,1,1
-SEAL 73,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,OVS,OVS,𐙝,93,1,1
-SEAL 74,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,BOS,BOS,𐙠,96,1,1
-SEAL 75,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,CAP,CAP,𐙜,92,1,1
-SEAL 76,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 77,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 78,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-SEAL 79,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-SEAL 80,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,I-DA OVS,I-DA|OVS,𐘚𐘦 𐙝,"26,38,93",2,3
-SEAL 81,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
-SEAL 82,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,DU-PU2 VIN,DU-PU2|VIN,𐘬𐙄 𐙗,"44,68,87",2,3
-SEAL 83,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,TA-NA GRA,TA-NA|GRA,𐘳𐘅 𐙕,"51,5,85",2,3
-SEAL 84,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SEAL 85,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-SEAL 86,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,KU-RO GRA,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
-SEAL 87,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-DU GRA 2,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 88,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,SA-MA VIN 3,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 89,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,KU-PA3 GRA 1,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
-SEAL 90,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
-SEAL 91,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
-SEAL 92,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,SA-MA-RA GRA,SA-MA-RA|GRA,𐘞𐙁𐘴 𐙕,"30,65,52,85",2,4
-SEAL 93,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,I-NA-JA VIN,I-NA-JA|VIN,𐘚𐘅𐘧 𐙗,"26,5,39,87",2,4
-SEAL 94,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,RE-KU GRA,RE-KU|GRA,𐘙𐙂 𐙕,"25,66,85",2,3
-SEAL 95,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,TA-RA2 OVS,TA-RA2|OVS,𐘳𐘱 𐙝,"51,49,93",2,3
-SEAL 96,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,WA-NA GRA,WA-NA|GRA,𐘮𐘅 𐙕,"46,5,85",2,3
-SEAL 97,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,A-SI-DA VIN,A-SI-DA|VIN,𐘀𐘜𐘦 𐙗,"0,28,38,87",2,4
-SEAL 98,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,DI-KI-SE GRA,DI-KI-SE|GRA,𐘆𐘸𐘈 𐙕,"6,56,8,85",2,4
-SEAL 99,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 100,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 101,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 102,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 103,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-SEAL 104,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-SEAL 105,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
-SEAL 106,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,TA-NA,TA-NA,𐘳𐘅,"51,5",1,2
-SEAL 107,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,WA-TI,WA-TI,𐘮𐘠,"46,32",1,2
-SEAL 108,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,RE-DI,RE-DI,𐘙𐘆,"25,6",1,2
-SEAL 109,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,KU-MI,KU-MI,𐙂𐘒,"66,18",1,2
-SEAL 110,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,A-SI,A-SI,𐘀𐘜,"0,28",1,2
-SEAL 111,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,PI-TA,PI-TA,𐘢𐘳,"34,51",1,2
-SEAL 112,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,SA-RA2,SA-RA2,𐘞𐘱,"30,49",1,2
-SEAL 113,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,A-KA,A-KA,𐘀𐘾,"0,62",1,2
-SEAL 114,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,I-NA,I-NA,𐘚𐘅,"26,5",1,2
-SEAL 115,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
-SEAL 116,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,KU-RA,KU-RA,𐙂𐘴,"66,52",1,2
-SEAL 117,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,A-MI,A-MI,𐘀𐘒,"0,18",1,2
-SEAL 118,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
-SEAL 119,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,GRA,GRA,𐙕,85,1,1
-SEAL 120,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,VIN,VIN,𐙗,87,1,1
-SEAL 121,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,OLE,OLE,𐙚,90,1,1
-SEAL 122,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,OVS,OVS,𐙝,93,1,1
-SEAL 123,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,BOS,BOS,𐙠,96,1,1
-SEAL 124,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,CAP,CAP,𐙜,92,1,1
-SEAL 125,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 126,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 127,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-SEAL 128,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-SEAL 129,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,I-DA OVS,I-DA|OVS,𐘚𐘦 𐙝,"26,38,93",2,3
-SEAL 130,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
-SEAL 131,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,DU-PU2 VIN,DU-PU2|VIN,𐘬𐙄 𐙗,"44,68,87",2,3
-SEAL 132,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,TA-NA GRA,TA-NA|GRA,𐘳𐘅 𐙕,"51,5,85",2,3
-SEAL 133,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SEAL 134,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-SEAL 135,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,KU-RO GRA,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
-SEAL 136,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-DU GRA 2,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 137,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,SA-MA VIN 3,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 138,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,KU-PA3 GRA 1,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
-SEAL 139,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
-SEAL 140,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
-SEAL 141,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,SA-MA-RA GRA,SA-MA-RA|GRA,𐘞𐙁𐘴 𐙕,"30,65,52,85",2,4
-SEAL 142,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,I-NA-JA VIN,I-NA-JA|VIN,𐘚𐘅𐘧 𐙗,"26,5,39,87",2,4
-SEAL 143,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,RE-KU GRA,RE-KU|GRA,𐘙𐙂 𐙕,"25,66,85",2,3
-SEAL 144,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,TA-RA2 OVS,TA-RA2|OVS,𐘳𐘱 𐙝,"51,49,93",2,3
-SEAL 145,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,WA-NA GRA,WA-NA|GRA,𐘮𐘅 𐙕,"46,5,85",2,3
-SEAL 146,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,A-SI-DA VIN,A-SI-DA|VIN,𐘀𐘜𐘦 𐙗,"0,28,38,87",2,4
-SEAL 147,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,DI-KI-SE GRA,DI-KI-SE|GRA,𐘆𐘸𐘈 𐙕,"6,56,8,85",2,4
-SEAL 148,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 149,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 150,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 151,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 152,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-SEAL 153,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-SEAL 154,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
-SEAL 155,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,TA-NA,TA-NA,𐘳𐘅,"51,5",1,2
-SEAL 156,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,WA-TI,WA-TI,𐘮𐘠,"46,32",1,2
-SEAL 157,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,RE-DI,RE-DI,𐘙𐘆,"25,6",1,2
-SEAL 158,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,KU-MI,KU-MI,𐙂𐘒,"66,18",1,2
-SEAL 159,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-SI,A-SI,𐘀𐘜,"0,28",1,2
-SEAL 160,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,PI-TA,PI-TA,𐘢𐘳,"34,51",1,2
-SEAL 161,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,SA-RA2,SA-RA2,𐘞𐘱,"30,49",1,2
-SEAL 162,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,A-KA,A-KA,𐘀𐘾,"0,62",1,2
-SEAL 163,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,I-NA,I-NA,𐘚𐘅,"26,5",1,2
-SEAL 164,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
-SEAL 165,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,KU-RA,KU-RA,𐙂𐘴,"66,52",1,2
-SEAL 166,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,A-MI,A-MI,𐘀𐘒,"0,18",1,2
-SEAL 167,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
-SEAL 168,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,GRA,GRA,𐙕,85,1,1
-SEAL 169,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,VIN,VIN,𐙗,87,1,1
-SEAL 170,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,OLE,OLE,𐙚,90,1,1
-SEAL 171,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,OVS,OVS,𐙝,93,1,1
-SEAL 172,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,BOS,BOS,𐙠,96,1,1
-SEAL 173,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,CAP,CAP,𐙜,92,1,1
-SEAL 174,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 175,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 176,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-SEAL 177,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-SEAL 178,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,I-DA OVS,I-DA|OVS,𐘚𐘦 𐙝,"26,38,93",2,3
-SEAL 179,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
-SEAL 180,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,DU-PU2 VIN,DU-PU2|VIN,𐘬𐙄 𐙗,"44,68,87",2,3
-SEAL 181,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,TA-NA GRA,TA-NA|GRA,𐘳𐘅 𐙕,"51,5,85",2,3
-SEAL 182,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SEAL 183,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-SEAL 184,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,KU-RO GRA,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
-SEAL 185,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,A-DU GRA 2,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 186,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,SA-MA VIN 3,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 187,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,KU-PA3 GRA 1,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
-SEAL 188,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
-SEAL 189,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
-SEAL 190,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,SA-MA-RA GRA,SA-MA-RA|GRA,𐘞𐙁𐘴 𐙕,"30,65,52,85",2,4
-SEAL 191,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,I-NA-JA VIN,I-NA-JA|VIN,𐘚𐘅𐘧 𐙗,"26,5,39,87",2,4
-SEAL 192,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,RE-KU GRA,RE-KU|GRA,𐘙𐙂 𐙕,"25,66,85",2,3
-SEAL 193,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,TA-RA2 OVS,TA-RA2|OVS,𐘳𐘱 𐙝,"51,49,93",2,3
-SEAL 194,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,WA-NA GRA,WA-NA|GRA,𐘮𐘅 𐙕,"46,5,85",2,3
-SEAL 195,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-SI-DA VIN,A-SI-DA|VIN,𐘀𐘜𐘦 𐙗,"0,28,38,87",2,4
-SEAL 196,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,DI-KI-SE GRA,DI-KI-SE|GRA,𐘆𐘸𐘈 𐙕,"6,56,8,85",2,4
-SEAL 197,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 198,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 199,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 200,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 201,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-SEAL 202,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-SEAL 203,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
-SEAL 204,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,TA-NA,TA-NA,𐘳𐘅,"51,5",1,2
-SEAL 205,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,WA-TI,WA-TI,𐘮𐘠,"46,32",1,2
-SEAL 206,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,RE-DI,RE-DI,𐘙𐘆,"25,6",1,2
-SEAL 207,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,KU-MI,KU-MI,𐙂𐘒,"66,18",1,2
-SEAL 208,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-SI,A-SI,𐘀𐘜,"0,28",1,2
-SEAL 209,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,PI-TA,PI-TA,𐘢𐘳,"34,51",1,2
-SEAL 210,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,SA-RA2,SA-RA2,𐘞𐘱,"30,49",1,2
-SEAL 211,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,A-KA,A-KA,𐘀𐘾,"0,62",1,2
-SEAL 212,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,I-NA,I-NA,𐘚𐘅,"26,5",1,2
-SEAL 213,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
-SEAL 214,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,KU-RA,KU-RA,𐙂𐘴,"66,52",1,2
-SEAL 215,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,A-MI,A-MI,𐘀𐘒,"0,18",1,2
-SEAL 216,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
-SEAL 217,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,GRA,GRA,𐙕,85,1,1
-SEAL 218,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,VIN,VIN,𐙗,87,1,1
-SEAL 219,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,OLE,OLE,𐙚,90,1,1
-SEAL 220,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,OVS,OVS,𐙝,93,1,1
-SEAL 221,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,BOS,BOS,𐙠,96,1,1
-SEAL 222,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,CAP,CAP,𐙜,92,1,1
-SEAL 223,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 224,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 225,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-SEAL 226,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-SEAL 227,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,I-DA OVS,I-DA|OVS,𐘚𐘦 𐙝,"26,38,93",2,3
-SEAL 228,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
-SEAL 229,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,DU-PU2 VIN,DU-PU2|VIN,𐘬𐙄 𐙗,"44,68,87",2,3
-SEAL 230,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,TA-NA GRA,TA-NA|GRA,𐘳𐘅 𐙕,"51,5,85",2,3
-SEAL 231,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-SEAL 232,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-SEAL 233,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,KU-RO GRA,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
-SEAL 234,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,A-DU GRA 2,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-SEAL 235,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,SA-MA VIN 3,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-SEAL 236,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,KU-PA3 GRA 1,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
-SEAL 237,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
-SEAL 238,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
-SEAL 239,Sealings (Khania),-1550,100,clay,clay_sealings,0.55,True,SA-MA-RA GRA,SA-MA-RA|GRA,𐘞𐙁𐘴 𐙕,"30,65,52,85",2,4
-SEAL 240,Sealings (Other),-1600,100,clay,clay_sealings,0.55,True,I-NA-JA VIN,I-NA-JA|VIN,𐘚𐘅𐘧 𐙗,"26,5,39,87",2,4
-SEAL 241,Sealings (Hagia Triada),-1500,100,clay,clay_sealings,0.55,True,RE-KU GRA,RE-KU|GRA,𐘙𐙂 𐙕,"25,66,85",2,3
-SEAL 242,Sealings (Zakros),-1550,100,clay,clay_sealings,0.55,True,TA-RA2 OVS,TA-RA2|OVS,𐘳𐘱 𐙝,"51,49,93",2,3
-SEAL 243,Sealings (Khania),-1600,100,clay,clay_sealings,0.55,True,WA-NA GRA,WA-NA|GRA,𐘮𐘅 𐙕,"46,5,85",2,3
-SEAL 244,Sealings (Other),-1500,100,clay,clay_sealings,0.55,True,A-SI-DA VIN,A-SI-DA|VIN,𐘀𐘜𐘦 𐙗,"0,28,38,87",2,4
-SEAL 245,Sealings (Hagia Triada),-1550,100,clay,clay_sealings,0.55,True,DI-KI-SE GRA,DI-KI-SE|GRA,𐘆𐘸𐘈 𐙕,"6,56,8,85",2,4
-SEAL 246,Sealings (Zakros),-1600,100,clay,clay_sealings,0.55,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-SEAL 247,Sealings (Khania),-1500,100,clay,clay_sealings,0.55,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-SEAL 248,Sealings (Other),-1550,100,clay,clay_sealings,0.55,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-SEAL 249,Sealings (Hagia Triada),-1600,100,clay,clay_sealings,0.55,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-SEAL 250,Sealings (Zakros),-1500,100,clay,clay_sealings,0.55,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-CER 1,Ceramics (Hagia Triada),-1500,100,clay,inscribed_ceramics,0.52,True,GRA,GRA,𐙕,85,1,1
-CER 2,Ceramics (Khania),-1550,100,clay,inscribed_ceramics,0.52,True,VIN,VIN,𐙗,87,1,1
-CER 3,Ceramics (Other),-1600,100,clay,inscribed_ceramics,0.52,True,OLE,OLE,𐙚,90,1,1
-CER 4,Phaistos,-1650,100,clay,inscribed_ceramics,0.52,True,OVS,OVS,𐙝,93,1,1
-CER 5,Mallia,-1500,100,clay,inscribed_ceramics,0.52,True,BOS,BOS,𐙠,96,1,1
-CER 6,Zakros,-1550,100,clay,inscribed_ceramics,0.52,True,GRA 1,GRA,𐙕,85,1,1
-CER 7,Kommos,-1600,100,clay,inscribed_ceramics,0.52,True,VIN 2,VIN,𐙗,87,1,1
-CER 8,Ceramics (Hagia Triada),-1650,100,clay,inscribed_ceramics,0.52,True,OLE 1,OLE,𐙚,90,1,1
-CER 9,Ceramics (Khania),-1500,100,clay,inscribed_ceramics,0.52,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-CER 10,Ceramics (Other),-1550,100,clay,inscribed_ceramics,0.52,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-CER 11,Phaistos,-1600,100,clay,inscribed_ceramics,0.52,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-CER 12,Mallia,-1650,100,clay,inscribed_ceramics,0.52,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-CER 13,Zakros,-1500,100,clay,inscribed_ceramics,0.52,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-CER 14,Kommos,-1550,100,clay,inscribed_ceramics,0.52,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-CER 15,Ceramics (Hagia Triada),-1600,100,clay,inscribed_ceramics,0.52,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-CER 16,Ceramics (Khania),-1650,100,clay,inscribed_ceramics,0.52,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-CER 17,Ceramics (Other),-1500,100,clay,inscribed_ceramics,0.52,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-CER 18,Phaistos,-1550,100,clay,inscribed_ceramics,0.52,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-CER 19,Mallia,-1600,100,clay,inscribed_ceramics,0.52,True,A-RE VIN,A-RE|VIN,𐘀𐘙 𐙗,"0,25,87",2,3
-CER 20,Zakros,-1650,100,clay,inscribed_ceramics,0.52,True,GRA 2,GRA,𐙕,85,1,1
-CER 21,Kommos,-1500,100,clay,inscribed_ceramics,0.52,True,VIN 3,VIN,𐙗,87,1,1
-CER 22,Ceramics (Hagia Triada),-1550,100,clay,inscribed_ceramics,0.52,True,OLE 2,OLE,𐙚,90,1,1
-CER 23,Ceramics (Khania),-1600,100,clay,inscribed_ceramics,0.52,True,OVS 1,OVS,𐙝,93,1,1
-CER 24,Ceramics (Other),-1650,100,clay,inscribed_ceramics,0.52,True,GRA 5,GRA,𐙕,85,1,1
-CER 25,Phaistos,-1500,100,clay,inscribed_ceramics,0.52,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-CER 26,Mallia,-1550,100,clay,inscribed_ceramics,0.52,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-CER 27,Zakros,-1600,100,clay,inscribed_ceramics,0.52,True,A-TA-I-*301-WA-JA,A-TA-I-*301-WA-JA,𐘀𐘳𐘚𐙕𐘮𐘧,"0,51,26,85,46,39",1,6
-CER 28,Kommos,-1650,100,clay,inscribed_ceramics,0.52,True,KU-RO,KU-RO,𐙂𐘁,"66,1",1,2
-CER 29,Ceramics (Hagia Triada),-1500,100,clay,inscribed_ceramics,0.52,True,KI-RO,KI-RO,𐘸𐘁,"56,1",1,2
-CER 30,Ceramics (Khania),-1550,100,clay,inscribed_ceramics,0.52,True,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
-CER 31,Ceramics (Other),-1600,100,clay,inscribed_ceramics,0.52,True,SA GRA,SA|GRA,𐘞 𐙕,"30,85",2,2
-CER 32,Phaistos,-1650,100,clay,inscribed_ceramics,0.52,True,DU GRA,DU|GRA,𐘬 𐙕,"44,85",2,2
-CER 33,Mallia,-1500,100,clay,inscribed_ceramics,0.52,True,TA GRA,TA|GRA,𐘳 𐙕,"51,85",2,2
-CER 34,Zakros,-1550,100,clay,inscribed_ceramics,0.52,True,WA VIN,WA|VIN,𐘮 𐙗,"46,87",2,2
-CER 35,Kommos,-1600,100,clay,inscribed_ceramics,0.52,True,RE GRA,RE|GRA,𐘙 𐙕,"25,85",2,2
-CER 36,Ceramics (Hagia Triada),-1650,100,clay,inscribed_ceramics,0.52,True,KU OLE,KU|OLE,𐙂 𐙚,"66,90",2,2
-CER 37,Ceramics (Khania),-1500,100,clay,inscribed_ceramics,0.52,True,GRA,GRA,𐙕,85,1,1
-CER 38,Ceramics (Other),-1550,100,clay,inscribed_ceramics,0.52,True,VIN,VIN,𐙗,87,1,1
-CER 39,Phaistos,-1600,100,clay,inscribed_ceramics,0.52,True,OLE,OLE,𐙚,90,1,1
-CER 40,Mallia,-1650,100,clay,inscribed_ceramics,0.52,True,OVS,OVS,𐙝,93,1,1
-CER 41,Zakros,-1500,100,clay,inscribed_ceramics,0.52,True,BOS,BOS,𐙠,96,1,1
-CER 42,Kommos,-1550,100,clay,inscribed_ceramics,0.52,True,GRA 1,GRA,𐙕,85,1,1
-CER 43,Ceramics (Hagia Triada),-1600,100,clay,inscribed_ceramics,0.52,True,VIN 2,VIN,𐙗,87,1,1
-CER 44,Ceramics (Khania),-1650,100,clay,inscribed_ceramics,0.52,True,OLE 1,OLE,𐙚,90,1,1
-CER 45,Ceramics (Other),-1500,100,clay,inscribed_ceramics,0.52,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-CER 46,Phaistos,-1550,100,clay,inscribed_ceramics,0.52,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-CER 47,Mallia,-1600,100,clay,inscribed_ceramics,0.52,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-CER 48,Zakros,-1650,100,clay,inscribed_ceramics,0.52,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-CER 49,Kommos,-1500,100,clay,inscribed_ceramics,0.52,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-CER 50,Ceramics (Hagia Triada),-1550,100,clay,inscribed_ceramics,0.52,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-CER 51,Ceramics (Khania),-1600,100,clay,inscribed_ceramics,0.52,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-CER 52,Ceramics (Other),-1650,100,clay,inscribed_ceramics,0.52,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-CER 53,Phaistos,-1500,100,clay,inscribed_ceramics,0.52,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-CER 54,Mallia,-1550,100,clay,inscribed_ceramics,0.52,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-CER 55,Zakros,-1600,100,clay,inscribed_ceramics,0.52,True,A-RE VIN,A-RE|VIN,𐘀𐘙 𐙗,"0,25,87",2,3
-CER 56,Kommos,-1650,100,clay,inscribed_ceramics,0.52,True,GRA 2,GRA,𐙕,85,1,1
-CER 57,Ceramics (Hagia Triada),-1500,100,clay,inscribed_ceramics,0.52,True,VIN 3,VIN,𐙗,87,1,1
-CER 58,Ceramics (Khania),-1550,100,clay,inscribed_ceramics,0.52,True,OLE 2,OLE,𐙚,90,1,1
-CER 59,Ceramics (Other),-1600,100,clay,inscribed_ceramics,0.52,True,OVS 1,OVS,𐙝,93,1,1
-CER 60,Phaistos,-1650,100,clay,inscribed_ceramics,0.52,True,GRA 5,GRA,𐙕,85,1,1
-CER 61,Mallia,-1500,100,clay,inscribed_ceramics,0.52,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-CER 62,Zakros,-1550,100,clay,inscribed_ceramics,0.52,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-CER 63,Kommos,-1600,100,clay,inscribed_ceramics,0.52,True,A-TA-I-*301-WA-JA,A-TA-I-*301-WA-JA,𐘀𐘳𐘚𐙕𐘮𐘧,"0,51,26,85,46,39",1,6
-CER 64,Ceramics (Hagia Triada),-1650,100,clay,inscribed_ceramics,0.52,True,KU-RO,KU-RO,𐙂𐘁,"66,1",1,2
-CER 65,Ceramics (Khania),-1500,100,clay,inscribed_ceramics,0.52,True,KI-RO,KI-RO,𐘸𐘁,"56,1",1,2
-CER 66,Ceramics (Other),-1550,100,clay,inscribed_ceramics,0.52,True,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
-CER 67,Phaistos,-1600,100,clay,inscribed_ceramics,0.52,True,SA GRA,SA|GRA,𐘞 𐙕,"30,85",2,2
-CER 68,Mallia,-1650,100,clay,inscribed_ceramics,0.52,True,DU GRA,DU|GRA,𐘬 𐙕,"44,85",2,2
-CER 69,Zakros,-1500,100,clay,inscribed_ceramics,0.52,True,TA GRA,TA|GRA,𐘳 𐙕,"51,85",2,2
-CER 70,Kommos,-1550,100,clay,inscribed_ceramics,0.52,True,WA VIN,WA|VIN,𐘮 𐙗,"46,87",2,2
-CER 71,Ceramics (Hagia Triada),-1600,100,clay,inscribed_ceramics,0.52,True,RE GRA,RE|GRA,𐘙 𐙕,"25,85",2,2
-CER 72,Ceramics (Khania),-1650,100,clay,inscribed_ceramics,0.52,True,KU OLE,KU|OLE,𐙂 𐙚,"66,90",2,2
-CER 73,Ceramics (Other),-1500,100,clay,inscribed_ceramics,0.52,True,GRA,GRA,𐙕,85,1,1
-CER 74,Phaistos,-1550,100,clay,inscribed_ceramics,0.52,True,VIN,VIN,𐙗,87,1,1
-CER 75,Mallia,-1600,100,clay,inscribed_ceramics,0.52,True,OLE,OLE,𐙚,90,1,1
-CER 76,Zakros,-1650,100,clay,inscribed_ceramics,0.52,True,OVS,OVS,𐙝,93,1,1
-CER 77,Kommos,-1500,100,clay,inscribed_ceramics,0.52,True,BOS,BOS,𐙠,96,1,1
-CER 78,Ceramics (Hagia Triada),-1550,100,clay,inscribed_ceramics,0.52,True,GRA 1,GRA,𐙕,85,1,1
-CER 79,Ceramics (Khania),-1600,100,clay,inscribed_ceramics,0.52,True,VIN 2,VIN,𐙗,87,1,1
-CER 80,Ceramics (Other),-1650,100,clay,inscribed_ceramics,0.52,True,OLE 1,OLE,𐙚,90,1,1
-CER 81,Phaistos,-1500,100,clay,inscribed_ceramics,0.52,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-CER 82,Mallia,-1550,100,clay,inscribed_ceramics,0.52,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-CER 83,Zakros,-1600,100,clay,inscribed_ceramics,0.52,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-CER 84,Kommos,-1650,100,clay,inscribed_ceramics,0.52,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
-CER 85,Ceramics (Hagia Triada),-1500,100,clay,inscribed_ceramics,0.52,True,A-RE,A-RE,𐘀𐘙,"0,25",1,2
-CER 86,Ceramics (Khania),-1550,100,clay,inscribed_ceramics,0.52,True,I-DA,I-DA,𐘚𐘦,"26,38",1,2
-CER 87,Ceramics (Other),-1600,100,clay,inscribed_ceramics,0.52,True,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
-CER 88,Phaistos,-1650,100,clay,inscribed_ceramics,0.52,True,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
-CER 89,Mallia,-1500,100,clay,inscribed_ceramics,0.52,True,KU-PA3 OLE,KU-PA3|OLE,𐙂𐘰 𐙚,"66,48,90",2,3
-CER 90,Zakros,-1550,100,clay,inscribed_ceramics,0.52,True,PA-TA GRA,PA-TA|GRA,𐘂𐘳 𐙕,"2,51,85",2,3
-CER 91,Kommos,-1600,100,clay,inscribed_ceramics,0.52,True,A-RE VIN,A-RE|VIN,𐘀𐘙 𐙗,"0,25,87",2,3
-CER 92,Ceramics (Hagia Triada),-1650,100,clay,inscribed_ceramics,0.52,True,GRA 2,GRA,𐙕,85,1,1
-CER 93,Ceramics (Khania),-1500,100,clay,inscribed_ceramics,0.52,True,VIN 3,VIN,𐙗,87,1,1
-CER 94,Ceramics (Other),-1550,100,clay,inscribed_ceramics,0.52,True,OLE 2,OLE,𐙚,90,1,1
-CER 95,Phaistos,-1600,100,clay,inscribed_ceramics,0.52,True,OVS 1,OVS,𐙝,93,1,1
-CER 96,Mallia,-1650,100,clay,inscribed_ceramics,0.52,True,GRA 5,GRA,𐙕,85,1,1
-CER 97,Zakros,-1500,100,clay,inscribed_ceramics,0.52,True,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
-CER 98,Kommos,-1550,100,clay,inscribed_ceramics,0.52,True,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
-CER 99,Ceramics (Hagia Triada),-1600,100,clay,inscribed_ceramics,0.52,True,A-TA-I-*301-WA-JA,A-TA-I-*301-WA-JA,𐘀𐘳𐘚𐙕𐘮𐘧,"0,51,26,85,46,39",1,6
-CER 100,Ceramics (Khania),-1650,100,clay,inscribed_ceramics,0.52,True,KU-RO,KU-RO,𐙂𐘁,"66,1",1,2
-CER 101,Ceramics (Other),-1500,100,clay,inscribed_ceramics,0.52,True,KI-RO,KI-RO,𐘸𐘁,"56,1",1,2
-CER 102,Phaistos,-1550,100,clay,inscribed_ceramics,0.52,True,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
-CER 103,Mallia,-1600,100,clay,inscribed_ceramics,0.52,True,SA GRA,SA|GRA,𐘞 𐙕,"30,85",2,2
-CER 104,Zakros,-1650,100,clay,inscribed_ceramics,0.52,True,DU GRA,DU|GRA,𐘬 𐙕,"44,85",2,2
-CER 105,Kommos,-1500,100,clay,inscribed_ceramics,0.52,True,TA GRA,TA|GRA,𐘳 𐙕,"51,85",2,2
-CER 106,Ceramics (Hagia Triada),-1550,100,clay,inscribed_ceramics,0.52,True,WA VIN,WA|VIN,𐘮 𐙗,"46,87",2,2
-CER 107,Ceramics (Khania),-1600,100,clay,inscribed_ceramics,0.52,True,RE GRA,RE|GRA,𐘙 𐙕,"25,85",2,2
-CER 108,Ceramics (Other),-1650,100,clay,inscribed_ceramics,0.52,True,KU OLE,KU|OLE,𐙂 𐙚,"66,90",2,2
-CER 109,Phaistos,-1500,100,clay,inscribed_ceramics,0.52,True,GRA,GRA,𐙕,85,1,1
-CER 110,Mallia,-1550,100,clay,inscribed_ceramics,0.52,True,VIN,VIN,𐙗,87,1,1
-CER 111,Zakros,-1600,100,clay,inscribed_ceramics,0.52,True,OLE,OLE,𐙚,90,1,1
-CER 112,Kommos,-1650,100,clay,inscribed_ceramics,0.52,True,OVS,OVS,𐙝,93,1,1
-CER 113,Ceramics (Hagia Triada),-1500,100,clay,inscribed_ceramics,0.52,True,BOS,BOS,𐙠,96,1,1
-CER 114,Ceramics (Khania),-1550,100,clay,inscribed_ceramics,0.52,True,GRA 1,GRA,𐙕,85,1,1
-CER 115,Ceramics (Other),-1600,100,clay,inscribed_ceramics,0.52,True,VIN 2,VIN,𐙗,87,1,1
-CER 116,Phaistos,-1650,100,clay,inscribed_ceramics,0.52,True,OLE 1,OLE,𐙚,90,1,1
-CER 117,Mallia,-1500,100,clay,inscribed_ceramics,0.52,True,A-DU,A-DU,𐘀𐘬,"0,44",1,2
-CER 118,Zakros,-1550,100,clay,inscribed_ceramics,0.52,True,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
-CER 119,Kommos,-1600,100,clay,inscribed_ceramics,0.52,True,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
-CER 120,Ceramics (Hagia Triada),-1650,100,clay,inscribed_ceramics,0.52,True,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
+HT Wc 1,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+HT Wc 2,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+HT Wc 3,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+HT Wc 4,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+HT Wc 5,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+HT Wc 6,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+HT Wc 7,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+HT Wc 8,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
+HT Wc 9,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,PA-I-TO GRA,PA-I-TO|GRA,𐘂𐘚𐘄 𐙕,"2,26,4,85",2,4
+HT Wc 10,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,DU-PU2,DU-PU2,𐘬𐙄,"44,68",1,2
+ZA Wc 1,Zakros,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+ZA Wc 2,Zakros,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+ZA Wc 3,Zakros,-1500,,clay,clay_sealings,0.55,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+ZA Wc 4,Zakros,-1500,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+ZA Wc 5,Zakros,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+ZA Wc 6,Zakros,-1500,,clay,clay_sealings,0.55,False,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
+ZA Wc 7,Zakros,-1500,,clay,clay_sealings,0.55,False,PA-TA,PA-TA,𐘂𐘳,"2,51",1,2
+ZA Wc 8,Zakros,-1500,,clay,clay_sealings,0.55,False,I-DA GRA,I-DA|GRA,𐘚𐘦 𐙕,"26,38,85",2,3
+KH Wc 1,Khania,-1450,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+KH Wc 2,Khania,-1450,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+KH Wc 3,Khania,-1450,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+KH Wc 4,Khania,-1450,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+KH Wc 5,Khania,-1450,,clay,clay_sealings,0.55,False,KU-PA3 GRA,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
+KH Wc 6,Khania,-1450,,clay,clay_sealings,0.55,False,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
+KH Wc 7,Khania,-1450,,clay,clay_sealings,0.55,False,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
+HT Zb 1,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+HT Zb 2,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,VIN 2,VIN,𐙗,87,1,1
+HT Zb 3,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+HT Zb 4,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+HT Zb 5,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU OLE,KU-PA3-NU|OLE,𐙂𐘰𐘟 𐙚,"66,48,31,90",2,4
+KH Zb 1,Khania,-1450,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+KH Zb 2,Khania,-1450,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+KH Zb 3,Khania,-1450,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+KH Zb 4,Khania,-1450,,clay,inscribed_ceramics,0.52,False,SA-MA GRA,SA-MA|GRA,𐘞𐙁 𐙕,"30,65,85",2,3
+PH Zb 1,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,GRA 5,GRA,𐙕,85,1,1
+PH Zb 2,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+PH Zb 3,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,OLE 2,OLE,𐙚,90,1,1
+ZA Zb 1,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+ZA Zb 2,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
+ZA Zb 3,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+KOM Zb 1,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+KOM Zb 2,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+KOM Zb 3,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+MA Zb 1,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+MA Zb 2,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4

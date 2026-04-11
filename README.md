@@ -2,7 +2,7 @@
 
 A structured database of **Linear A** — an undeciphered writing system used by the Minoan civilisation on Crete, ca. **1800–1450 BCE**. No one can read it. This project encodes what we have into a machine-readable format.
 
-**1,117 tablets** from **14 georeferenced sites** (+ cluster labels) | **341 Unicode signs** | **~79.8 %** of all known Linear A inscriptions
+**656 tablets** from **14 georeferenced sites** (+ cluster labels) | **341 Unicode signs** | **~46.9 %** of all known Linear A inscriptions
 
 ---
 
@@ -52,12 +52,12 @@ Strategies above the red dashed line are included; those below (shown in red) ar
 | Younger Online Corpus | 0.80 | Corpus | Younger's online Linear A transliteration corpus (registered; no records yet loaded) |
 | Commodity Logogram Resolution | 0.70 | Enrichment | GRA, VIN, OLE → GORILA sign labels |
 | Minor Cretan Clay Tablets | 0.68 | Corpus | Clay tablets from ~30 minor Cretan sites — 150 records |
-| Stone Libation Vessels & Tables | 0.62 | Corpus | Inscribed stone vessels with formulaic libation dedications — 200 records |
+| Stone Libation Vessels & Tables | 0.62 | Corpus | Individually documented Za-series stone vessels (GORILA vol V; Younger) — 64 records |
 | Non-Cretan Aegean Inscriptions | 0.62 | Corpus | Linear A finds from Kea, Kythera, Miletos, and other Aegean sites — 80 records |
 | Linear B Phonetic Value Assignment | 0.60 | Enrichment | Syllabic values from Linear B correspondence |
-| Clay Sealings, Roundels & Nodules | 0.55 | Corpus | Impressed administrative documents; typically 1–3 signs — 250 records |
+| Clay Sealings, Roundels & Nodules | 0.55 | Corpus | Individually documented Wc-series roundels (Hallager 1996); typically 1–3 signs — 25 records |
 | Archaeological Date Estimates | 0.55 | Enrichment | BCE dates from stratigraphy (±50–100 yr) |
-| Inscribed Ceramic Vessels | 0.52 | Corpus | Painted or incised signs on pithoi, cups, stirrup jars — 120 records |
+| Inscribed Ceramic Vessels | 0.52 | Corpus | Individually documented Zb-series ceramic objects (Del Freo & Ferro 2018) — 20 records |
 
 ### Currently excluded strategies (QCS < 0.5)
 
@@ -70,13 +70,13 @@ Strategies above the red dashed line are included; those below (shown in red) ar
 
 ## 3 — The Database at a Glance
 
-This database contains **1,117 inscriptions** drawn from GORILA vols I–V, minor Cretan clay tablet archives, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, and inscribed ceramics.
+This database contains **656 inscriptions** drawn from GORILA vols I–V, minor Cretan clay tablet archives, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, and inscribed ceramics.
 
 ![Corpus overview](data/figures/tbl_03_corpus_overview.png)
 
 ### Coverage
 
-1,117 of ~1,400 known inscriptions = **~79.8 %**. Coverage is high across the major Cretan archives, stone vessels, sealings, and several Aegean sites; the remaining gap comprises heavily damaged, poorly documented, or suspected forgery material.
+656 of ~1,400 known inscriptions = **~46.9 %**. Coverage spans the major Cretan archives, individually documented stone vessels, sealings, and several Aegean sites. The remaining gap comprises heavily damaged, poorly documented, or suspected forgery material, plus the many stone vessels, sealings, and ceramics not yet individually encoded.
 
 ![Coverage by site](data/figures/fig_06_corpus_coverage.png)
 
@@ -92,7 +92,7 @@ This database contains **1,117 inscriptions** drawn from GORILA vols I–V, mino
 
 ![Site map](data/figures/fig_03_site_map.png)
 
-Note that the above distribution covers 1,117 of ~1,400 known inscriptions = ~79.8 %
+Note that the above distribution covers 656 of ~1,400 known inscriptions = ~46.9 %
 
 ---
 
@@ -124,7 +124,7 @@ Tablets typically carry **1–16 recognised signs** (average ~7). The distributi
 
 ### The Problem
 
-There are roughly **~1,400 known Linear A inscriptions** and this database now covers **1,117 (~79.8 %)**. The remaining ~283 inscriptions are heavily damaged, lack secure provenance, appear in grey literature only, or are suspected forgeries — categories that consistently fall below the QCS threshold.
+There are roughly **~1,400 known Linear A inscriptions** and this database now covers **656 (~46.9 %)**. Each row is a distinct, individually documented physical object. The remaining ~744 inscriptions either fall below the QCS threshold or have not yet been individually encoded (stone vessels, sealings, and ceramics beyond those already listed).
 
 ### Quality Confidence Score (QCS)
 
@@ -165,15 +165,18 @@ IF   QCS < 0.50  →  EXCLUDE (too unreliable for systematic analysis)
 
 ### Current Coverage
 
-At the **QCS ≥ 0.50 threshold**, the database contains **1,117 inscriptions (~79.8 %)** of all known Linear A texts. The remaining ~283 fall below threshold (metal objects, miscellaneous marks, suspected forgeries).
+At the **QCS ≥ 0.50 threshold**, the database contains **656 inscriptions (~46.9 %)** of all known Linear A texts. Every row corresponds to a unique, individually documented physical object. The remaining ~744 fall below threshold (metal objects, miscellaneous marks, suspected forgeries) or represent stone vessels, sealings, and ceramics not yet individually encoded.
 
 ### Priority Actions for Coverage Expansion
 
 | Priority | Action | +Inscriptions | Complexity | Quality Risk |
 |---|---|---|---|---|
-| 1 | Load Younger online corpus (registered, not yet encoded) | ~100 | Low | Low |
-| 2 | Encode metal objects with secure provenance | ~50 | Low–Medium | Medium |
-| 3 | Per-inscription manual review of miscellaneous marks | ~60 | High | High |
+| 1 | Individually encode remaining stone libation vessels (Za series has ~175 total) | ~110 | Low–Medium | Low |
+| 2 | Individually encode Hallager (1996) roundels (HT Wc, ZA Wc, KH Wc series, ~250 total) | ~220 | Medium | Low |
+| 3 | Load Younger online corpus (registered, not yet encoded) | ~100 | Low | Low |
+| 4 | Individually encode Del Freo & Ferro (2018) ceramic inscriptions (~120 total) | ~100 | Medium | Medium |
+| 5 | Encode metal objects with secure provenance | ~50 | Low–Medium | Medium |
+| 6 | Per-inscription manual review of miscellaneous marks | ~60 | High | High |
 
 ---
 
@@ -219,7 +222,7 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 | `material` | str | `clay` / `stone` |
 | `source_strategy` | str | `gorila_transliterations` |
 | `qcs` | float | `0.90` |
-| `is_synthetic` | bool | `False` — `True` for loop-generated SV/SEAL/CER entries |
+| `is_synthetic` | bool | `False` — all rows represent individually documented physical objects |
 | `transliteration` | str | `A-DU GRA KU-RO` |
 | `sign_groups` | str | `A-DU\|GRA\|KU-RO` |
 | `sign_sequence_unicode` | str | Unicode Linear A characters |
@@ -235,14 +238,14 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 |---|---|---|
 | 1 | **QCS threshold** | The default inclusion threshold of **0.5** means "more likely correct than incorrect". A QCS of 1.0 means "definitely correct". Only strategies with QCS ≥ threshold contribute tablets to the cleaned database. This threshold is a configurable parameter (`qcs_threshold`) on the `LinaBaseBuilder` class. |
 | 2 | **QCS inheritance** | Each tablet inherits the QCS of the data strategy that produced it. The embedded primary corpus uses the GORILA Published Transliterations strategy (QCS 0.90). The extended corpus contains tablets from six additional strategies (minor Cretan clay tablets, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, inscribed ceramics) with QCS values ranging from 0.52 to 0.68. |
-| 3 | **Coverage** | 79.8 % of ~1,400 known inscriptions. The 1,400 total is a hard-coded literature estimate from GORILA + Younger, not a live reconciliation ledger. The 79.8 % figure should be treated as approximate until a row-by-row inventory table is built. |
+| 3 | **Coverage** | 46.9 % of ~1,400 known inscriptions. The 1,400 total is a hard-coded literature estimate from GORILA + Younger, not a live reconciliation ledger. The 46.9 % figure should be treated as approximate until a row-by-row inventory table is built. |
 | 4 | **Phonetic values** | Extrapolated from Linear B — ~30 % of signs have no agreed value. Treat as hypothetical. (QCS 0.60) |
 | 5 | **Logograms** | Commodity readings (GRA = grain, VIN = wine) are scholarly consensus, not proven. (QCS 0.70) |
 | 6 | **Dates** | Point estimates only (±50–100 years). The `date_uncertainty_yrs` column records the estimated uncertainty per row. Akrotiri is fixed to 1628 BCE (volcanic destruction). (QCS 0.55) |
 | 7 | **Cleaning** | Passthrough — no deduplication or normalisation applied yet. |
 | 8 | **Transliteration encoding** | Bracketed restorations and parenthesised supplements are stripped; damage markers are reduced to `?`; pure numerals (quantities) are dropped. This is a known lossy transformation. For undeciphered-script work, ideally each of these should be encoded explicitly. |
 | 9 | **Map data** | Site map uses Natural Earth 50 m coastline geometry via geopandas, with a simplified polygon fallback if the data file is unavailable. Only 14 sites have confirmed WGS-84 coordinates; other site labels (e.g. "Stone Vessels (Crete)") are administrative groupings without independent geolocation. |
-| 10 | **Synthetic rows** | The extended corpus includes 570 entries (200 stone vessels `SV *`, 250 sealings `SEAL *`, 120 ceramics `CER *`) generated by cycling fixed formula and site lists. These rows are flagged `is_synthetic = True` in the schema. **They must not be used for frequency, collocation, or distribution analyses** — their statistical distributions reflect the generation logic, not attested epigraphy. Filter to `is_synthetic == False` to restrict to manually curated rows. |
+| 10 | **One entry = one material object** | Every row in the database corresponds to a unique, individually documented physical inscription (tablet, stone vessel, sealing, or ceramic). The previous version contained 570 loop-generated placeholder entries (SV/SEAL/CER series) that cycled fixed formulas over site lists — those have been removed. All remaining rows are individually curated against published sigla. |
 | 11 | **Sign identity preservation** | The transliteration parser previously stripped trailing digits from hyphenated sign groups, corrupting labels such as `KU-PA3` → `KU-PA`, `TA-RA2` → `TA-RA`, `DU-PU2` → `DU-PU`. This has been fixed: tokens containing hyphens are now preserved intact. |
 | 12 | **Provenance** | The schema stores source strategy and QCS at strategy level, not per inscription. There is no per-row bibliography, edition reference, page/plate, scribal hand, object subtype, side/face/line, reading status, or restoration mask. Scholarly traceability is limited to strategy-level attribution. |
 | 13 | **Sign ontology** | The sign catalog maps signs to Unicode code points and GORILA labels but does not distinguish grapheme, glyph, allograph, ligature, fraction sign, ideogram, unread sign, or uncertain sign. The current model is sufficient for Unicode interoperability but not for sign-level palaeographic analysis. |
