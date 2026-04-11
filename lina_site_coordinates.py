@@ -1,7 +1,8 @@
 """
 lina_site_coordinates.py – Geographic coordinates for Linear A find-sites.
 
-All sites are on the island of Crete, Greece.
+Sites are on the island of Crete, Greece, or the broader Aegean region
+(Akrotiri/Thera is on the island of Santorini).
 Coordinates are WGS-84 decimal degrees (lat N, lon E).
 
 Sources
@@ -27,6 +28,13 @@ SITE_COORDINATES: Dict[str, Dict[str, Any]] = {
     "Mallia":       {"lat": 35.296, "lon": 25.469, "island": "Crete"},
     "Tylissos":     {"lat": 35.307, "lon": 25.010, "island": "Crete"},
     "Palaikastro":  {"lat": 35.208, "lon": 26.241, "island": "Crete"},
+    # Aegean (non-Cretan) site
+    "Akrotiri":     {"lat": 36.352, "lon": 25.406, "island": "Thera"},
+    # Minor Cretan sites
+    "Gournia":      {"lat": 35.178, "lon": 25.696, "island": "Crete"},
+    "Nirou Khani":  {"lat": 35.333, "lon": 25.344, "island": "Crete"},
+    "Myrtos":       {"lat": 34.935, "lon": 25.641, "island": "Crete"},
+    "Apodioulou":   {"lat": 35.179, "lon": 24.634, "island": "Crete"},
 }
 
 # Simplified coastline polygon for Crete (lon, lat order for matplotlib).

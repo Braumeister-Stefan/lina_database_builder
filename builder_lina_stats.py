@@ -23,7 +23,7 @@ Outputs (saved to data/figures/)
 import os
 import textwrap
 from collections import Counter
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import matplotlib
 matplotlib.use("Agg")                            # non-interactive backend
@@ -39,6 +39,34 @@ from lina_site_coordinates import (
     CRETE_OUTLINE, GREECE_OUTLINE, TURKEY_W_OUTLINE,
     SITE_COORDINATES, get_site_summary_df,
 )
+
+# ---------------------------------------------------------------------------
+# Corpus coverage constants (from GORILA + Younger's corpus literature)
+# ---------------------------------------------------------------------------
+# Total known Linear A inscriptions across all sites, materials and periods.
+TOTAL_KNOWN_INSCRIPTIONS = 1400
+
+# Best-estimate count of inscriptions per site from the published literature.
+# Sources: GORILA vols I–V; Younger, J.G. Linear A Texts in Transliteration.
+KNOWN_SITE_TOTALS: Dict[str, int] = {
+    "Hagia Triada": 147,
+    "Khania":        83,
+    "Zakros":        31,
+    "Phaistos":      15,
+    "Mallia":        13,
+    "Knossos":        8,
+    "Tylissos":       7,
+    "Arkhanes":       6,
+    "Palaikastro":    5,
+    "Akrotiri":       7,
+    "Gournia":        5,
+    "Nirou Khani":    3,
+    "Myrtos":         4,
+    "Apodioulou":     2,
+    # Remainder: scattered minor Cretan sites, non-Cretan Aegean sites,
+    # inscribed stone vessels, ceramic objects, sealings and nodules.
+    "Other / unassigned": 1064,
+}
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -94,6 +122,7 @@ def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
     figures.append(_fig_site_map(df))
     figures.append(_fig_timeline(df))
     figures.append(_fig_signs_per_tablet(df))
+    figures.append(_fig_corpus_coverage(df))
 
     print(f"\n[stats] {len(figures)} outputs saved to '{FIGURES_DIR}'.")
     return figures
@@ -401,10 +430,10 @@ def _tbl_site_breakdown(df: pd.DataFrame) -> Tuple[str, str, str]:
             f"{r['lat']:.3f}", f"{r['lon']:.3f}", date_rng,
         ])
     return _save_table_png(
-        "Site Breakdown", "Linear A Tablets by Find-Site (all sites on Crete)",
+        "Site Breakdown", "Linear A Tablets by Find-Site (Crete and Aegean region)",
         headers, rows, "tbl_04_site_breakdown.png",
         col_widths=[0.22, 0.10, 0.08, 0.08, 0.10, 0.10, 0.18],
-        fig_h=4.5,
+        fig_h=5.5,
     )
 
 
@@ -473,7 +502,7 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
     ax.set_title("Linear A Tablet Find-Sites – Crete and Aegean Region\n"
-                 "Circle size proportional to tablet count. All sites on Crete.",
+                 "Circle size proportional to tablet count. Cretan sites + Akrotiri/Thera.",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.grid(linestyle="--", alpha=0.3, zorder=1)
 
@@ -566,3 +595,82 @@ def _fig_signs_per_tablet(df: pd.DataFrame) -> Tuple[str, str, str]:
     plt.close(fig)
     print("[stats] saved fig_05_signs_per_tablet.png")
     return ("Signs per Tablet", "Distribution of Signs per Tablet", path)
+
+
+# ---------------------------------------------------------------------------
+# Figure 6 – Corpus coverage: DB count vs total known inscriptions
+# ---------------------------------------------------------------------------
+
+def _fig_corpus_coverage(df: pd.DataFrame) -> Tuple[str, str, str]:
+    """Stacked horizontal bar showing inscriptions in DB vs remaining known."""
+    # Build per-site counts
+    db_counts = df["site"].value_counts().to_dict()
+
+    sites_ordered = sorted(
+        KNOWN_SITE_TOTALS.keys(),
+        key=lambda s: KNOWN_SITE_TOTALS[s],
+        reverse=True,
+    )
+
+    labels: List[str] = []
+    in_db:  List[int] = []
+    remain: List[int] = []
+
+    for site in sites_ordered:
+        known  = KNOWN_SITE_TOTALS[site]
+        in_db_n = min(db_counts.get(site, 0), known)   # cap at known total
+        labels.append(site)
+        in_db.append(in_db_n)
+        remain.append(max(0, known - in_db_n))
+
+    # Summary row: totals
+    total_in_db   = len(df)
+    total_remain  = max(0, TOTAL_KNOWN_INSCRIPTIONS - total_in_db)
+    labels.append("TOTAL CORPUS")
+    in_db.append(total_in_db)
+    remain.append(total_remain)
+
+    y = np.arange(len(labels))
+    fig_h = max(6, len(labels) * 0.6 + 2)
+    fig, ax = plt.subplots(figsize=(_FIG_W, fig_h))
+
+    bar_in   = ax.barh(y, in_db,  color="#2E86AB", edgecolor="white",
+                       height=0.6, label="In database")
+    bar_rem  = ax.barh(y, remain, left=in_db, color="#E8E8E8",
+                       edgecolor="#AAAAAA", height=0.6, label="Not yet encoded")
+
+    # Percentage label inside the 'in database' bar
+    for i, (n, r) in enumerate(zip(in_db, remain)):
+        total = n + r
+        pct   = 100 * n / total if total > 0 else 0
+        if n > 10:
+            ax.text(n / 2, i, f"{pct:.0f}%",
+                    va="center", ha="center", fontsize=8,
+                    color="white", fontweight="bold")
+        # Count label at the right edge
+        ax.text(total + total * 0.01, i, f"{n} / {total}",
+                va="center", ha="left", fontsize=8, color="#444444")
+
+    # Highlight the TOTAL row
+    ax.get_children()  # force render order
+    ax.axhline(len(labels) - 1.5, color="#888888", linewidth=0.8, linestyle="--")
+
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels, fontsize=10)
+    ax.set_xlabel("Number of inscriptions", fontsize=11)
+    ax.set_xlim(0, TOTAL_KNOWN_INSCRIPTIONS * 1.15)
+    ax.set_title(
+        f"Linear A Corpus Coverage – Database vs Total Known Inscriptions\n"
+        f"Total known: ~{TOTAL_KNOWN_INSCRIPTIONS}  |  "
+        f"In this database: {total_in_db}  ({100 * total_in_db / TOTAL_KNOWN_INSCRIPTIONS:.1f}%)\n"
+        f"Sources: GORILA vols I–V; Younger's online corpus",
+        fontsize=_TITLE_FONTSIZE, fontweight="bold",
+    )
+    ax.legend(loc="lower right", fontsize=9, frameon=True)
+    ax.grid(axis="x", linestyle="--", alpha=0.3)
+    fig.tight_layout()
+    path = os.path.join(FIGURES_DIR, "fig_06_corpus_coverage.png")
+    fig.savefig(path, dpi=_DPI, bbox_inches="tight")
+    plt.close(fig)
+    print("[stats] saved fig_06_corpus_coverage.png")
+    return ("Coverage", "Corpus Coverage vs Total Known", path)
