@@ -262,7 +262,7 @@ def _fig_catalog_categories(catalog: list) -> Tuple[str, str, str]:
         at.set_color("white")
 
     ax.legend(
-        wedges, [f"{l.replace('\n', ' ')} ({s})" for l, s in zip(labels, sizes)],
+        wedges, [f"{l.replace(chr(10), ' ')} ({s})" for l, s in zip(labels, sizes)],
         loc="lower center", bbox_to_anchor=(0.5, -0.12),
         ncol=2, fontsize=10, frameon=False,
     )
