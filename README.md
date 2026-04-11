@@ -19,22 +19,7 @@ lina_database_builder/
 ├── lina_sign_catalog.py         Sign catalog (341 Unicode Linear A signs) + converters
 ├── lina_corpus_embedded.py      Embedded corpus (317 tablets, 14 sites)
 ├── lina_site_coordinates.py     WGS-84 coordinates for each find-site + map outlines
-├── requirements.txt             Python dependencies
-└── data/                        Generated output (created on first run)
-    ├── lina_database_raw.csv    Raw corpus as CSV
-    ├── lina_database_clean.csv  Cleaned corpus as CSV (identical to raw for now)
-    ├── lina_report.xlsx         Multi-tab xlsx report (databases + all figures)
-    └── figures/                 Individual PNG figures and table images
-        ├── tbl_01_catalog_overview.png
-        ├── tbl_02_sign_group_types.png
-        ├── fig_01_catalog_categories.png
-        ├── fig_02_sign_group_frequencies.png
-        ├── tbl_03_corpus_overview.png
-        ├── tbl_04_site_breakdown.png
-        ├── fig_03_site_map.png
-        ├── fig_04_timeline.png
-        ├── fig_05_signs_per_tablet.png
-        └── fig_06_corpus_coverage.png
+└── requirements.txt             Python dependencies
 ```
 
 ---
@@ -46,71 +31,84 @@ pip install -r requirements.txt
 python main.py
 ```
 
-All outputs are written to the `data/` directory.
+All outputs are written to the `data/` directory (`data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lina_report.xlsx`, `data/figures/*.png`).
 
 ---
 
-## Major functions
+## Database description
 
-### `lina_sign_catalog.py`
-| Function | Description |
-|---|---|
-| `build_sign_catalog()` | Returns list of 341 sign dicts derived from Python's `unicodedata` (Unicode block U+10600–U+1077F). Each dict contains sign_label, category, char, codepoint, hex_code, unicode_name. |
-| `build_label_to_char_map()` | Dict mapping GORILA sign label (e.g. `AB001`) to Unicode character. |
-| `build_char_to_id_map()` | Dict mapping Unicode character to numeric sign ID (cp − 0x10600). |
-| `parse_sign_groups(transliteration)` | Tokenises a transliteration string into sign-group tokens (whitespace-delimited, numerics dropped). |
-| `sign_group_to_unicode(group, label_map)` | Converts one sign group (e.g. `KU-RO`) to a Unicode Linear A string. |
-| `transliteration_to_unicode_string(transliteration, label_map)` | Converts a full tablet transliteration to a space-segmented Unicode Linear A string. |
+### Sign catalog
 
-### `lina_site_coordinates.py`
-| Name | Description |
-|---|---|
-| `SITE_COORDINATES` | Dict of WGS-84 coordinates (lat, lon) for all 9 Cretan find-sites. |
-| `CRETE_OUTLINE`, `GREECE_OUTLINE`, `TURKEY_W_OUTLINE` | Simplified coastline polygon coordinates used for the map figure. |
-| `get_site_summary_df(corpus_df)` | Joins tablet counts, material breakdown and date range to site coordinates. |
+The sign catalog is derived directly from Python's built-in `unicodedata` module — every character in Unicode block U+10600–U+1077F that carries a `LINEAR A SIGN …` name is included, giving **341 signs** split across three functional categories.
 
-### `builder_lina_loader.py`
-| Function | Description |
-|---|---|
-| `load_data(data_dir)` | Builds the catalog, loads the embedded corpus, converts transliterations to Unicode and returns the canonical 10-column DataFrame. |
+![Sign catalog overview](data/figures/tbl_01_catalog_overview.png)
 
-### `builder_lina_stats.py`
-| Function | Description |
-|---|---|
-| `report_stats(df)` | Main entry point: prints statistics, generates all 9 PNGs, returns list of `(tab_name, title, path)` for xlsx assembly. |
-| `_tbl_catalog_overview()` | Table PNG: sign counts by category. |
-| `_tbl_sign_group_types()` | Table PNG: sign group type taxonomy from GORILA literature. |
-| `_fig_catalog_categories()` | Pie chart: sign category proportions. |
-| `_fig_sign_group_frequencies()` | Horizontal bar: top-15 sign groups, colour-coded by functional type. |
-| `_tbl_corpus_overview()` | Table PNG: headline corpus statistics. |
-| `_tbl_site_breakdown()` | Table PNG: tablets per find-site with coordinates and date range. |
-| `_fig_site_map()` | Map of Crete and Aegean showing site locations (no external data needed). |
-| `_fig_timeline()` | Scatter of tablets by estimated date × site, distinguishing clay and stone. |
-| `_fig_signs_per_tablet()` | Histogram of sign count per tablet with mean/median lines. |
+![Sign category pie chart](data/figures/fig_01_catalog_categories.png)
 
-### `builder_lina_saver.py`
-| Function | Description |
-|---|---|
-| `save_data(df, output_path)` | Saves a DataFrame as CSV. |
-| `save_report(raw_df, clean_df, catalog, figures, xlsx_path)` | Assembles the multi-tab xlsx report: three formatted DataFrame tabs (raw DB, clean DB, sign catalog) followed by one tab per PNG figure. |
+Signs in the **syllabic** category (AB-series, 81 signs) carry phonetic values extrapolated from the parallel Linear B script. **Logographic** signs (A-series, 230 signs) represent objects, commodities and administrative concepts. **Numeric/fraction** signs (30 signs) encode quantities.
 
 ---
 
-## Inputs and outputs
+### Sign group types
 
-**Inputs**
-- No external data required. The corpus is fully embedded in `lina_corpus_embedded.py`.
-- Future: `_lina_scraper()` in `builder_lina_loader.py` can be extended to pull from online corpora (DĀMOS, Younger's corpus).
+Linear A tablets use a small number of recurring sign group patterns. The table below summarises the functional taxonomy used throughout this database.
 
-**Outputs**
-| File | Contents |
-|---|---|
-| `data/lina_database_raw.csv` | Full corpus DataFrame (317 tablets × 10 columns) |
-| `data/lina_database_clean.csv` | Identical to raw (cleaning is a passthrough for now) |
-| `data/lina_report.xlsx` | 13-tab xlsx: Raw Database, Clean Database, Sign Catalog, + 10 figure/table tabs |
-| `data/figures/*.png` | Individual PNG for each figure and formatted table |
+![Sign group types](data/figures/tbl_02_sign_group_types.png)
 
-**DataFrame columns**
+---
+
+### Corpus overview
+
+The embedded corpus currently contains **317 inscriptions** across **14 find-sites**, drawn from GORILA vols I–V and Younger's online corpus. This represents approximately **22.6 %** of the ~1,400 known Linear A inscriptions.
+
+![Corpus overview statistics](data/figures/tbl_03_corpus_overview.png)
+
+---
+
+### Coverage vs total known corpus
+
+The chart below shows how many inscriptions from each site are in this database versus the total published count. Sites for which the full known record is encoded appear at 100 %. The large **Other / unassigned** category (stone vessels, sealings, nodules, minor Aegean sites) is not yet in scope.
+
+![Corpus coverage](data/figures/fig_06_corpus_coverage.png)
+
+---
+
+### Tablets by find-site
+
+![Site breakdown table](data/figures/tbl_04_site_breakdown.png)
+
+![Site map](data/figures/fig_03_site_map.png)
+
+All 13 Cretan sites lie within the island. Akrotiri (Thera / Santorini) plots north of Crete in the Aegean. Circle size on the map is proportional to tablet count.
+
+---
+
+### Temporal distribution
+
+Each point below represents one tablet. The x-axis shows approximate BCE date (older to the left); rows are ordered by median date. Khania (KH) stands out as the **latest** Linear A archive (~1350 BCE, LM IIIB), post-dating most Cretan archives by over a century.
+
+![Timeline](data/figures/fig_04_timeline.png)
+
+---
+
+### Sign group frequency
+
+The 15 most frequent sign groups in the corpus, colour-coded by functional type. **GRA** (grain logogram) and **KU-RO** (grand total) dominate, reflecting the administrative accounting nature of most clay tablets. Personal names such as **A-DU**, **KU-PA3-NU** and **DA-QE-RA** rank among the top syllabic entries.
+
+![Sign group frequencies](data/figures/fig_02_sign_group_frequencies.png)
+
+---
+
+### Distribution of signs per tablet
+
+Most tablets carry between **8 and 13** recognised signs. The relatively narrow distribution reflects the formulaic nature of the administrative record (personal name + commodity logogram + quantity, closed by KU-RO). Stone libation formulae, which carry fewer but longer sign groups, pull the lower tail.
+
+![Signs per tablet histogram](data/figures/fig_05_signs_per_tablet.png)
+
+---
+
+## DataFrame schema
+
 | Column | Type | Description |
 |---|---|---|
 | `tablet_id` | str | GORILA reference (e.g. `HT 1`) |
@@ -123,6 +121,42 @@ All outputs are written to the `data/` directory.
 | `sign_sequence_ids` | str | Comma-separated sign IDs (codepoint − 0x10600) |
 | `sign_group_count` | int | Number of sign groups per tablet |
 | `sign_count` | int | Number of recognised individual signs per tablet |
+
+---
+
+## Major functions
+
+### `lina_sign_catalog.py`
+| Function | Description |
+|---|---|
+| `build_sign_catalog()` | Returns list of 341 sign dicts (sign_label, category, char, codepoint, hex_code, unicode_name). |
+| `build_label_to_char_map()` | Dict mapping GORILA sign label (e.g. `AB001`) to Unicode character. |
+| `build_char_to_id_map()` | Dict mapping Unicode character to numeric sign ID (cp − 0x10600). |
+| `parse_sign_groups(transliteration)` | Tokenises a transliteration string into sign-group tokens; drops numerics and damage markers. |
+| `sign_group_to_unicode(group, label_map)` | Converts one sign group (e.g. `KU-RO`) to a Unicode Linear A string. |
+
+### `lina_site_coordinates.py`
+| Name | Description |
+|---|---|
+| `SITE_COORDINATES` | WGS-84 coordinates (lat, lon) for all 14 find-sites. |
+| `CRETE_OUTLINE`, `GREECE_OUTLINE`, `TURKEY_W_OUTLINE` | Simplified coastline polygons for the map figure. |
+| `get_site_summary_df(corpus_df)` | Joins tablet counts, material breakdown and date range to site coordinates. |
+
+### `builder_lina_loader.py`
+| Function | Description |
+|---|---|
+| `load_data(data_dir)` | Builds the catalog, loads the embedded corpus, converts transliterations to Unicode and returns the canonical 10-column DataFrame. |
+
+### `builder_lina_stats.py`
+| Function | Description |
+|---|---|
+| `report_stats(df)` | Main entry point: prints statistics, generates all 10 PNGs, returns list of `(tab_name, title, path)` for xlsx assembly. |
+
+### `builder_lina_saver.py`
+| Function | Description |
+|---|---|
+| `save_data(df, output_path)` | Saves a DataFrame as CSV. |
+| `save_report(raw_df, clean_df, catalog, figures, xlsx_path)` | Assembles the 13-tab xlsx report. |
 
 ---
 
@@ -155,7 +189,7 @@ requests        – HTTP utilities (future scraper)
 
 ### Sign catalog
 - All 341 signs in Unicode block U+10600–U+1077F are included. No signs have been added or removed.
-- The category assignments (syllabic, logographic, numeric_fraction) are derived purely from the GORILA sign-label prefixes (AB vs. A3xx vs. A7xx). The Unicode Standard itself does not label functional categories.
+- Category assignments (syllabic, logographic, numeric_fraction) are derived purely from GORILA sign-label prefixes (AB vs. A3xx vs. A7xx). The Unicode Standard itself does not label functional categories.
 - Phonetic values assigned in `PHONETIC_TO_SIGN_LABEL` follow the Linear B correspondence convention, which is widely used in scholarship but not definitively proven for Linear A.
 
 ### Corpus (embedded dataset)
