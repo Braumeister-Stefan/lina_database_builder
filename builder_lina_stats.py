@@ -443,75 +443,96 @@ def _tbl_site_breakdown(df: pd.DataFrame) -> Tuple[str, str, str]:
 
 def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     site_df  = get_site_summary_df(df)
-    fig, ax  = plt.subplots(figsize=(12, 7))
+    fig, ax  = plt.subplots(figsize=(14, 6))
 
     # Sea background
     ax.set_facecolor("#A8D5E2")
 
-    # Land polygons
-    for outline, color in [
-        (GREECE_OUTLINE,   "#D4C99A"),
-        (TURKEY_W_OUTLINE, "#D4C99A"),
-        (CRETE_OUTLINE,    "#E8DEC0"),
-    ]:
-        xs = [p[0] for p in outline]
-        ys = [p[1] for p in outline]
-        ax.fill(xs, ys, color=color, zorder=2)
-        ax.plot(xs + [xs[0]], ys + [ys[0]], color="#888888",
-                linewidth=0.6, zorder=3)
+    # Crete only
+    xs = [p[0] for p in CRETE_OUTLINE]
+    ys = [p[1] for p in CRETE_OUTLINE]
+    ax.fill(xs, ys, color="#E8DEC0", zorder=2)
+    ax.plot(xs + [xs[0]], ys + [ys[0]], color="#888888",
+            linewidth=0.8, zorder=3)
 
-    # Map extent: slightly wider than Crete extremes
-    ax.set_xlim(20.5, 28.0)
-    ax.set_ylim(33.5, 42.0)
+    # Map extent: tight around Crete with padding
+    ax.set_xlim(23.2, 26.7)
+    ax.set_ylim(34.65, 35.85)
+    ax.set_aspect(1.4)  # rough Mercator correction at 35°N
 
-    # Site scatter – size proportional to tablet count
+    # Manual label nudges: (offset_x, offset_y, ha, va)
+    _nudge = {
+        "Hagia Triada": (-0.08, -0.04, "right", "top"),
+        "Phaistos":     (-0.08,  0.02, "right", "bottom"),
+        "Knossos":      ( 0.08, -0.04, "left",  "top"),
+        "Arkhanes":     ( 0.08,  0.02, "left",  "bottom"),
+        "Khania":       (-0.08,  0.02, "right", "bottom"),
+        "Mallia":       ( 0.08,  0.02, "left",  "bottom"),
+        "Tylissos":     (-0.08, -0.04, "right", "top"),
+        "Myrtos":       ( 0.08, -0.04, "left",  "top"),
+        "Nirou Khani":  ( 0.08, -0.04, "left",  "top"),
+        "Gournia":      ( 0.08,  0.02, "left",  "bottom"),
+        "Palaikastro":  ( 0.08,  0.02, "left",  "bottom"),
+        "Apodioulou":   (-0.08, -0.04, "right", "top"),
+    }
+
+    # Cretan site scatter
     for _, row in site_df.iterrows():
-        size = max(80, row["tablet_count"] * 25)
+        if row["island"] != "Crete":
+            continue
+        size = max(100, row["tablet_count"] * 30)
         ax.scatter(row["lon"], row["lat"], s=size,
                    color="#C0392B", edgecolors="#800000",
                    linewidths=0.8, zorder=5, alpha=0.85)
-        # Label offset to avoid overlap
-        offset_x = 0.10
-        offset_y = 0.10
-        # Manual nudges for closely spaced sites
-        if row["site"] in ("Phaistos", "Knossos", "Arkhanes"):
-            offset_y = -0.18
-        if row["site"] == "Hagia Triada":
-            offset_x = -0.60
-        ax.text(row["lon"] + offset_x, row["lat"] + offset_y,
-                f"{row['site']}\n(n={row['tablet_count']})",
-                fontsize=8, zorder=6, color="#2C3E50",
-                ha="left", va="bottom",
-                bbox=dict(boxstyle="round,pad=0.15", fc="white",
-                          ec="none", alpha=0.7))
+        ox, oy, ha, va = _nudge.get(row["site"], (0.08, 0.02, "left", "bottom"))
+        ax.annotate(
+            f"{row['site']}  (n={row['tablet_count']})",
+            xy=(row["lon"], row["lat"]),
+            xytext=(row["lon"] + ox, row["lat"] + oy),
+            fontsize=8.5, color="#2C3E50", zorder=6,
+            ha=ha, va=va,
+            bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.75),
+        )
 
-    # Annotations
-    ax.text(24.5, 35.35, "C R E T E", fontsize=10, color="#5A4A3A",
-            ha="center", va="center", alpha=0.5, style="italic", zorder=4)
-    ax.text(23.0, 38.5, "GREECE", fontsize=9, color="#5A4A3A",
-            ha="center", va="center", alpha=0.4, style="italic", zorder=4)
-    ax.text(27.2, 38.8, "TURKEY", fontsize=9, color="#5A4A3A",
-            ha="center", va="center", alpha=0.4, style="italic", zorder=4)
-    ax.text(24.5, 34.0, "Libyan Sea", fontsize=8, color="#6AA3B8",
+    # Akrotiri callout (off-map, annotated in corner)
+    akrotiri = site_df[site_df["site"] == "Akrotiri"]
+    if not akrotiri.empty:
+        n = int(akrotiri.iloc[0]["tablet_count"])
+        ax.annotate(
+            f"Akrotiri / Thera  (n={n})\n120 km N  (Santorini)",
+            xy=(25.4, 35.83), fontsize=9, color="#C0392B",
+            ha="center", va="top", fontweight="bold",
+            bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#C0392B",
+                      alpha=0.9, linewidth=1.2),
+            zorder=7,
+        )
+        # north-pointing arrow
+        ax.annotate("", xy=(25.4, 35.85), xytext=(25.4, 35.78),
+                    arrowprops=dict(arrowstyle="->", color="#C0392B", lw=1.5),
+                    zorder=7)
+
+    # Island label
+    ax.text(24.9, 35.15, "C R E T E", fontsize=13, color="#5A4A3A",
+            ha="center", va="center", alpha=0.4, style="italic",
+            fontweight="bold", zorder=4)
+    ax.text(24.9, 34.72, "Libyan Sea", fontsize=9, color="#6AA3B8",
             ha="center", style="italic", zorder=4)
-    ax.text(22.0, 40.0, "Ionian Sea", fontsize=8, color="#6AA3B8",
-            ha="center", style="italic", zorder=4)
-    ax.text(26.0, 40.5, "Aegean Sea", fontsize=8, color="#6AA3B8",
+    ax.text(24.9, 35.77, "Sea of Crete", fontsize=9, color="#6AA3B8",
             ha="center", style="italic", zorder=4)
 
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
-    ax.set_title("Linear A Tablet Find-Sites – Crete and Aegean Region\n"
-                 "Circle size proportional to tablet count. Cretan sites + Akrotiri/Thera.",
+    ax.set_title("Linear A Tablet Find-Sites on Crete\n"
+                 "Circle size proportional to tablet count.",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
-    ax.grid(linestyle="--", alpha=0.3, zorder=1)
+    ax.grid(linestyle="--", alpha=0.25, zorder=1)
 
     fig.tight_layout()
     path = os.path.join(FIGURES_DIR, "fig_03_site_map.png")
     fig.savefig(path, dpi=_DPI, bbox_inches="tight")
     plt.close(fig)
     print("[stats] saved fig_03_site_map.png")
-    return ("Map", "Tablet Find-Sites – Aegean Region", path)
+    return ("Map", "Tablet Find-Sites – Crete", path)
 
 
 # ---------------------------------------------------------------------------
@@ -535,21 +556,44 @@ def _fig_timeline(df: pd.DataFrame) -> Tuple[str, str, str]:
 
     color_map = {"clay": _COLORS["clay"], "stone": _COLORS["stone"]}
 
+    # Draw a faint horizontal span per site showing its date range
     for i, site in enumerate(site_order):
         grp = plot_df[plot_df["site"] == site]
-        for _, row in grp.iterrows():
-            c = color_map.get(row["material"], "#AAAAAA")
-            ax.scatter(row["date_bce"], i, color=c, s=70,
-                       edgecolors="white", linewidths=0.5, zorder=3, alpha=0.9)
+        lo, hi = grp["date_bce"].min(), grp["date_bce"].max()
+        ax.barh(i, hi - lo, left=lo, height=0.35, color="#D5D8DC",
+                edgecolor="none", zorder=2, alpha=0.7)
+        # Tablet count label at right edge
+        ax.text(hi + 4, i, f"n={len(grp)}", va="center", fontsize=8,
+                color="#888888", zorder=4)
+
+    # Jitter overlapping points within each site
+    for i, site in enumerate(site_order):
+        grp = plot_df[plot_df["site"] == site]
+        dates = grp["date_bce"].values
+        materials = grp["material"].values
+        # Determine jitter offsets for stacked points at same date
+        date_counts: dict = {}
+        jitters = []
+        for d in dates:
+            date_counts.setdefault(d, 0)
+            jitters.append(date_counts[d])
+            date_counts[d] += 1
+        for d, mat, j in zip(dates, materials, jitters):
+            # Centre the stack
+            total_at = date_counts[d]
+            y_off = (j - (total_at - 1) / 2) * 0.06
+            c = color_map.get(mat, "#AAAAAA")
+            ax.scatter(d, i + y_off, color=c, s=60,
+                       edgecolors="white", linewidths=0.4, zorder=3, alpha=0.9)
 
     ax.set_yticks(range(len(site_order)))
     ax.set_yticklabels(site_order, fontsize=10)
     ax.invert_xaxis()           # older dates on the left
     ax.set_xlabel("Approximate date (BCE)", fontsize=11)
     ax.set_title("Tablet Corpus – Estimated Date by Find-Site\n"
-                 "Each point = one tablet. X-axis: approx. BCE (older → left).",
+                 "Each dot = one tablet. Grey bar = site date range.",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
-    ax.grid(axis="x", linestyle="--", alpha=0.4, zorder=1)
+    ax.grid(axis="x", linestyle="--", alpha=0.3, zorder=1)
 
     legend_patches = [
         mpatches.Patch(color=_COLORS["clay"],  label="Clay tablet"),
