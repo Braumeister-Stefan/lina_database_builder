@@ -35,7 +35,9 @@ Every data source and enrichment method that feeds this database is assigned a *
 | **0.5** | More likely correct than incorrect — **inclusion threshold** |
 | **< 0.5** | More likely incorrect — excluded from the database |
 
-The default inclusion threshold is **0.5**: only strategies scoring at or above this cutoff contribute to the final cleaned database. This threshold is configurable via the `qcs_threshold` parameter on `LinaBaseBuilder`.![QCS strategy scores](data/figures/fig_07_qcs_strategies.png)
+The default inclusion threshold is **0.5**: only strategies scoring at or above this cutoff contribute to the final cleaned database. This threshold is configurable via the `qcs_threshold` parameter on `LinaBaseBuilder`.
+
+![QCS strategy scores](data/figures/fig_07_qcs_strategies.png)
 
 Strategies above the red dashed line are included; those below (shown in red) are excluded. Each tablet in the database inherits the QCS of its source strategy, ensuring traceability from record to quality rationale.
 
