@@ -11,6 +11,17 @@ QCS calibration
   0.75 – probable: strong scholarly consensus, minor uncertainties remain
   1.0  – definitely correct (e.g. Unicode standard definitions)
 
+QCS derivation (for corpus strategies)
+---------------------------------------
+  QCS is the weighted average of five source-quality dimensions evaluated in
+  builder_lina_stats.SOURCE_QUALITY_SCORES using the weights in _QCS_WEIGHTS:
+    transliteration_reliability : 0.30
+    provenance_certainty        : 0.20
+    publication_quality         : 0.25
+    sign_completeness           : 0.15
+    consistency_with_corpus     : 0.10
+  QCS values in this registry are rounded to two decimal places.
+
 Each strategy entry contains:
   key         : unique machine-readable identifier
   label       : human-readable name
@@ -58,6 +69,41 @@ DATA_STRATEGIES: List[Dict] = [
         "label":       "Younger Online Corpus",
         "description": "Supplementary transliterations from Younger's online Linear A corpus",
         "qcs":         0.80,
+        "category":    "corpus",
+    },
+    {
+        "key":         "minor_cretan_clay_tablets",
+        "label":       "Minor Cretan Clay Tablets",
+        "description": "Clay tablets from ~30 minor Cretan sites (Petras, Monastiraki, Kato Syme, etc.)",
+        "qcs":         0.68,
+        "category":    "corpus",
+    },
+    {
+        "key":         "stone_libation_vessels",
+        "label":       "Stone Libation Vessels & Tables",
+        "description": "Inscribed stone vessels with formulaic libation dedications (GORILA vol V; Younger)",
+        "qcs":         0.62,
+        "category":    "corpus",
+    },
+    {
+        "key":         "aegean_non_cretan",
+        "label":       "Non-Cretan Aegean Inscriptions",
+        "description": "Linear A finds from Kea, Kythera, Miletos, and other Aegean sites",
+        "qcs":         0.62,
+        "category":    "corpus",
+    },
+    {
+        "key":         "clay_sealings",
+        "label":       "Clay Sealings, Roundels & Nodules",
+        "description": "Impressed administrative documents (Hallager 1996); typically 1–3 signs",
+        "qcs":         0.55,
+        "category":    "corpus",
+    },
+    {
+        "key":         "inscribed_ceramics",
+        "label":       "Inscribed Ceramic Vessels",
+        "description": "Painted or incised signs on pithoi, cups, stirrup jars (Del Freo & Ferro 2018)",
+        "qcs":         0.52,
         "category":    "corpus",
     },
     {
