@@ -15,9 +15,10 @@ Outputs (saved to data/figures/)
   fig_02_sign_group_frequencies.png – horizontal bar: top-15 sign groups
   tbl_03_corpus_overview.png       – corpus headline stats
   tbl_04_site_breakdown.png        – tablets per find-site with coordinates
-  fig_03_site_map.png              – map of Crete showing find-sites
+  fig_03_site_map.png              – geographic map of Crete + Aegean with find-sites
   fig_04_timeline.png              – tablets by estimated date × site
   fig_05_signs_per_tablet.png      – histogram: sign count distribution
+  fig_07_quality_confidence.png    – quality confidence scores per source
 """
 
 import os
@@ -33,10 +34,11 @@ from matplotlib.patches import Polygon
 from matplotlib.collections import PatchCollection
 import numpy as np
 import pandas as pd
+import geopandas as gpd
+from shapely.geometry import box
 
 from lina_sign_catalog import build_sign_catalog
 from lina_site_coordinates import (
-    CRETE_OUTLINE, GREECE_OUTLINE, TURKEY_W_OUTLINE,
     SITE_COORDINATES, get_site_summary_df,
 )
 
@@ -72,6 +74,411 @@ KNOWN_SITE_TOTALS: Dict[str, int] = {
 # Paths
 # ---------------------------------------------------------------------------
 FIGURES_DIR = os.path.join(os.path.dirname(__file__), "data", "figures")
+GEODATA_DIR = os.path.join(os.path.dirname(__file__), "data", "geodata")
+NE_LAND_PATH = os.path.join(GEODATA_DIR, "ne_50m_land.geojson")
+
+# ---------------------------------------------------------------------------
+# Quality confidence scoring framework
+# ---------------------------------------------------------------------------
+# Each potential source is evaluated on five dimensions (0–1 each):
+#   transliteration_reliability : how standardised the transliteration is
+#   provenance_certainty        : confidence in site attribution
+#   publication_quality         : peer-reviewed / GORILA vs. grey literature
+#   sign_completeness           : ratio of legible signs vs. damaged/missing
+#   consistency_with_corpus     : how well it aligns with existing DB conventions
+#
+# Quality Confidence Score (QCS) = weighted average of the five dimensions.
+# Weights reflect relative importance for downstream analysis.
+_QCS_WEIGHTS = {
+    "transliteration_reliability": 0.30,
+    "provenance_certainty":        0.20,
+    "publication_quality":         0.25,
+    "sign_completeness":           0.15,
+    "consistency_with_corpus":     0.10,
+}
+
+# Decision rule: include a source if QCS >= threshold.
+QCS_INCLUSION_THRESHOLD = 0.60
+
+# ---------------------------------------------------------------------------
+# Source quality assessments – all potential Linear A inscription sources
+# ---------------------------------------------------------------------------
+# Sources currently IN the database (14 sites, 317 tablets from GORILA + Younger).
+# Sources NOT yet in the database are evaluated for potential inclusion.
+#
+# Literature basis:
+#   Godart & Olivier (1976–1985) GORILA vols I–V
+#   Younger, J.G. "Linear A Texts in Transliteration" (online corpus)
+#   Schoep, I. (2002) "The Administration of Neopalatial Crete" (Minos suppl.)
+#   Olivier, J.-P. (1993) Corpus Hieroglyphicarum Inscriptionum Cretae (CHIC)
+#   Hallager, E. (1996) "The Minoan Roundel and Other Sealed Documents"
+#   Raison & Pope (1971) "Index transnuméré du linéaire A"
+#   Del Freo & Ferro (2018) "Texts and Contexts" review of inscribed objects
+#
+# Categorisation of ~1,400 known inscriptions:
+#   ~336 tablets already encoded (GORILA major archives) — IN DB
+#   ~150 additional clay tablets from minor Cretan sites — NOT YET
+#   ~200 inscribed stone libation vessels/tables — NOT YET (partially)
+#   ~250 clay sealings, roundels, nodules — NOT YET
+#   ~120 painted/incised ceramic vessels, pithos sherds — NOT YET
+#   ~100 metal objects (pins, axes, rings, ingots) — NOT YET
+#   ~80  non-Cretan Aegean finds (Kea, Kythera, Miletos, etc.) — NOT YET
+#   ~60  miscellaneous (labels, weights, graffiti) — NOT YET
+#   ~25  doubtful/possible forgeries — EXCLUDE
+
+SOURCE_QUALITY_SCORES: List[Dict] = [
+    # ── Currently included sources (14 sites) ──
+    {
+        "source": "Hagia Triada clay tablets",
+        "status": "included",
+        "est_inscriptions": 147,
+        "in_db": 136,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.95,
+            "provenance_certainty": 0.95,
+            "publication_quality": 0.95,
+            "sign_completeness": 0.85,
+            "consistency_with_corpus": 1.00,
+        },
+        "notes": "Best-published archive. GORILA vol I. Foundation of all Linear A study.",
+    },
+    {
+        "source": "Khania clay tablets",
+        "status": "included",
+        "est_inscriptions": 83,
+        "in_db": 75,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.90,
+            "provenance_certainty": 0.95,
+            "publication_quality": 0.90,
+            "sign_completeness": 0.80,
+            "consistency_with_corpus": 0.95,
+        },
+        "notes": "LM III archive, well published. Later date than most.",
+    },
+    {
+        "source": "Zakros clay tablets",
+        "status": "included",
+        "est_inscriptions": 31,
+        "in_db": 31,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.90,
+            "provenance_certainty": 0.95,
+            "publication_quality": 0.90,
+            "sign_completeness": 0.80,
+            "consistency_with_corpus": 0.95,
+        },
+        "notes": "Palace archive, GORILA vol IV. Consistent format.",
+    },
+    {
+        "source": "Phaistos clay tablets",
+        "status": "included",
+        "est_inscriptions": 15,
+        "in_db": 15,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.90,
+            "provenance_certainty": 0.95,
+            "publication_quality": 0.90,
+            "sign_completeness": 0.80,
+            "consistency_with_corpus": 0.95,
+        },
+        "notes": "GORILA vol II. Overlapping scribal hands with HT.",
+    },
+    {
+        "source": "Mallia clay tablets",
+        "status": "included",
+        "est_inscriptions": 13,
+        "in_db": 13,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.85,
+            "provenance_certainty": 0.90,
+            "publication_quality": 0.85,
+            "sign_completeness": 0.75,
+            "consistency_with_corpus": 0.90,
+        },
+        "notes": "Palace archive. Some early (MM III) texts with archaic signs.",
+    },
+    {
+        "source": "Knossos clay tablets",
+        "status": "included",
+        "est_inscriptions": 8,
+        "in_db": 8,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.85,
+            "provenance_certainty": 0.90,
+            "publication_quality": 0.90,
+            "sign_completeness": 0.75,
+            "consistency_with_corpus": 0.90,
+        },
+        "notes": "Small Linear A archive amid vast Linear B corpus.",
+    },
+    {
+        "source": "Tylissos clay tablets",
+        "status": "included",
+        "est_inscriptions": 7,
+        "in_db": 7,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.85,
+            "provenance_certainty": 0.90,
+            "publication_quality": 0.85,
+            "sign_completeness": 0.70,
+            "consistency_with_corpus": 0.90,
+        },
+        "notes": "Small archive. GORILA vol III.",
+    },
+    {
+        "source": "Arkhanes tablets & vessels",
+        "status": "included",
+        "est_inscriptions": 6,
+        "in_db": 6,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.80,
+            "provenance_certainty": 0.90,
+            "publication_quality": 0.85,
+            "sign_completeness": 0.70,
+            "consistency_with_corpus": 0.85,
+        },
+        "notes": "Mixed materials. Some fragmentary.",
+    },
+    {
+        "source": "Palaikastro tablets",
+        "status": "included",
+        "est_inscriptions": 5,
+        "in_db": 5,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.80,
+            "provenance_certainty": 0.85,
+            "publication_quality": 0.85,
+            "sign_completeness": 0.70,
+            "consistency_with_corpus": 0.85,
+        },
+        "notes": "Small collection, fragments. Eastern Crete.",
+    },
+    {
+        "source": "Akrotiri (Thera) tablets",
+        "status": "included",
+        "est_inscriptions": 7,
+        "in_db": 7,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.85,
+            "provenance_certainty": 0.95,
+            "publication_quality": 0.90,
+            "sign_completeness": 0.75,
+            "consistency_with_corpus": 0.80,
+        },
+        "notes": "Volcanic destruction layer provides precise terminus ante quem (1628 BCE).",
+    },
+    {
+        "source": "Gournia clay tablets",
+        "status": "included",
+        "est_inscriptions": 5,
+        "in_db": 5,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.80,
+            "provenance_certainty": 0.85,
+            "publication_quality": 0.80,
+            "sign_completeness": 0.65,
+            "consistency_with_corpus": 0.85,
+        },
+        "notes": "Early excavation (Boyd 1901–04). Small collection.",
+    },
+    {
+        "source": "Nirou Khani tablets",
+        "status": "included",
+        "est_inscriptions": 3,
+        "in_db": 3,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.75,
+            "provenance_certainty": 0.85,
+            "publication_quality": 0.80,
+            "sign_completeness": 0.60,
+            "consistency_with_corpus": 0.85,
+        },
+        "notes": "Very small collection. Some fragmentary.",
+    },
+    {
+        "source": "Myrtos (Pyrgos) tablets",
+        "status": "included",
+        "est_inscriptions": 4,
+        "in_db": 4,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.75,
+            "provenance_certainty": 0.85,
+            "publication_quality": 0.80,
+            "sign_completeness": 0.60,
+            "consistency_with_corpus": 0.80,
+        },
+        "notes": "Cadogan excavation. Small archive.",
+    },
+    {
+        "source": "Apodioulou tablets",
+        "status": "included",
+        "est_inscriptions": 2,
+        "in_db": 2,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.75,
+            "provenance_certainty": 0.85,
+            "publication_quality": 0.80,
+            "sign_completeness": 0.55,
+            "consistency_with_corpus": 0.80,
+        },
+        "notes": "Very small find, fragmentary. Western Crete.",
+    },
+    # ── Not yet included sources ──
+    {
+        "source": "Minor Cretan sites – remaining clay tablets",
+        "status": "not_included",
+        "est_inscriptions": 150,
+        "in_db": 0,
+        "category": "clay tablet",
+        "scores": {
+            "transliteration_reliability": 0.70,
+            "provenance_certainty": 0.75,
+            "publication_quality": 0.65,
+            "sign_completeness": 0.55,
+            "consistency_with_corpus": 0.75,
+        },
+        "notes": "Scattered across ~30 minor sites. Many fragmentary, published in diverse "
+                 "excavation reports rather than GORILA. Includes Petras, Kato Syme, "
+                 "Monastiraki, Vrysinas, etc.",
+    },
+    {
+        "source": "Stone libation vessels & tables",
+        "status": "not_included",
+        "est_inscriptions": 200,
+        "in_db": 0,
+        "category": "stone vessel",
+        "scores": {
+            "transliteration_reliability": 0.65,
+            "provenance_certainty": 0.60,
+            "publication_quality": 0.70,
+            "sign_completeness": 0.50,
+            "consistency_with_corpus": 0.55,
+        },
+        "notes": "Ritual rather than administrative. Formulaic libation dedications "
+                 "(A-SA-SA-RA-ME etc.). Many provenances unknown (museum pieces). "
+                 "Sign forms deviate from clay-tablet norms. GORILA vol V covers some.",
+    },
+    {
+        "source": "Clay sealings, roundels & nodules",
+        "status": "not_included",
+        "est_inscriptions": 250,
+        "in_db": 0,
+        "category": "sealing",
+        "scores": {
+            "transliteration_reliability": 0.55,
+            "provenance_certainty": 0.70,
+            "publication_quality": 0.60,
+            "sign_completeness": 0.35,
+            "consistency_with_corpus": 0.45,
+        },
+        "notes": "Typically 1–3 signs impressed from seal-stones. Very short texts, "
+                 "poor legibility. Hallager (1996) provides the reference corpus. "
+                 "Mixed Linear A / Cretan Hieroglyphic overlap complicates classification.",
+    },
+    {
+        "source": "Inscribed ceramic vessels & sherds",
+        "status": "not_included",
+        "est_inscriptions": 120,
+        "in_db": 0,
+        "category": "ceramic",
+        "scores": {
+            "transliteration_reliability": 0.50,
+            "provenance_certainty": 0.65,
+            "publication_quality": 0.55,
+            "sign_completeness": 0.40,
+            "consistency_with_corpus": 0.40,
+        },
+        "notes": "Painted or incised signs on pithoi, cups, stirrup jars. Often single signs "
+                 "or brief marks — may be potter's marks rather than writing. High ambiguity.",
+    },
+    {
+        "source": "Metal objects (pins, axes, rings, ingots)",
+        "status": "not_included",
+        "est_inscriptions": 100,
+        "in_db": 0,
+        "category": "metal",
+        "scores": {
+            "transliteration_reliability": 0.45,
+            "provenance_certainty": 0.50,
+            "publication_quality": 0.55,
+            "sign_completeness": 0.40,
+            "consistency_with_corpus": 0.35,
+        },
+        "notes": "Ownership or votive marks. Often single-sign or two-sign sequences. "
+                 "Many from antiquities trade — provenance uncertain. Includes bronze "
+                 "double axes, gold/silver pins and rings, copper ingots.",
+    },
+    {
+        "source": "Non-Cretan Aegean finds (Kea, Kythera, Miletos, etc.)",
+        "status": "not_included",
+        "est_inscriptions": 80,
+        "in_db": 0,
+        "category": "mixed",
+        "scores": {
+            "transliteration_reliability": 0.60,
+            "provenance_certainty": 0.75,
+            "publication_quality": 0.65,
+            "sign_completeness": 0.50,
+            "consistency_with_corpus": 0.55,
+        },
+        "notes": "Spread across Cycladic and mainland sites. Varied materials. "
+                 "Some well-published (Miletos, Kea), others isolated finds. "
+                 "Key for understanding Minoan influence outside Crete.",
+    },
+    {
+        "source": "Miscellaneous (labels, weights, graffiti)",
+        "status": "not_included",
+        "est_inscriptions": 60,
+        "in_db": 0,
+        "category": "misc",
+        "scores": {
+            "transliteration_reliability": 0.40,
+            "provenance_certainty": 0.55,
+            "publication_quality": 0.45,
+            "sign_completeness": 0.30,
+            "consistency_with_corpus": 0.30,
+        },
+        "notes": "Heterogeneous group: clay labels, stone weights, wall graffiti. "
+                 "Very short, often damaged. Low information content per inscription.",
+    },
+    {
+        "source": "Doubtful / possible forgeries",
+        "status": "exclude",
+        "est_inscriptions": 25,
+        "in_db": 0,
+        "category": "doubtful",
+        "scores": {
+            "transliteration_reliability": 0.20,
+            "provenance_certainty": 0.15,
+            "publication_quality": 0.30,
+            "sign_completeness": 0.25,
+            "consistency_with_corpus": 0.10,
+        },
+        "notes": "Suspected forgeries, unprovenanced pieces of dubious authenticity. "
+                 "Including several 'Minoan' gold rings and a few controversial tablets.",
+    },
+]
+
+
+def _compute_qcs(scores: Dict[str, float]) -> float:
+    """Compute the weighted Quality Confidence Score for a source."""
+    return sum(scores[k] * _QCS_WEIGHTS[k] for k in _QCS_WEIGHTS)
+
 
 # Consistent style
 _FIG_W, _FIG_H = 12, 6
@@ -123,6 +530,9 @@ def report_stats(df: pd.DataFrame) -> List[Tuple[str, str, str]]:
     figures.append(_fig_timeline(df))
     figures.append(_fig_signs_per_tablet(df))
     figures.append(_fig_corpus_coverage(df))
+
+    # ── Quality confidence & inclusion strategy ─────────────────────────
+    figures.append(_fig_quality_confidence())
 
     print(f"\n[stats] {len(figures)} outputs saved to '{FIGURES_DIR}'.")
     return figures
@@ -438,55 +848,62 @@ def _tbl_site_breakdown(df: pd.DataFrame) -> Tuple[str, str, str]:
 
 
 # ---------------------------------------------------------------------------
-# Figure 3 – Map of Crete with find-sites
+# Figure 3 – Geographic map of Crete + Aegean with find-sites
 # ---------------------------------------------------------------------------
 
 def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
-    site_df  = get_site_summary_df(df)
-    fig, ax  = plt.subplots(figsize=(14, 6))
+    site_df = get_site_summary_df(df)
+
+    # Load Natural Earth 50 m land polygons (bundled in repo)
+    land = gpd.read_file(NE_LAND_PATH)
+
+    # Clip to the eastern-Mediterranean region covering Crete and Santorini
+    region_bbox = box(23.0, 34.5, 26.7, 36.6)
+    land_clipped = gpd.clip(land, region_bbox)
+
+    fig, ax = plt.subplots(figsize=(14, 8))
 
     # Sea background
     ax.set_facecolor("#A8D5E2")
 
-    # Crete only
-    xs = [p[0] for p in CRETE_OUTLINE]
-    ys = [p[1] for p in CRETE_OUTLINE]
-    ax.fill(xs, ys, color="#E8DEC0", zorder=2)
-    ax.plot(xs + [xs[0]], ys + [ys[0]], color="#888888",
-            linewidth=0.8, zorder=3)
+    # Render real coastlines
+    land_clipped.plot(ax=ax, color="#E8DEC0", edgecolor="#888888",
+                      linewidth=0.6, zorder=2)
 
-    # Map extent: tight around Crete with padding
-    ax.set_xlim(23.2, 26.7)
-    ax.set_ylim(34.65, 35.85)
+    # Map extent: wide enough to show Crete + Santorini/Akrotiri
+    ax.set_xlim(23.0, 26.7)
+    ax.set_ylim(34.5, 36.6)
     ax.set_aspect(1.4)  # rough Mercator correction at 35°N
 
     # Manual label nudges: (offset_x, offset_y, ha, va)
     _nudge = {
-        "Hagia Triada": (-0.08, -0.04, "right", "top"),
-        "Phaistos":     (-0.08,  0.02, "right", "bottom"),
-        "Knossos":      ( 0.08, -0.04, "left",  "top"),
-        "Arkhanes":     ( 0.08,  0.02, "left",  "bottom"),
-        "Khania":       (-0.08,  0.02, "right", "bottom"),
-        "Mallia":       ( 0.08,  0.02, "left",  "bottom"),
-        "Tylissos":     (-0.08, -0.04, "right", "top"),
-        "Myrtos":       ( 0.08, -0.04, "left",  "top"),
-        "Nirou Khani":  ( 0.08, -0.04, "left",  "top"),
-        "Gournia":      ( 0.08,  0.02, "left",  "bottom"),
-        "Palaikastro":  ( 0.08,  0.02, "left",  "bottom"),
-        "Apodioulou":   (-0.08, -0.04, "right", "top"),
+        "Hagia Triada": (-0.08, -0.06, "right", "top"),
+        "Phaistos":     (-0.08,  0.04, "right", "bottom"),
+        "Knossos":      ( 0.08, -0.06, "left",  "top"),
+        "Arkhanes":     ( 0.08,  0.04, "left",  "bottom"),
+        "Khania":       (-0.08,  0.04, "right", "bottom"),
+        "Mallia":       ( 0.08,  0.04, "left",  "bottom"),
+        "Tylissos":     (-0.08, -0.06, "right", "top"),
+        "Myrtos":       ( 0.08, -0.06, "left",  "top"),
+        "Nirou Khani":  ( 0.08, -0.06, "left",  "top"),
+        "Gournia":      ( 0.08,  0.04, "left",  "bottom"),
+        "Palaikastro":  ( 0.08,  0.04, "left",  "bottom"),
+        "Apodioulou":   (-0.08, -0.06, "right", "top"),
+        "Akrotiri":     (-0.10,  0.04, "right", "bottom"),
     }
 
-    # Cretan site scatter
+    # Plot ALL sites including Akrotiri directly on the map
     for _, row in site_df.iterrows():
-        if row["island"] != "Crete":
-            continue
         size = max(100, row["tablet_count"] * 30)
         ax.scatter(row["lon"], row["lat"], s=size,
                    color="#C0392B", edgecolors="#800000",
                    linewidths=0.8, zorder=5, alpha=0.85)
-        ox, oy, ha, va = _nudge.get(row["site"], (0.08, 0.02, "left", "bottom"))
+        ox, oy, ha, va = _nudge.get(row["site"], (0.08, 0.04, "left", "bottom"))
+        label = f"{row['site']}  (n={row['tablet_count']})"
+        if row["site"] == "Akrotiri":
+            label = f"Akrotiri / Thera  (n={row['tablet_count']})"
         ax.annotate(
-            f"{row['site']}  (n={row['tablet_count']})",
+            label,
             xy=(row["lon"], row["lat"]),
             xytext=(row["lon"] + ox, row["lat"] + oy),
             fontsize=8.5, color="#2C3E50", zorder=6,
@@ -494,36 +911,22 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
             bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.75),
         )
 
-    # Akrotiri callout (off-map, annotated in corner)
-    akrotiri = site_df[site_df["site"] == "Akrotiri"]
-    if not akrotiri.empty:
-        n = int(akrotiri.iloc[0]["tablet_count"])
-        ax.annotate(
-            f"Akrotiri / Thera  (n={n})\n120 km N  (Santorini)",
-            xy=(25.4, 35.83), fontsize=9, color="#C0392B",
-            ha="center", va="top", fontweight="bold",
-            bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#C0392B",
-                      alpha=0.9, linewidth=1.2),
-            zorder=7,
-        )
-        # north-pointing arrow
-        ax.annotate("", xy=(25.4, 35.85), xytext=(25.4, 35.78),
-                    arrowprops=dict(arrowstyle="->", color="#C0392B", lw=1.5),
-                    zorder=7)
-
-    # Island label
+    # Island / sea labels
     ax.text(24.9, 35.15, "C R E T E", fontsize=13, color="#5A4A3A",
             ha="center", va="center", alpha=0.4, style="italic",
             fontweight="bold", zorder=4)
-    ax.text(24.9, 34.72, "Libyan Sea", fontsize=9, color="#6AA3B8",
+    ax.text(24.9, 34.60, "Libyan Sea", fontsize=9, color="#6AA3B8",
             ha="center", style="italic", zorder=4)
-    ax.text(24.9, 35.77, "Sea of Crete", fontsize=9, color="#6AA3B8",
+    ax.text(24.5, 35.95, "Sea of Crete", fontsize=9, color="#6AA3B8",
             ha="center", style="italic", zorder=4)
+    ax.text(25.6, 36.50, "Santorini", fontsize=8, color="#5A4A3A",
+            ha="center", style="italic", alpha=0.5, zorder=4)
 
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
-    ax.set_title("Linear A Tablet Find-Sites on Crete\n"
-                 "Circle size proportional to tablet count.",
+    ax.set_title("Linear A Tablet Find-Sites – Crete and Aegean\n"
+                 "Circle size proportional to tablet count.  "
+                 "Real coastlines from Natural Earth 50 m.",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.grid(linestyle="--", alpha=0.25, zorder=1)
 
@@ -532,7 +935,7 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     fig.savefig(path, dpi=_DPI, bbox_inches="tight")
     plt.close(fig)
     print("[stats] saved fig_03_site_map.png")
-    return ("Map", "Tablet Find-Sites – Crete", path)
+    return ("Map", "Tablet Find-Sites – Crete & Aegean", path)
 
 
 # ---------------------------------------------------------------------------
@@ -718,3 +1121,91 @@ def _fig_corpus_coverage(df: pd.DataFrame) -> Tuple[str, str, str]:
     plt.close(fig)
     print("[stats] saved fig_06_corpus_coverage.png")
     return ("Coverage", "Corpus Coverage vs Total Known", path)
+
+
+# ---------------------------------------------------------------------------
+# Figure 7 – Quality confidence scores & inclusion strategy
+# ---------------------------------------------------------------------------
+
+def _fig_quality_confidence() -> Tuple[str, str, str]:
+    """Horizontal bar chart of Quality Confidence Scores for all sources.
+
+    Sources above QCS_INCLUSION_THRESHOLD are shown in green/blue;
+    sources below appear in orange/red.  The threshold line is drawn
+    vertically so the inclusion decision is immediately visible.
+    """
+    # Compute QCS for every source and sort by score descending
+    rows = []
+    for src in SOURCE_QUALITY_SCORES:
+        qcs = _compute_qcs(src["scores"])
+        rows.append({
+            "source":   src["source"],
+            "status":   src["status"],
+            "qcs":      qcs,
+            "est_n":    src["est_inscriptions"],
+            "in_db":    src["in_db"],
+            "category": src["category"],
+        })
+    sdf = pd.DataFrame(rows).sort_values("qcs", ascending=True).reset_index(drop=True)
+
+    # Achievable coverage: sum of inscriptions where QCS >= threshold
+    achievable = sdf.loc[sdf["qcs"] >= QCS_INCLUSION_THRESHOLD, "est_n"].sum()
+    achievable_pct = 100 * achievable / TOTAL_KNOWN_INSCRIPTIONS
+
+    fig_h = max(7, len(sdf) * 0.55 + 3)
+    fig, ax = plt.subplots(figsize=(_FIG_W, fig_h))
+
+    colors = []
+    for _, r in sdf.iterrows():
+        if r["status"] == "exclude":
+            colors.append("#E74C3C")   # red – excluded
+        elif r["qcs"] < QCS_INCLUSION_THRESHOLD:
+            colors.append("#E67E22")   # orange – below threshold
+        elif r["status"] == "included":
+            colors.append("#2E86AB")   # blue – currently included
+        else:
+            colors.append("#27AE60")   # green – recommended for inclusion
+
+    y = np.arange(len(sdf))
+    bars = ax.barh(y, sdf["qcs"], color=colors, edgecolor="white", height=0.65)
+
+    # QCS value + inscription count annotation
+    for i, (_, r) in enumerate(sdf.iterrows()):
+        status_tag = {"included": "IN DB", "not_included": "NOT YET",
+                      "exclude": "EXCL"}[r["status"]]
+        ax.text(r["qcs"] + 0.01, i,
+                f" {r['qcs']:.2f}  |  ~{r['est_n']} inscr.  [{status_tag}]",
+                va="center", ha="left", fontsize=8, color="#333333")
+
+    # Threshold line
+    ax.axvline(QCS_INCLUSION_THRESHOLD, color="#C0392B", linewidth=1.8,
+               linestyle="--", zorder=10,
+               label=f"Inclusion threshold = {QCS_INCLUSION_THRESHOLD:.2f}")
+
+    ax.set_yticks(y)
+    ax.set_yticklabels(sdf["source"], fontsize=9)
+    ax.set_xlabel("Quality Confidence Score (QCS)", fontsize=11)
+    ax.set_xlim(0, 1.15)
+    ax.set_title(
+        f"Linear A Source Quality Confidence Scores\n"
+        f"Inclusion threshold QCS ≥ {QCS_INCLUSION_THRESHOLD:.2f}  |  "
+        f"Achievable coverage at threshold: ~{achievable} / {TOTAL_KNOWN_INSCRIPTIONS} "
+        f"({achievable_pct:.0f}%)\n"
+        f"■ In DB   ■ Recommended   ■ Below threshold   ■ Excluded",
+        fontsize=_TITLE_FONTSIZE, fontweight="bold",
+    )
+
+    legend_patches = [
+        mpatches.Patch(color="#2E86AB", label="Currently included"),
+        mpatches.Patch(color="#27AE60", label="Recommended for inclusion"),
+        mpatches.Patch(color="#E67E22", label="Below quality threshold"),
+        mpatches.Patch(color="#E74C3C", label="Excluded (forgeries / doubtful)"),
+    ]
+    ax.legend(handles=legend_patches, loc="lower right", fontsize=9, frameon=True)
+    ax.grid(axis="x", linestyle="--", alpha=0.3)
+    fig.tight_layout()
+    path = os.path.join(FIGURES_DIR, "fig_07_quality_confidence.png")
+    fig.savefig(path, dpi=_DPI, bbox_inches="tight")
+    plt.close(fig)
+    print("[stats] saved fig_07_quality_confidence.png")
+    return ("Quality", "Source Quality Confidence Scores", path)
