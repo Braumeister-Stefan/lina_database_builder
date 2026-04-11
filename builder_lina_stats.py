@@ -91,7 +91,8 @@ KNOWN_SITE_TOTALS: Dict[str, int] = {
     "Ceramics (Khania)":       20,
     "Ceramics (Other)":        70,
     # ── Remaining unclassified / museum pieces ─────────────────────────────
-    "Other / unassigned":     228,
+    # 1400 total − 336 major-site tablets − 800 newly categorised = 264
+    "Other / unassigned":     264,
 }
 
 # ---------------------------------------------------------------------------

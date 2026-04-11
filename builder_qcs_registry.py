@@ -11,6 +11,17 @@ QCS calibration
   0.75 – probable: strong scholarly consensus, minor uncertainties remain
   1.0  – definitely correct (e.g. Unicode standard definitions)
 
+QCS derivation (for corpus strategies)
+---------------------------------------
+  QCS is the weighted average of five source-quality dimensions evaluated in
+  builder_lina_stats.SOURCE_QUALITY_SCORES using the weights in _QCS_WEIGHTS:
+    transliteration_reliability : 0.30
+    provenance_certainty        : 0.20
+    publication_quality         : 0.25
+    sign_completeness           : 0.15
+    consistency_with_corpus     : 0.10
+  QCS values in this registry are rounded to two decimal places.
+
 Each strategy entry contains:
   key         : unique machine-readable identifier
   label       : human-readable name
