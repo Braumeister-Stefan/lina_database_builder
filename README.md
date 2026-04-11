@@ -1,8 +1,11 @@
 # lina_database_builder
 
-**Project statement:** Build a structured Linear A database and perform basic data exploration.
+**Project Description:** This is an attempt of creating a database of the tablets found identified as the undecyphered Linear A Minoan writing system. 
+
+Below, first the database included on this repository is explored. second the structure and underlying sources & assumptions of the tool are summarized.
 
 This tool loads a curated corpus of Minoan Linear A tablet transcriptions, converts each tablet to Unicode Linear A characters, saves the database in both CSV and XLSX format, and produces a set of self-contained summary statistics and visualisations — all at the click of a button via `python main.py`.
+
 
 ---
 
