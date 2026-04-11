@@ -86,20 +86,17 @@ def _build_dataframe() -> pd.DataFrame:
         uni_parts = [sign_group_to_unicode(g, label_map) for g in groups]
         sign_unicode = " ".join(uni_parts)
 
-        # Flat comma-separated sign-ID list (omits '?' placeholders)
-        ids = []
-        for part in uni_parts:
-            for ch in part:
-                if ch != '?':
-                    sid = char_to_id.get(ch)
-                    if sid is not None:
-                        ids.append(str(sid))
-        sign_ids_str = ",".join(ids)
+        # Collect recognised Unicode characters (exclude '?' placeholders)
+        recognised_chars = [
+            ch for part in uni_parts for ch in part if ch != '?'
+        ]
 
-        # Count recognised signs (characters that are not '?')
-        sign_count = sum(
-            1 for part in uni_parts for ch in part if ch != '?'
+        # Flat comma-separated sign-ID list
+        sign_ids_str = ",".join(
+            str(char_to_id[ch]) for ch in recognised_chars if ch in char_to_id
         )
+
+        sign_count = len(recognised_chars)
 
         rows.append({
             "tablet_id":             tablet["tablet_id"],

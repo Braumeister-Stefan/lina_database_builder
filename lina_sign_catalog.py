@@ -65,7 +65,7 @@ def build_sign_catalog() -> List[dict]:
         # Categorise by sign_label pattern
         if sign_label.startswith("AB"):
             category = "syllabic"
-        elif re.match(r"A[7-9]\d{2}", sign_label) or re.match(r"A[7-9]\d{2}", sign_label[:4]):
+        elif re.match(r"A[7-9]\d{2}", sign_label):
             category = "numeric_fraction"
         elif re.match(r"A8\d{2}", sign_label):
             category = "punctuation"
