@@ -477,7 +477,14 @@ SOURCE_QUALITY_SCORES: List[Dict] = [
 
 def _compute_qcs(scores: Dict[str, float]) -> float:
     """Compute the weighted Quality Confidence Score for a source."""
+    for key in _QCS_WEIGHTS:
+        if key not in scores:
+            raise ValueError(f"Missing QCS dimension: {key}")
     return sum(scores[k] * _QCS_WEIGHTS[k] for k in _QCS_WEIGHTS)
+
+
+# Map bounding box for Crete + Santorini region (lon_min, lat_min, lon_max, lat_max)
+_AEGEAN_REGION_BBOX = (23.0, 34.5, 26.7, 36.6)
 
 
 # Consistent style
@@ -858,7 +865,7 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     land = gpd.read_file(NE_LAND_PATH)
 
     # Clip to the eastern-Mediterranean region covering Crete and Santorini
-    region_bbox = box(23.0, 34.5, 26.7, 36.6)
+    region_bbox = box(*_AEGEAN_REGION_BBOX)
     land_clipped = gpd.clip(land, region_bbox)
 
     fig, ax = plt.subplots(figsize=(14, 8))
@@ -871,8 +878,8 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
                       linewidth=0.6, zorder=2)
 
     # Map extent: wide enough to show Crete + Santorini/Akrotiri
-    ax.set_xlim(23.0, 26.7)
-    ax.set_ylim(34.5, 36.6)
+    ax.set_xlim(_AEGEAN_REGION_BBOX[0], _AEGEAN_REGION_BBOX[2])
+    ax.set_ylim(_AEGEAN_REGION_BBOX[1], _AEGEAN_REGION_BBOX[3])
     ax.set_aspect(1.4)  # rough Mercator correction at 35°N
 
     # Manual label nudges: (offset_x, offset_y, ha, va)

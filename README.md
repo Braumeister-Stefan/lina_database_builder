@@ -40,7 +40,7 @@ This database contains **317 inscriptions** drawn from GORILA vols I–V and You
 
 ## 3 — Geographic Distribution
 
-All 13 Cretan sites plus Akrotiri on Santorini (Thera), shown on a real geographic map using Natural Earth 50 m coastline data. Hagia Triada dominates with ~43 % of the corpus.
+All 13 Cretan sites plus Akrotiri on Santorini (Thera) — 14 find-sites total — shown on a real geographic map using Natural Earth 50 m coastline data. Hagia Triada dominates with ~43 % of the corpus.
 
 ![Site breakdown](data/figures/tbl_04_site_breakdown.png)
 
