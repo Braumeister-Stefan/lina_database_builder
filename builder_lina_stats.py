@@ -1036,51 +1036,13 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
     ax.set_ylim(_AEGEAN_REGION_BBOX[1], _AEGEAN_REGION_BBOX[3])
     ax.set_aspect(1.4)  # rough Mercator correction at 35°N
 
-    # Manual label nudges: (offset_x, offset_y, ha, va)
-    _nudge = {
-        "Hagia Triada": (-0.08, -0.06, "right", "top"),
-        "Phaistos":     (-0.08,  0.04, "right", "bottom"),
-        "Knossos":      ( 0.08, -0.06, "left",  "top"),
-        "Arkhanes":     ( 0.08,  0.04, "left",  "bottom"),
-        "Khania":       (-0.08,  0.04, "right", "bottom"),
-        "Mallia":       ( 0.08,  0.04, "left",  "bottom"),
-        "Tylissos":     (-0.08, -0.06, "right", "top"),
-        "Myrtos":       ( 0.08, -0.06, "left",  "top"),
-        "Nirou Khani":  ( 0.08, -0.06, "left",  "top"),
-        "Gournia":      ( 0.08,  0.04, "left",  "bottom"),
-        "Palaikastro":  ( 0.08,  0.04, "left",  "bottom"),
-        "Apodioulou":   (-0.08, -0.06, "right", "top"),
-        "Akrotiri":     (-0.10,  0.04, "right", "bottom"),
-    }
-
-    # Plot ALL sites including Akrotiri directly on the map
+    # Plot ALL sites including Akrotiri directly on the map.
+    # Intentionally no per-site text annotations to avoid label overlap.
     for _, row in site_df.iterrows():
         size = max(100, row["tablet_count"] * 30)
         ax.scatter(row["lon"], row["lat"], s=size,
                    color="#C0392B", edgecolors="#800000",
                    linewidths=0.8, zorder=5, alpha=0.85)
-        ox, oy, ha, va = _nudge.get(row["site"], (0.08, 0.04, "left", "bottom"))
-        label = f"{row['site']}  (n={row['tablet_count']})"
-        if row["site"] == "Akrotiri":
-            label = f"Akrotiri / Thera  (n={row['tablet_count']})"
-        ax.annotate(
-            label,
-            xy=(row["lon"], row["lat"]),
-            xytext=(row["lon"] + ox, row["lat"] + oy),
-            fontsize=8.5, color="#2C3E50", zorder=6,
-            ha=ha, va=va,
-        )
-
-    # Island / sea labels
-    ax.text(24.9, 35.15, "C R E T E", fontsize=13, color="#5A4A3A",
-            ha="center", va="center", alpha=0.4, style="italic",
-            fontweight="bold", zorder=4)
-    ax.text(24.9, 34.60, "Libyan Sea", fontsize=9, color="#6AA3B8",
-            ha="center", style="italic", zorder=4)
-    ax.text(24.5, 35.95, "Sea of Crete", fontsize=9, color="#6AA3B8",
-            ha="center", style="italic", zorder=4)
-    ax.text(25.6, 36.50, "Santorini", fontsize=8, color="#5A4A3A",
-            ha="center", style="italic", alpha=0.5, zorder=4)
 
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
@@ -1188,7 +1150,7 @@ def _fig_signs_per_tablet(df: pd.DataFrame) -> Tuple[str, str, str]:
     ax.set_xlabel("Number of recognised signs per tablet", fontsize=11)
     ax.set_ylabel("Number of tablets", fontsize=11)
     ax.set_title("Distribution of Signs per Tablet\n"
-                 "Recognised (non-'?') Linear A signs only.",
+                 "Recognised Linear A signs only.",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.legend(fontsize=9, frameon=True)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
