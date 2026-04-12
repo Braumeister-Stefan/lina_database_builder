@@ -366,6 +366,109 @@ PE 47,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-SE GRA 14 KU-RO 
 PE 48,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU OLE 9 KI-RO OLE 2 KU-RO OLE 7,KU-PA3-NU|OLE|KI-RO|OLE|KU-RO|OLE,𐙂𐘰𐘟 𐙚 𐘸𐘁 𐙚 𐙂𐘁 𐙚,"66,48,31,90,56,1,90,66,1,90",6,10
 PE 49,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 55 VIN 14 KU-RO GRA 55,A-DU|GRA|VIN|KU-RO|GRA,𐘀𐘬 𐙕 𐙗 𐙂𐘁 𐙕,"0,44,85,87,66,1,85",5,7
 PE 50,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2-MA GRA 40 KI-RO GRA 4 KU-RO GRA 36,SA-RA2-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘞𐘱𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"30,49,65,85,56,1,85,66,1,85",6,10
+PE 51,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 28 KI-RO GRA 3 KU-RO GRA 25,A-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,44,85,56,1,85,66,1,85",6,9
+PE 52,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO VIN 9 OLE 2 KU-RO VIN 9,PA-I-TO|VIN|OLE|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐙚 𐙂𐘁 𐙗,"2,26,4,87,90,66,1,87",5,8
+PE 53,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 32 KI-RO GRA 4 KU-RO GRA 28,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
+PE 54,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MI OVS 18 CAP 4 KU-RO OVS 18,I-DA-MI|OVS|CAP|KU-RO|OVS,𐘚𐘦𐘒 𐙝 𐙜 𐙂𐘁 𐙝,"26,38,18,93,92,66,1,93",5,8
+PE 55,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA GRA 11 VIN 3 KU-RO GRA 11,SA-MA|GRA|VIN|KU-RO|GRA,𐘞𐙁 𐙕 𐙗 𐙂𐘁 𐙕,"30,65,85,87,66,1,85",5,7
+PE 56,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-RE VIN 15 KI-RO VIN 2 KU-RO VIN 13,A-RE|VIN|KI-RO|VIN|KU-RO|VIN,𐘀𐘙 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"0,25,87,56,1,87,66,1,87",6,9
+PE 57,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2-RE GRA 50 KU-RO GRA 50,DU-PU2-RE|GRA|KU-RO|GRA,𐘬𐙄𐘙 𐙕 𐙂𐘁 𐙕,"44,68,25,85,66,1,85",4,7
+PE 58,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TE-KI GRA 8 A-KA GRA 4 KU-RO GRA 12,TE-KI|GRA|A-KA|GRA|KU-RO|GRA,𐘃𐘸 𐙕 𐘀𐘾 𐙕 𐙂𐘁 𐙕,"3,56,85,0,62,85,66,1,85",6,9
+PE 59,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,WA-TI GRA 22 KI-RO GRA 2 KU-RO GRA 20,WA-TI|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘠 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,32,85,56,1,85,66,1,85",6,9
+PE 60,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO VIN 60 OLE 15,KU-RO|VIN|OLE,𐙂𐘁 𐙗 𐙚,"66,1,87,90",3,4
+PE 61,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DI-NA-U GRA 14 KU-RO GRA 14,DI-NA-U|GRA|KU-RO|GRA,𐘆𐘅𐘉 𐙕 𐙂𐘁 𐙕,"6,5,9,85,66,1,85",4,7
+PE 62,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-SA-SA-RA-ME GRA 6 KU-RO GRA 6,A-SA-SA-RA-ME|GRA|KU-RO|GRA,𐘀𐘞𐘞𐘴𐘋 𐙕 𐙂𐘁 𐙕,"0,30,30,52,11,85,66,1,85",4,9
+PE 63,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RI-JA-TA GRA 20 KI-RO GRA 4 KU-RO GRA 16,RI-JA-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘭𐘧𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"45,39,51,85,56,1,85,66,1,85",6,10
+PE 64,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA3-TE OVS 25 BOS 3 KU-RO OVS 25,PA3-TE|OVS|BOS|KU-RO|OVS,𐘰𐘃 𐙝 𐙠 𐙂𐘁 𐙝,"48,3,93,96,66,1,93",5,7
+PE 65,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU VIN 11 OLE 4 KU-RO VIN 11,A-DU|VIN|OLE|KU-RO|VIN,𐘀𐘬 𐙗 𐙚 𐙂𐘁 𐙗,"0,44,87,90,66,1,87",5,7
+PE 66,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SI-DA-TE GRA 35 KI-RO GRA 5 KU-RO GRA 30,SI-DA-TE|GRA|KI-RO|GRA|KU-RO|GRA,𐘜𐘦𐘃 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"28,38,3,85,56,1,85,66,1,85",6,10
+PE 67,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DA-QE-RA GRA 18 VIN 6 KU-RO GRA 18,DA-QE-RA|GRA|VIN|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"38,63,52,85,87,66,1,85",5,8
+PE 68,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-NA-TE GRA 9 KU-RO GRA 9,TA-NA-TE|GRA|KU-RO|GRA,𐘳𐘅𐘃 𐙕 𐙂𐘁 𐙕,"51,5,3,85,66,1,85",4,7
+PE 69,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 OVS 30 CAP 8 KU-RO OVS 30,KU-PA3|OVS|CAP|KU-RO|OVS,𐙂𐘰 𐙝 𐙜 𐙂𐘁 𐙝,"66,48,93,92,66,1,93",5,7
+PE 70,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-MI-DA-O GRA 42 KI-RO GRA 7 KU-RO GRA 35,A-MI-DA-O|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘒𐘦𐘵 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,18,38,53,85,56,1,85,66,1,85",6,11
+PE 71,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RE-QE-ME VIN 8 KU-RO VIN 8,RE-QE-ME|VIN|KU-RO|VIN,𐘙𐘿𐘋 𐙗 𐙂𐘁 𐙗,"25,63,11,87,66,1,87",4,7
+PE 72,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-RA2 GRA 24 OLE 6 KU-RO GRA 24,TA-RA2|GRA|OLE|KU-RO|GRA,𐘳𐘱 𐙕 𐙚 𐙂𐘁 𐙕,"51,49,85,90,66,1,85",5,7
+PE 73,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,JA-RE GRA 16 KI-RO GRA 2 KU-RO GRA 14,JA-RE|GRA|KI-RO|GRA|KU-RO|GRA,𐘧𐘙 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"39,25,85,56,1,85,66,1,85",6,9
+PE 74,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-NA GRA 7 VIN 3 KU-RO GRA 7,I-NA|GRA|VIN|KU-RO|GRA,𐘚𐘅 𐙕 𐙗 𐙂𐘁 𐙕,"26,5,85,87,66,1,85",5,7
+PE 75,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA GRA 33 KI-RO GRA 3 KU-RO GRA 30,PA-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,51,85,56,1,85,66,1,85",6,9
+PE 76,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2 VIN 14 OLE 4 KU-RO VIN 14,SA-RA2|VIN|OLE|KU-RO|VIN,𐘞𐘱 𐙗 𐙚 𐙂𐘁 𐙗,"30,49,87,90,66,1,87",5,7
+PE 77,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA GRA 26 KI-RO GRA 4 KU-RO GRA 22,WA-NA|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘅 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,5,85,56,1,85,66,1,85",6,9
+PE 78,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DI-KI-SE OVS 16 BOS 2 KU-RO OVS 16,DI-KI-SE|OVS|BOS|KU-RO|OVS,𐘆𐘸𐘈 𐙝 𐙠 𐙂𐘁 𐙝,"6,56,8,93,96,66,1,93",5,8
+PE 79,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-MI GRA 19 KU-RO GRA 19,A-MI|GRA|KU-RO|GRA,𐘀𐘒 𐙕 𐙂𐘁 𐙕,"0,18,85,66,1,85",4,6
+PE 80,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TE-ZA VIN 10 KI-RO VIN 1 KU-RO VIN 9,TE-ZA|VIN|KI-RO|VIN|KU-RO|VIN,𐘃𐘍 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"3,13,87,56,1,87,66,1,87",6,9
+PE 81,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-SE GRA 45 KI-RO GRA 5 KU-RO GRA 40,I-SE|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘈 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,8,85,56,1,85,66,1,85",6,9
+PE 82,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RA GRA 12 VIN 4 KU-RO GRA 12,KU-RA|GRA|VIN|KU-RO|GRA,𐙂𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"66,52,85,87,66,1,85",5,7
+PE 83,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-NA GRA 30 KI-RO GRA 3 KU-RO GRA 27,A-NA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘅 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,5,85,56,1,85,66,1,85",6,9
+PE 84,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-DE OVS 22 SUS 4 KU-RO OVS 22,PA-DE|OVS|SUS|KU-RO|OVS,𐘂𐘦 𐙝 𐙙 𐙂𐘁 𐙝,"2,38,93,89,66,1,93",5,7
+PE 85,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DU GRA 17 OLE 5 KU-RO GRA 17,DU|GRA|OLE|KU-RO|GRA,𐘬 𐙕 𐙚 𐙂𐘁 𐙕,"44,85,90,66,1,85",5,6
+PE 86,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-KA-RU GRA 38 KI-RO GRA 8 KU-RO GRA 30,A-KA-RU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘾𐘘 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,62,24,85,56,1,85,66,1,85",6,10
+PE 87,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RE-DI VIN 20 KI-RO VIN 3 KU-RO VIN 17,RE-DI|VIN|KI-RO|VIN|KU-RO|VIN,𐘙𐘆 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"25,6,87,56,1,87,66,1,87",6,9
+PE 88,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-PA-KA GRA 15 KU-RO GRA 15,SA-PA-KA|GRA|KU-RO|GRA,𐘞𐘂𐘾 𐙕 𐙂𐘁 𐙕,"30,2,62,85,66,1,85",4,7
+PE 89,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PI-TA GRA 28 OLE 7 KU-RO GRA 28,PI-TA|GRA|OLE|KU-RO|GRA,𐘢𐘳 𐙕 𐙚 𐙂𐘁 𐙕,"34,51,85,90,66,1,85",5,7
+PE 90,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 120 VIN 30 OLE 18,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+PE 91,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-DA GRA 10 VIN 4 KU-RO GRA 10,I-DA|GRA|VIN|KU-RO|GRA,𐘚𐘦 𐙕 𐙗 𐙂𐘁 𐙕,"26,38,85,87,66,1,85",5,7
+PE 92,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-KU OVS 14 CAP 6 BOS 1 KU-RO OVS 14,TA-KU|OVS|CAP|BOS|KU-RO|OVS,𐘳𐙂 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"51,66,93,92,96,66,1,93",6,8
+PE 93,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,WA-DU GRA 23 KI-RO GRA 3 KU-RO GRA 20,WA-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,44,85,56,1,85,66,1,85",6,9
+PE 94,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-SI GRA 41 KI-RO GRA 6 KU-RO GRA 35,A-SI|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,85,56,1,85,66,1,85",6,9
+PE 95,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KI-RE-TA2 VIN 7 OLE 3 KU-RO VIN 7,KI-RE-TA2|VIN|OLE|KU-RO|VIN,𐘸𐘙𐘷 𐙗 𐙚 𐙂𐘁 𐙗,"56,25,55,87,90,66,1,87",5,8
+PE 96,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,NU-PA3 GRA 19 KI-RO GRA 1 KU-RO GRA 18,NU-PA3|GRA|KI-RO|GRA|KU-RO|GRA,𐘟𐘰 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"31,48,85,56,1,85,66,1,85",6,9
+PE 97,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SU-PU2 OVS 28 BOS 4 KU-RO OVS 28,SU-PU2|OVS|BOS|KU-RO|OVS,𐘲𐙄 𐙝 𐙠 𐙂𐘁 𐙝,"50,68,93,96,66,1,93",5,7
+PE 98,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,MI-NU-TE GRA 11 VIN 3 KU-RO GRA 11,MI-NU-TE|GRA|VIN|KU-RO|GRA,𐘒𐘟𐘃 𐙕 𐙗 𐙂𐘁 𐙕,"18,31,3,85,87,66,1,85",5,8
+PE 99,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-RU GRA 36 KI-RO GRA 6 KU-RO GRA 30,A-RU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘘 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,24,85,56,1,85,66,1,85",6,9
+PE 100,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 200 VIN 50 OLE 30,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+PE 101,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA-NE GRA 17 KI-RO GRA 2 KU-RO GRA 15,PA-TA-NE|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘳𐘗 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,51,23,85,56,1,85,66,1,85",6,10
+PE 102,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-QE GRA 22 OLE 8 KU-RO GRA 22,I-QE|GRA|OLE|KU-RO|GRA,𐘚𐘿 𐙕 𐙚 𐙂𐘁 𐙕,"26,63,85,90,66,1,85",5,7
+PE 103,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DA-TA GRA 14 VIN 5 KU-RO GRA 14,DA-TA|GRA|VIN|KU-RO|GRA,𐘦𐘳 𐙕 𐙗 𐙂𐘁 𐙕,"38,51,85,87,66,1,85",5,7
+PE 104,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI-NA OVS 35 CAP 7 KU-RO OVS 35,KU-MI-NA|OVS|CAP|KU-RO|OVS,𐙂𐘒𐘅 𐙝 𐙜 𐙂𐘁 𐙝,"66,18,5,93,92,66,1,93",5,8
+PE 105,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA GRA 48 KI-RO GRA 8 KU-RO GRA 40,A-SI-DA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,38,85,56,1,85,66,1,85",6,10
+PE 106,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RI-JA VIN 13 KI-RO VIN 1 KU-RO VIN 12,RI-JA|VIN|KI-RO|VIN|KU-RO|VIN,𐘭𐘧 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"45,39,87,56,1,87,66,1,87",6,9
+PE 107,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2 GRA 26 KU-RO GRA 26,DU-PU2|GRA|KU-RO|GRA,𐘬𐙄 𐙕 𐙂𐘁 𐙕,"44,68,85,66,1,85",4,6
+PE 108,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU OVS 20 BOS 2 SUS 3 KU-RO OVS 20,KU-PA3-NU|OVS|BOS|SUS|KU-RO|OVS,𐙂𐘰𐘟 𐙝 𐙠 𐙙 𐙂𐘁 𐙝,"66,48,31,93,96,89,66,1,93",6,9
+PE 109,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 60 KI-RO GRA 8 KU-RO GRA 52,A-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,44,85,56,1,85,66,1,85",6,9
+PE 110,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO GRA 31 OLE 9 KU-RO GRA 31,PA-I-TO|GRA|OLE|KU-RO|GRA,𐘂𐘚𐘄 𐙕 𐙚 𐙂𐘁 𐙕,"2,26,4,85,90,66,1,85",5,8
+PE 111,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA-RA GRA 15 VIN 4 KU-RO GRA 15,SA-MA-RA|GRA|VIN|KU-RO|GRA,𐘞𐙁𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"30,65,52,85,87,66,1,85",5,8
+PE 112,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TE-KU GRA 22 KI-RO GRA 2 KU-RO GRA 20,TE-KU|GRA|KI-RO|GRA|KU-RO|GRA,𐘃𐙂 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"3,66,85,56,1,85,66,1,85",6,9
+PE 113,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 37 KI-RO GRA 7 KU-RO GRA 30,I-DA-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,56,1,85,66,1,85",6,10
+PE 114,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,WA-TI VIN 9 OLE 3 KU-RO VIN 9,WA-TI|VIN|OLE|KU-RO|VIN,𐘮𐘠 𐙗 𐙚 𐙂𐘁 𐙗,"46,32,87,90,66,1,87",5,7
+PE 115,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-RO2 GRA 44 KI-RO GRA 4 KU-RO GRA 40,A-RO2|GRA|KI-RO|GRA|KU-RO|GRA,𐘀? 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,85,56,1,85,66,1,85",6,8
+PE 116,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 GRA 18 VIN 6 KU-RO GRA 18,KU-PA3|GRA|VIN|KU-RO|GRA,𐙂𐘰 𐙕 𐙗 𐙂𐘁 𐙕,"66,48,85,87,66,1,85",5,7
+PE 117,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RE-DI-SE OVS 24 CAP 5 KU-RO OVS 24,RE-DI-SE|OVS|CAP|KU-RO|OVS,𐘙𐘆𐘈 𐙝 𐙜 𐙂𐘁 𐙝,"25,6,8,93,92,66,1,93",5,8
+PE 118,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-RA2 GRA 29 KI-RO GRA 4 KU-RO GRA 25,TA-RA2|GRA|KI-RO|GRA|KU-RO|GRA,𐘳𐘱 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"51,49,85,56,1,85,66,1,85",6,9
+PE 119,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-MI-DA-O VIN 11 OLE 5 KU-RO VIN 11,A-MI-DA-O|VIN|OLE|KU-RO|VIN,𐘀𐘒𐘦𐘵 𐙗 𐙚 𐙂𐘁 𐙗,"0,18,38,53,87,90,66,1,87",5,9
+PE 120,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 150 VIN 40 OLE 20,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+PE 121,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DA-QE-RA GRA 55 KI-RO GRA 10 KU-RO GRA 45,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+PE 122,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,JA-RE-MI GRA 13 KU-RO GRA 13,JA-RE-MI|GRA|KU-RO|GRA,𐘧𐘙𐘒 𐙕 𐙂𐘁 𐙕,"39,25,18,85,66,1,85",4,7
+PE 123,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-QE-KU GRA 21 VIN 7 KU-RO GRA 21,I-QE-KU|GRA|VIN|KU-RO|GRA,𐘚𐘿𐙂 𐙕 𐙗 𐙂𐘁 𐙕,"26,63,66,85,87,66,1,85",5,8
+PE 124,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-NA GRA 38 KI-RO GRA 8 KU-RO GRA 30,A-NA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘅 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,5,85,56,1,85,66,1,85",6,9
+PE 125,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SI-RU-TE OVS 40 BOS 5 KU-RO OVS 40,SI-RU-TE|OVS|BOS|KU-RO|OVS,𐘜𐘘𐘃 𐙝 𐙠 𐙂𐘁 𐙝,"28,24,3,93,96,66,1,93",5,8
+PE 126,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RE-KU GRA 16 OLE 4 KU-RO GRA 16,RE-KU|GRA|OLE|KU-RO|GRA,𐘙𐙂 𐙕 𐙚 𐙂𐘁 𐙕,"25,66,85,90,66,1,85",5,7
+PE 127,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 300,KU-RO|GRA,𐙂𐘁 𐙕,"66,1,85",2,3
+PE 128,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-KU-TI GRA 17 VIN 5 KU-RO GRA 17,TA-KU-TI|GRA|VIN|KU-RO|GRA,𐘳𐙂𐘠 𐙕 𐙗 𐙂𐘁 𐙕,"51,66,32,85,87,66,1,85",5,8
+PE 129,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-MA-WA GRA 23 KI-RO GRA 3 KU-RO GRA 20,A-MA-WA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐙁𐘮 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,65,46,85,56,1,85,66,1,85",6,10
+PE 130,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA-NE VIN 12 OLE 4 KU-RO VIN 12,PA-TA-NE|VIN|OLE|KU-RO|VIN,𐘂𐘳𐘗 𐙗 𐙚 𐙂𐘁 𐙗,"2,51,23,87,90,66,1,87",5,8
+PE 131,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KI-RE-TA2-U GRA 44 KI-RO GRA 6 KU-RO GRA 38,KI-RE-TA2-U|GRA|KI-RO|GRA|KU-RO|GRA,𐘸𐘙𐘷𐘉 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"56,25,55,9,85,56,1,85,66,1,85",6,11
+PE 132,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU OVS 50 CAP 10 BOS 2 KU-RO OVS 50,A-DU|OVS|CAP|BOS|KU-RO|OVS,𐘀𐘬 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"0,44,93,92,96,66,1,93",6,8
+PE 133,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DI-NA-U GRA 27 VIN 8 KU-RO GRA 27,DI-NA-U|GRA|VIN|KU-RO|GRA,𐘆𐘅𐘉 𐙕 𐙗 𐙂𐘁 𐙕,"6,5,9,85,87,66,1,85",5,8
+PE 134,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-DE GRA 19 KI-RO GRA 2 KU-RO GRA 17,PA-DE|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,38,85,56,1,85,66,1,85",6,9
+PE 135,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2-MA GRA 53 KI-RO GRA 8 KU-RO GRA 45,SA-RA2-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘞𐘱𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"30,49,65,85,56,1,85,66,1,85",6,10
+PE 136,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI VIN 6 OLE 2 KU-RO VIN 6,KU-MI|VIN|OLE|KU-RO|VIN,𐙂𐘒 𐙗 𐙚 𐙂𐘁 𐙗,"66,18,87,90,66,1,87",5,7
+PE 137,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-KA GRA 31 KI-RO GRA 6 KU-RO GRA 25,A-KA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘾 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,62,85,56,1,85,66,1,85",6,9
+PE 138,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA-TA GRA 24 KU-RO GRA 24,WA-NA-TA|GRA|KU-RO|GRA,𐘮𐘅𐘳 𐙕 𐙂𐘁 𐙕,"46,5,51,85,66,1,85",4,7
+PE 139,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,RI-JA-TA OVS 16 SUS 3 KU-RO OVS 16,RI-JA-TA|OVS|SUS|KU-RO|OVS,𐘭𐘧𐘳 𐙝 𐙙 𐙂𐘁 𐙝,"45,39,51,93,89,66,1,93",5,8
+PE 140,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 250 VIN 60 OLE 35,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+PE 141,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-RE-NE GRA 12 VIN 4 KU-RO GRA 12,A-RE-NE|GRA|VIN|KU-RO|GRA,𐘀𐘙𐘗 𐙕 𐙗 𐙂𐘁 𐙕,"0,25,23,85,87,66,1,85",5,8
+PE 142,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,SA-DI GRA 36 KI-RO GRA 6 KU-RO GRA 30,SA-DI|GRA|KI-RO|GRA|KU-RO|GRA,𐘞𐘆 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"30,6,85,56,1,85,66,1,85",6,9
+PE 143,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TE-RE-JA OVS 45 CAP 9 KU-RO OVS 45,TE-RE-JA|OVS|CAP|KU-RO|OVS,𐘃𐘙𐘧 𐙝 𐙜 𐙂𐘁 𐙝,"3,25,39,93,92,66,1,93",5,8
+PE 144,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MI GRA 28 VIN 9 KU-RO GRA 28,I-DA-MI|GRA|VIN|KU-RO|GRA,𐘚𐘦𐘒 𐙕 𐙗 𐙂𐘁 𐙕,"26,38,18,85,87,66,1,85",5,8
+PE 145,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-DU-RE GRA 42 KI-RO GRA 7 KU-RO GRA 35,A-DU-RE|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘬𐘙 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,44,25,85,56,1,85,66,1,85",6,10
+PE 146,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PI-KU-NA VIN 8 OLE 3 KU-RO VIN 8,PI-KU-NA|VIN|OLE|KU-RO|VIN,𐘢𐙂𐘅 𐙗 𐙚 𐙂𐘁 𐙗,"34,66,5,87,90,66,1,87",5,8
+PE 147,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,TA-MI GRA 16 KI-RO GRA 1 KU-RO GRA 15,TA-MI|GRA|KI-RO|GRA|KU-RO|GRA,𐘳𐘒 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"51,18,85,56,1,85,66,1,85",6,9
+PE 148,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 62 KI-RO GRA 12 KU-RO GRA 50,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
+PE 149,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,A-SA-MI GRA 20 VIN 6 KU-RO GRA 20,A-SA-MI|GRA|VIN|KU-RO|GRA,𐘀𐘞𐘒 𐙕 𐙗 𐙂𐘁 𐙕,"0,30,18,85,87,66,1,85",5,8
+PE 150,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 400 VIN 100 OLE 60,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+PE 151,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2-RE GRA 70 KI-RO GRA 10 KU-RO GRA 60,DU-PU2-RE|GRA|KI-RO|GRA|KU-RO|GRA,𐘬𐙄𐘙 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"44,68,25,85,56,1,85,66,1,85",6,10
+PE 152,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,I-QE-PA3 OVS 55 BOS 6 CAP 10 KU-RO OVS 55,I-QE-PA3|OVS|BOS|CAP|KU-RO|OVS,𐘚𐘿𐘰 𐙝 𐙠 𐙜 𐙂𐘁 𐙝,"26,63,48,93,96,92,66,1,93",6,9
+PE 153,Petras,-1600,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO GRA 80 KI-RO GRA 10 KU-RO GRA 70,PA-I-TO|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘚𐘄 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,26,4,85,56,1,85,66,1,85",6,10
 MON 1,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KA GRA 20 KU-RO GRA 20,A-KA|GRA|KU-RO|GRA,𐘀𐘾 𐙕 𐙂𐘁 𐙕,"0,62,85,66,1,85",4,6
 MON 2,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA VIN 10 KI-RO VIN 2 KU-RO VIN 8,PA-TA|VIN|KI-RO|VIN|KU-RO|VIN,𐘂𐘳 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"2,51,87,56,1,87,66,1,87",6,9
 MON 3,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 GRA 15 OLE 5 KU-RO GRA 15,KU-PA3|GRA|OLE|KU-RO|GRA,𐙂𐘰 𐙕 𐙚 𐙂𐘁 𐙕,"66,48,85,90,66,1,85",5,7
@@ -406,6 +509,140 @@ MON 37,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 
 MON 38,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-PA GRA 5 VIN 2 KU-RO GRA 5,SA-PA|GRA|VIN|KU-RO|GRA,𐘞𐘂 𐙕 𐙗 𐙂𐘁 𐙕,"30,2,85,87,66,1,85",5,7
 MON 39,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-DE GRA 42 KI-RO GRA 7 KU-RO GRA 35,A-DE|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,38,85,56,1,85,66,1,85",6,9
 MON 40,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA VIN 16 KU-RO VIN 16,WA-NA|VIN|KU-RO|VIN,𐘮𐘅 𐙗 𐙂𐘁 𐙗,"46,5,87,66,1,87",4,6
+MON 41,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KA GRA 25 KI-RO GRA 5 KU-RO GRA 20,A-KA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘾 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,62,85,56,1,85,66,1,85",6,9
+MON 42,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA VIN 12 OLE 3 KU-RO VIN 12,PA-TA|VIN|OLE|KU-RO|VIN,𐘂𐘳 𐙗 𐙚 𐙂𐘁 𐙗,"2,51,87,90,66,1,87",5,7
+MON 43,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 GRA 18 KI-RO GRA 3 KU-RO GRA 15,KU-PA3|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,85,56,1,85,66,1,85",6,9
+MON 44,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DI-KI-SE GRA 30 KI-RO GRA 6 KU-RO GRA 24,DI-KI-SE|GRA|KI-RO|GRA|KU-RO|GRA,𐘆𐘸𐘈 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"6,56,8,85,56,1,85,66,1,85",6,10
+MON 45,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA OVS 35 BOS 6 KU-RO OVS 35,I-DA|OVS|BOS|KU-RO|OVS,𐘚𐘦 𐙝 𐙠 𐙂𐘁 𐙝,"26,38,93,96,66,1,93",5,7
+MON 46,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA GRA 14 VIN 5 KU-RO GRA 14,SA-MA|GRA|VIN|KU-RO|GRA,𐘞𐙁 𐙕 𐙗 𐙂𐘁 𐙕,"30,65,85,87,66,1,85",5,7
+MON 47,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 90 VIN 25 OLE 14,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 48,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RE-DI GRA 22 KI-RO GRA 4 KU-RO GRA 18,RE-DI|GRA|KI-RO|GRA|KU-RO|GRA,𐘙𐘆 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"25,6,85,56,1,85,66,1,85",6,9
+MON 49,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA GRA 48 KU-RO GRA 48,A-SI-DA|GRA|KU-RO|GRA,𐘀𐘜𐘦 𐙕 𐙂𐘁 𐙕,"0,28,38,85,66,1,85",4,7
+MON 50,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-NA VIN 10 OLE 4 KU-RO VIN 10,TA-NA|VIN|OLE|KU-RO|VIN,𐘳𐘅 𐙗 𐙚 𐙂𐘁 𐙗,"51,5,87,90,66,1,87",5,7
+MON 51,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-TU GRA 27 KI-RO GRA 3 KU-RO GRA 24,WA-TU|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘹 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,57,85,56,1,85,66,1,85",6,9
+MON 52,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-DE OVS 18 CAP 4 KU-RO OVS 18,PA-DE|OVS|CAP|KU-RO|OVS,𐘂𐘦 𐙝 𐙜 𐙂𐘁 𐙝,"2,38,93,92,66,1,93",5,7
+MON 53,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-NA GRA 11 VIN 6 KU-RO GRA 11,I-NA|GRA|VIN|KU-RO|GRA,𐘚𐘅 𐙕 𐙗 𐙂𐘁 𐙕,"26,5,85,87,66,1,85",5,7
+MON 54,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI-NA GRA 36 KI-RO GRA 6 KU-RO GRA 30,KU-MI-NA|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘒𐘅 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,18,5,85,56,1,85,66,1,85",6,10
+MON 55,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DU-RA GRA 19 KU-RO GRA 19,DU-RA|GRA|KU-RO|GRA,𐘬𐘴 𐙕 𐙂𐘁 𐙕,"44,52,85,66,1,85",4,6
+MON 56,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RO2 VIN 8 KU-RO VIN 8,A-RO2|VIN|KU-RO|VIN,𐘀? 𐙗 𐙂𐘁 𐙗,"0,87,66,1,87",4,5
+MON 57,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-RA2 GRA 34 OLE 8 KU-RO GRA 34,TA-RA2|GRA|OLE|KU-RO|GRA,𐘳𐘱 𐙕 𐙚 𐙂𐘁 𐙕,"51,49,85,90,66,1,85",5,7
+MON 58,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PI-TA GRA 13 KI-RO GRA 1 KU-RO GRA 12,PI-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘢𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"34,51,85,56,1,85,66,1,85",6,9
+MON 59,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RA-PE GRA 40 KU-RO GRA 40,KU-RA-PE|GRA|KU-RO|GRA,𐙂𐘴? 𐙕 𐙂𐘁 𐙕,"66,52,85,66,1,85",4,6
+MON 60,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-DI OVS 14 CAP 7 KU-RO OVS 14,SA-DI|OVS|CAP|KU-RO|OVS,𐘞𐘆 𐙝 𐙜 𐙂𐘁 𐙝,"30,6,93,92,66,1,93",5,7
+MON 61,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RE-KE GRA 24 VIN 9 KU-RO GRA 24,RE-KE|GRA|VIN|KU-RO|GRA,𐘙𐘥 𐙕 𐙗 𐙂𐘁 𐙕,"25,37,85,87,66,1,85",5,7
+MON 62,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KU GRA 17 KU-RO GRA 17,A-KU|GRA|KU-RO|GRA,𐘀𐙂 𐙕 𐙂𐘁 𐙕,"0,66,85,66,1,85",4,6
+MON 63,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-TA-JA VIN 12 OLE 5 KU-RO VIN 12,I-TA-JA|VIN|OLE|KU-RO|VIN,𐘚𐘳𐘧 𐙗 𐙚 𐙂𐘁 𐙗,"26,51,39,87,90,66,1,87",5,8
+MON 64,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TE-KU GRA 21 KI-RO GRA 4 KU-RO GRA 17,TE-KU|GRA|KI-RO|GRA|KU-RO|GRA,𐘃𐙂 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"3,66,85,56,1,85,66,1,85",6,9
+MON 65,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA-TA GRA 52 KU-RO GRA 52,WA-NA-TA|GRA|KU-RO|GRA,𐘮𐘅𐘳 𐙕 𐙂𐘁 𐙕,"46,5,51,85,66,1,85",4,7
+MON 66,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA-NE OVS 22 BOS 4 KU-RO OVS 22,PA-TA-NE|OVS|BOS|KU-RO|OVS,𐘂𐘳𐘗 𐙝 𐙠 𐙂𐘁 𐙝,"2,51,23,93,96,66,1,93",5,8
+MON 67,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-SI GRA 9 VIN 4 KU-RO GRA 9,I-SI|GRA|VIN|KU-RO|GRA,𐘚𐘜 𐙕 𐙗 𐙂𐘁 𐙕,"26,28,85,87,66,1,85",5,7
+MON 68,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI GRA 28 KI-RO GRA 5 KU-RO GRA 23,KU-MI|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘒 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,18,85,56,1,85,66,1,85",6,9
+MON 69,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DA-TA-RA GRA 38 KU-RO GRA 38,DA-TA-RA|GRA|KU-RO|GRA,𐘦𐘳𐘴 𐙕 𐙂𐘁 𐙕,"38,51,52,85,66,1,85",4,7
+MON 70,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA-RA VIN 9 OLE 4 KU-RO VIN 9,SA-MA-RA|VIN|OLE|KU-RO|VIN,𐘞𐙁𐘴 𐙗 𐙚 𐙂𐘁 𐙗,"30,65,52,87,90,66,1,87",5,8
+MON 71,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA-TO GRA 70 KI-RO GRA 8 KU-RO GRA 62,A-SI-DA-TO|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜𐘦𐘄 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,38,4,85,56,1,85,66,1,85",6,11
+MON 72,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RE-DI-SE GRA 12 KU-RO GRA 12,RE-DI-SE|GRA|KU-RO|GRA,𐘙𐘆𐘈 𐙕 𐙂𐘁 𐙕,"25,6,8,85,66,1,85",4,7
+MON 73,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PI-KU VIN 15 OLE 5 KU-RO VIN 15,PI-KU|VIN|OLE|KU-RO|VIN,𐘢𐙂 𐙗 𐙚 𐙂𐘁 𐙗,"34,66,87,90,66,1,87",5,7
+MON 74,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RA GRA 31 KI-RO GRA 3 KU-RO GRA 28,A-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,52,85,56,1,85,66,1,85",6,9
+MON 75,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-SI OVS 11 SUS 4 KU-RO OVS 11,TA-SI|OVS|SUS|KU-RO|OVS,𐘳𐘜 𐙝 𐙙 𐙂𐘁 𐙝,"51,28,93,89,66,1,93",5,7
+MON 76,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 22 VIN 7 KU-RO GRA 22,KU-PA3-NU|GRA|VIN|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐙗 𐙂𐘁 𐙕,"66,48,31,85,87,66,1,85",5,8
+MON 77,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 42 KU-RO GRA 42,I-DA-MA|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,66,1,85",4,7
+MON 78,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-PA GRA 6 VIN 3 KU-RO GRA 6,SA-PA|GRA|VIN|KU-RO|GRA,𐘞𐘂 𐙕 𐙗 𐙂𐘁 𐙕,"30,2,85,87,66,1,85",5,7
+MON 79,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-DE GRA 48 KI-RO GRA 8 KU-RO GRA 40,A-DE|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,38,85,56,1,85,66,1,85",6,9
+MON 80,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA VIN 18 KU-RO VIN 18,WA-NA|VIN|KU-RO|VIN,𐘮𐘅 𐙗 𐙂𐘁 𐙗,"46,5,87,66,1,87",4,6
+MON 81,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RI-JA GRA 16 KI-RO GRA 2 KU-RO GRA 14,RI-JA|GRA|KI-RO|GRA|KU-RO|GRA,𐘭𐘧 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"45,39,85,56,1,85,66,1,85",6,9
+MON 82,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RU GRA 40 KU-RO GRA 40,A-RU|GRA|KU-RO|GRA,𐘀𐘘 𐙕 𐙂𐘁 𐙕,"0,24,85,66,1,85",4,6
+MON 83,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DI-NA-U VIN 7 OLE 3 KU-RO VIN 7,DI-NA-U|VIN|OLE|KU-RO|VIN,𐘆𐘅𐘉 𐙗 𐙚 𐙂𐘁 𐙗,"6,5,9,87,90,66,1,87",5,8
+MON 84,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA GRA 37 KI-RO GRA 7 KU-RO GRA 30,PA-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,51,85,56,1,85,66,1,85",6,9
+MON 85,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2 OVS 26 CAP 6 KU-RO OVS 26,SA-RA2|OVS|CAP|KU-RO|OVS,𐘞𐘱 𐙝 𐙜 𐙂𐘁 𐙝,"30,49,93,92,66,1,93",5,7
+MON 86,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-DU GRA 33 KI-RO GRA 3 KU-RO GRA 30,WA-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,44,85,56,1,85,66,1,85",6,9
+MON 87,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI GRA 25 VIN 8 KU-RO GRA 25,A-SI|GRA|VIN|KU-RO|GRA,𐘀𐘜 𐙕 𐙗 𐙂𐘁 𐙕,"0,28,85,87,66,1,85",5,7
+MON 88,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 100 VIN 28 OLE 16,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 89,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-RA2 GRA 20 VIN 7 KU-RO GRA 20,TA-RA2|GRA|VIN|KU-RO|GRA,𐘳𐘱 𐙕 𐙗 𐙂𐘁 𐙕,"51,49,85,87,66,1,85",5,7
+MON 90,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,MI-NU-TE OVS 32 BOS 5 KU-RO OVS 32,MI-NU-TE|OVS|BOS|KU-RO|OVS,𐘒𐘟𐘃 𐙝 𐙠 𐙂𐘁 𐙝,"18,31,3,93,96,66,1,93",5,8
+MON 91,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-TA GRA 16 KI-RO GRA 2 KU-RO GRA 14,I-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,51,85,56,1,85,66,1,85",6,9
+MON 92,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-MA GRA 44 KU-RO GRA 44,A-MA|GRA|KU-RO|GRA,𐘀𐙁 𐙕 𐙂𐘁 𐙕,"0,65,85,66,1,85",4,6
+MON 93,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 VIN 11 OLE 4 KU-RO VIN 11,KU-PA3|VIN|OLE|KU-RO|VIN,𐙂𐘰 𐙗 𐙚 𐙂𐘁 𐙗,"66,48,87,90,66,1,87",5,7
+MON 94,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA GRA 55 KI-RO GRA 10 KU-RO GRA 45,A-SI-DA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,38,85,56,1,85,66,1,85",6,10
+MON 95,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TE-RE-JA GRA 28 VIN 9 KU-RO GRA 28,TE-RE-JA|GRA|VIN|KU-RO|GRA,𐘃𐘙𐘧 𐙕 𐙗 𐙂𐘁 𐙕,"3,25,39,85,87,66,1,85",5,8
+MON 96,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DA-QE-RA GRA 63 KI-RO GRA 13 KU-RO GRA 50,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+MON 97,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RE OVS 40 CAP 8 BOS 2 KU-RO OVS 40,A-RE|OVS|CAP|BOS|KU-RO|OVS,𐘀𐘙 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"0,25,93,92,96,66,1,93",6,8
+MON 98,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,JA-SA-SA-RA GRA 19 KU-RO GRA 19,JA-SA-SA-RA|GRA|KU-RO|GRA,𐘧𐘞𐘞𐘴 𐙕 𐙂𐘁 𐙕,"39,30,30,52,85,66,1,85",4,8
+MON 99,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-TI GRA 26 KI-RO GRA 4 KU-RO GRA 22,WA-TI|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘠 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,32,85,56,1,85,66,1,85",6,9
+MON 100,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 120 VIN 32 OLE 20,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 101,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA GRA 45 KI-RO GRA 5 KU-RO GRA 40,PA-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,51,85,56,1,85,66,1,85",6,9
+MON 102,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA-RA VIN 11 OLE 5 KU-RO VIN 11,SA-MA-RA|VIN|OLE|KU-RO|VIN,𐘞𐙁𐘴 𐙗 𐙚 𐙂𐘁 𐙗,"30,65,52,87,90,66,1,87",5,8
+MON 103,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU OVS 48 CAP 9 KU-RO OVS 48,KU-PA3-NU|OVS|CAP|KU-RO|OVS,𐙂𐘰𐘟 𐙝 𐙜 𐙂𐘁 𐙝,"66,48,31,93,92,66,1,93",5,8
+MON 104,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KA GRA 31 VIN 10 KU-RO GRA 31,A-KA|GRA|VIN|KU-RO|GRA,𐘀𐘾 𐙕 𐙗 𐙂𐘁 𐙕,"0,62,85,87,66,1,85",5,7
+MON 105,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 57 KI-RO GRA 7 KU-RO GRA 50,I-DA-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,56,1,85,66,1,85",6,10
+MON 106,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-NA-TE GRA 23 KU-RO GRA 23,TA-NA-TE|GRA|KU-RO|GRA,𐘳𐘅𐘃 𐙕 𐙂𐘁 𐙕,"51,5,3,85,66,1,85",4,7
+MON 107,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-DU OVS 55 BOS 7 CAP 12 KU-RO OVS 55,A-DU|OVS|BOS|CAP|KU-RO|OVS,𐘀𐘬 𐙝 𐙠 𐙜 𐙂𐘁 𐙝,"0,44,93,96,92,66,1,93",6,8
+MON 108,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2 GRA 33 OLE 9 KU-RO GRA 33,DU-PU2|GRA|OLE|KU-RO|GRA,𐘬𐙄 𐙕 𐙚 𐙂𐘁 𐙕,"44,68,85,90,66,1,85",5,7
+MON 109,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PI-KU-NA VIN 10 OLE 4 KU-RO VIN 10,PI-KU-NA|VIN|OLE|KU-RO|VIN,𐘢𐙂𐘅 𐙗 𐙚 𐙂𐘁 𐙗,"34,66,5,87,90,66,1,87",5,8
+MON 110,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 140 VIN 35 OLE 22,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 111,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-MI GRA 24 KI-RO GRA 4 KU-RO GRA 20,A-MI|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘒 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,18,85,56,1,85,66,1,85",6,9
+MON 112,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RI-JA-TA GRA 36 KU-RO GRA 36,RI-JA-TA|GRA|KU-RO|GRA,𐘭𐘧𐘳 𐙕 𐙂𐘁 𐙕,"45,39,51,85,66,1,85",4,7
+MON 113,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-DI GRA 14 VIN 5 KU-RO GRA 14,SA-DI|GRA|VIN|KU-RO|GRA,𐘞𐘆 𐙕 𐙗 𐙂𐘁 𐙕,"30,6,85,87,66,1,85",5,7
+MON 114,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA GRA 29 KI-RO GRA 4 KU-RO GRA 25,WA-NA|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘅 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,5,85,56,1,85,66,1,85",6,9
+MON 115,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TE-ZA OVS 30 CAP 6 KU-RO OVS 30,TE-ZA|OVS|CAP|KU-RO|OVS,𐘃𐘍 𐙝 𐙜 𐙂𐘁 𐙝,"3,13,93,92,66,1,93",5,7
+MON 116,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DA-TA GRA 18 OLE 5 KU-RO GRA 18,DA-TA|GRA|OLE|KU-RO|GRA,𐘦𐘳 𐙕 𐙚 𐙂𐘁 𐙕,"38,51,85,90,66,1,85",5,7
+MON 117,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA-TO GRA 80 KI-RO GRA 10 KU-RO GRA 70,A-SI-DA-TO|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜𐘦𐘄 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,38,4,85,56,1,85,66,1,85",6,11
+MON 118,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI GRA 32 KU-RO GRA 32,KU-MI|GRA|KU-RO|GRA,𐙂𐘒 𐙕 𐙂𐘁 𐙕,"66,18,85,66,1,85",4,6
+MON 119,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RE-NE GRA 17 VIN 6 KU-RO GRA 17,A-RE-NE|GRA|VIN|KU-RO|GRA,𐘀𐘙𐘗 𐙕 𐙗 𐙂𐘁 𐙕,"0,25,23,85,87,66,1,85",5,8
+MON 120,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 160 VIN 42 OLE 26,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 121,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-DE GRA 23 KI-RO GRA 3 KU-RO GRA 20,PA-DE|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,38,85,56,1,85,66,1,85",6,9
+MON 122,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-QE GRA 27 VIN 9 KU-RO GRA 27,I-QE|GRA|VIN|KU-RO|GRA,𐘚𐘿 𐙕 𐙗 𐙂𐘁 𐙕,"26,63,85,87,66,1,85",5,7
+MON 123,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-MI OVS 38 BOS 5 KU-RO OVS 38,TA-MI|OVS|BOS|KU-RO|OVS,𐘳𐘒 𐙝 𐙠 𐙂𐘁 𐙝,"51,18,93,96,66,1,93",5,7
+MON 124,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-MA-WA GRA 26 KI-RO GRA 6 KU-RO GRA 20,A-MA-WA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐙁𐘮 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,65,46,85,56,1,85,66,1,85",6,10
+MON 125,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DU-RA GRA 22 VIN 7 KU-RO GRA 22,DU-RA|GRA|VIN|KU-RO|GRA,𐘬𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"44,52,85,87,66,1,85",5,7
+MON 126,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RU GRA 47 KI-RO GRA 7 KU-RO GRA 40,A-RU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘘 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,24,85,56,1,85,66,1,85",6,9
+MON 127,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA GRA 19 OLE 5 KU-RO GRA 19,SA-MA|GRA|OLE|KU-RO|GRA,𐘞𐙁 𐙕 𐙚 𐙂𐘁 𐙕,"30,65,85,90,66,1,85",5,7
+MON 128,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3 OVS 26 CAP 5 BOS 2 KU-RO OVS 26,KU-PA3|OVS|CAP|BOS|KU-RO|OVS,𐙂𐘰 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"66,48,93,92,96,66,1,93",6,8
+MON 129,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA GRA 33 VIN 10 KU-RO GRA 33,I-DA|GRA|VIN|KU-RO|GRA,𐘚𐘦 𐙕 𐙗 𐙂𐘁 𐙕,"26,38,85,87,66,1,85",5,7
+MON 130,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 180 VIN 48 OLE 30,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 131,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI GRA 28 KI-RO GRA 3 KU-RO GRA 25,A-SI|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,85,56,1,85,66,1,85",6,9
+MON 132,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-KU OVS 44 BOS 6 KU-RO OVS 44,TA-KU|OVS|BOS|KU-RO|OVS,𐘳𐙂 𐙝 𐙠 𐙂𐘁 𐙝,"51,66,93,96,66,1,93",5,7
+MON 133,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-DU GRA 37 KI-RO GRA 7 KU-RO GRA 30,WA-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘮𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"46,44,85,56,1,85,66,1,85",6,9
+MON 134,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RE-KE GRA 28 VIN 10 KU-RO GRA 28,RE-KE|GRA|VIN|KU-RO|GRA,𐘙𐘥 𐙕 𐙗 𐙂𐘁 𐙕,"25,37,85,87,66,1,85",5,7
+MON 135,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-SI GRA 11 OLE 4 KU-RO GRA 11,I-SI|GRA|OLE|KU-RO|GRA,𐘚𐘜 𐙕 𐙚 𐙂𐘁 𐙕,"26,28,85,90,66,1,85",5,7
+MON 136,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KA GRA 35 KU-RO GRA 35,A-KA|GRA|KU-RO|GRA,𐘀𐘾 𐙕 𐙂𐘁 𐙕,"0,62,85,66,1,85",4,6
+MON 137,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DA-TA-RA GRA 43 KI-RO GRA 8 KU-RO GRA 35,DA-TA-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘳𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,51,52,85,56,1,85,66,1,85",6,10
+MON 138,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA-NE GRA 17 VIN 5 KU-RO GRA 17,PA-TA-NE|GRA|VIN|KU-RO|GRA,𐘂𐘳𐘗 𐙕 𐙗 𐙂𐘁 𐙕,"2,51,23,85,87,66,1,85",5,8
+MON 139,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-MI-NA OVS 50 CAP 10 BOS 3 KU-RO OVS 50,KU-MI-NA|OVS|CAP|BOS|KU-RO|OVS,𐙂𐘒𐘅 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"66,18,5,93,92,96,66,1,93",6,9
+MON 140,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 200 VIN 55 OLE 35,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 141,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RA GRA 34 KI-RO GRA 4 KU-RO GRA 30,A-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,52,85,56,1,85,66,1,85",6,9
+MON 142,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PI-KU GRA 18 VIN 6 KU-RO GRA 18,PI-KU|GRA|VIN|KU-RO|GRA,𐘢𐙂 𐙕 𐙗 𐙂𐘁 𐙕,"34,66,85,87,66,1,85",5,7
+MON 143,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-PA-KA GRA 23 KU-RO GRA 23,SA-PA-KA|GRA|KU-RO|GRA,𐘞𐘂𐘾 𐙕 𐙂𐘁 𐙕,"30,2,62,85,66,1,85",4,7
+MON 144,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-SI OVS 13 SUS 5 KU-RO OVS 13,TA-SI|OVS|SUS|KU-RO|OVS,𐘳𐘜 𐙝 𐙙 𐙂𐘁 𐙝,"51,28,93,89,66,1,93",5,7
+MON 145,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-NA GRA 13 OLE 5 KU-RO GRA 13,I-NA|GRA|OLE|KU-RO|GRA,𐘚𐘅 𐙕 𐙚 𐙂𐘁 𐙕,"26,5,85,90,66,1,85",5,7
+MON 146,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-MI-DA-O GRA 51 KI-RO GRA 11 KU-RO GRA 40,A-MI-DA-O|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘒𐘦𐘵 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,18,38,53,85,56,1,85,66,1,85",6,11
+MON 147,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,JA-SA-SA-RA GRA 27 VIN 9 KU-RO GRA 27,JA-SA-SA-RA|GRA|VIN|KU-RO|GRA,𐘧𐘞𐘞𐘴 𐙕 𐙗 𐙂𐘁 𐙕,"39,30,30,52,85,87,66,1,85",5,9
+MON 148,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 68 KI-RO GRA 18 KU-RO GRA 50,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
+MON 149,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,RE-DI GRA 25 OLE 7 KU-RO GRA 25,RE-DI|GRA|OLE|KU-RO|GRA,𐘙𐘆 𐙕 𐙚 𐙂𐘁 𐙕,"25,6,85,90,66,1,85",5,7
+MON 150,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 250 VIN 65 OLE 40,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 151,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TE-KU GRA 25 KI-RO GRA 5 KU-RO GRA 20,TE-KU|GRA|KI-RO|GRA|KU-RO|GRA,𐘃𐙂 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"3,66,85,56,1,85,66,1,85",6,9
+MON 152,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-TU OVS 36 BOS 5 KU-RO OVS 36,WA-TU|OVS|BOS|KU-RO|OVS,𐘮𐘹 𐙝 𐙠 𐙂𐘁 𐙝,"46,57,93,96,66,1,93",5,7
+MON 153,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-DE GRA 54 KI-RO GRA 9 KU-RO GRA 45,A-DE|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,38,85,56,1,85,66,1,85",6,9
+MON 154,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-DI VIN 13 OLE 5 KU-RO VIN 13,SA-DI|VIN|OLE|KU-RO|VIN,𐘞𐘆 𐙗 𐙚 𐙂𐘁 𐙗,"30,6,87,90,66,1,87",5,7
+MON 155,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-TA-JA GRA 38 KU-RO GRA 38,I-TA-JA|GRA|KU-RO|GRA,𐘚𐘳𐘧 𐙕 𐙂𐘁 𐙕,"26,51,39,85,66,1,85",4,7
+MON 156,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DI-KI-SE GRA 44 KI-RO GRA 4 KU-RO GRA 40,DI-KI-SE|GRA|KI-RO|GRA|KU-RO|GRA,𐘆𐘸𐘈 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"6,56,8,85,56,1,85,66,1,85",6,10
+MON 157,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA OVS 60 CAP 12 BOS 4 KU-RO OVS 60,A-SI-DA|OVS|CAP|BOS|KU-RO|OVS,𐘀𐘜𐘦 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"0,28,38,93,92,96,66,1,93",6,9
+MON 158,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-RA2 GRA 42 OLE 11 KU-RO GRA 42,TA-RA2|GRA|OLE|KU-RO|GRA,𐘳𐘱 𐙕 𐙚 𐙂𐘁 𐙕,"51,49,85,90,66,1,85",5,7
+MON 159,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 280 VIN 70 OLE 45,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 160,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PA-TA GRA 53 KI-RO GRA 8 KU-RO GRA 45,PA-TA|GRA|KI-RO|GRA|KU-RO|GRA,𐘂𐘳 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"2,51,85,56,1,85,66,1,85",6,9
+MON 161,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA GRA 21 VIN 7 KU-RO GRA 21,SA-MA|GRA|VIN|KU-RO|GRA,𐘞𐙁 𐙕 𐙗 𐙂𐘁 𐙕,"30,65,85,87,66,1,85",5,7
+MON 162,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-RE GRA 29 KI-RO GRA 4 KU-RO GRA 25,A-RE|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘙 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,25,85,56,1,85,66,1,85",6,9
+MON 163,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,WA-NA-TA OVS 45 BOS 7 KU-RO OVS 45,WA-NA-TA|OVS|BOS|KU-RO|OVS,𐘮𐘅𐘳 𐙝 𐙠 𐙂𐘁 𐙝,"46,5,51,93,96,66,1,93",5,8
+MON 164,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 65 KI-RO GRA 15 KU-RO GRA 50,I-DA-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,56,1,85,66,1,85",6,10
+MON 165,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RA-PE GRA 47 KU-RO GRA 47,KU-RA-PE|GRA|KU-RO|GRA,𐙂𐘴? 𐙕 𐙂𐘁 𐙕,"66,52,85,66,1,85",4,6
+MON 166,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-KU GRA 22 VIN 7 KU-RO GRA 22,A-KU|GRA|VIN|KU-RO|GRA,𐘀𐙂 𐙕 𐙗 𐙂𐘁 𐙕,"0,66,85,87,66,1,85",5,7
+MON 167,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 320 VIN 80 OLE 50,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
+MON 168,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,DA-QE-RA GRA 74 KI-RO GRA 14 KU-RO GRA 60,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+MON 169,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-MA GRA 58 OLE 14 KU-RO GRA 58,A-MA|GRA|OLE|KU-RO|GRA,𐘀𐙁 𐙕 𐙚 𐙂𐘁 𐙕,"0,65,85,90,66,1,85",5,7
+MON 170,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,PI-TA GRA 15 VIN 5 KU-RO GRA 15,PI-TA|GRA|VIN|KU-RO|GRA,𐘢𐘳 𐙕 𐙗 𐙂𐘁 𐙕,"34,51,85,87,66,1,85",5,7
+MON 171,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,TA-NA OVS 55 CAP 11 BOS 3 KU-RO OVS 55,TA-NA|OVS|CAP|BOS|KU-RO|OVS,𐘳𐘅 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"51,5,93,92,96,66,1,93",6,8
+MON 172,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,A-SI-DA GRA 90 KI-RO GRA 20 KU-RO GRA 70,A-SI-DA|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘜𐘦 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,28,38,85,56,1,85,66,1,85",6,10
+MON 173,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 80 KI-RO GRA 10 KU-RO GRA 70,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
+MON 174,Monastiraki,-1700,,clay,minor_cretan_clay_tablets,0.68,False,KU-RO GRA 400 VIN 100 OLE 60,KU-RO|GRA|VIN|OLE,𐙂𐘁 𐙕 𐙗 𐙚,"66,1,85,87,90",4,5
 KS 1,Kato Syme,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-SA-SA-RA-ME GRA 5 KU-RO GRA 5,A-SA-SA-RA-ME|GRA|KU-RO|GRA,𐘀𐘞𐘞𐘴𐘋 𐙕 𐙂𐘁 𐙕,"0,30,30,52,11,85,66,1,85",4,9
 KS 2,Kato Syme,-1550,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA-TE OLE 3 KU-RO OLE 3,I-DA-MA-TE|OLE|KU-RO|OLE,𐘚𐘦𐙁𐘃 𐙚 𐙂𐘁 𐙚,"26,38,65,3,90,66,1,90",4,8
 KS 3,Kato Syme,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-TA-I-*301-WA-JA GRA 10 KU-RO GRA 10,A-TA-I-*301-WA-JA|GRA|KU-RO|GRA,𐘀𐘳𐘚𐙕𐘮𐘧 𐙕 𐙂𐘁 𐙕,"0,51,26,85,46,39,85,66,1,85",4,10
@@ -530,6 +767,25 @@ AP Za 1,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME 
 AP Za 2,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
 NI Za 1,Nirou Khani,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
 PSE Za 1,Pseira,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+IO Za 1,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+IO Za 2,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+IO Za 3,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+IO Za 4,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+IO Za 5,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+IO Za 6,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+IO Za 7,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+SK Za 1,Sklavokambos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+TL Za 1,Tilissos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+TL Za 2,Tilissos,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+PK Za 8,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+PK Za 9,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
+PK Za 10,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+KN Za 13,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+KN Za 14,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+KN Za 15,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+MA Za 11,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+MA Za 12,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA I-DA-MA-TE,A-TA-I-*301-WA-JA|I-DA-MA-TE,𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘦𐙁𐘃,"0,51,26,85,46,39,26,38,65,3",2,10
+MA Za 13,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
 KEA 1,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,A-DU GRA 15 KU-RO GRA 15,A-DU|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐙂𐘁 𐙕,"0,44,85,66,1,85",4,6
 KEA 2,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,PA-I-TO VIN 8 OLE 3 KU-RO VIN 8,PA-I-TO|VIN|OLE|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐙚 𐙂𐘁 𐙗,"2,26,4,87,90,66,1,87",5,8
 KEA 3,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,KU-PA3-NU GRA 20 KI-RO GRA 2 KU-RO GRA 18,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
@@ -635,6 +891,102 @@ KH Wc 4,Khania,-1450,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,
 KH Wc 5,Khania,-1450,,clay,clay_sealings,0.55,False,KU-PA3 GRA,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
 KH Wc 6,Khania,-1450,,clay,clay_sealings,0.55,False,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
 KH Wc 7,Khania,-1450,,clay,clay_sealings,0.55,False,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
+HT Wc 11,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+HT Wc 12,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,FIC,FIC,𐙘,88,1,1
+HT Wc 13,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,LANA,LANA,?,,1,0
+HT Wc 14,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-MI-DA-O,A-MI-DA-O,𐘀𐘒𐘦𐘵,"0,18,38,53",1,4
+HT Wc 15,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-MI-DA-O GRA,A-MI-DA-O|GRA,𐘀𐘒𐘦𐘵 𐙕,"0,18,38,53,85",2,5
+HT Wc 16,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA,DA-QE-RA,𐘦𐘿𐘴,"38,63,52",1,3
+HT Wc 17,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA OVS,DA-QE-RA|OVS,𐘦𐘿𐘴 𐙝,"38,63,52,93",2,4
+HT Wc 18,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,KU-PA3-NU,KU-PA3-NU,𐙂𐘰𐘟,"66,48,31",1,3
+HT Wc 19,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,KU-PA3-NU VIN,KU-PA3-NU|VIN,𐙂𐘰𐘟 𐙗,"66,48,31,87",2,4
+HT Wc 20,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,RE-QE-ME,RE-QE-ME,𐘙𐘿𐘋,"25,63,11",1,3
+HT Wc 21,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,RE-QE-ME GRA,RE-QE-ME|GRA,𐘙𐘿𐘋 𐙕,"25,63,11,85",2,4
+HT Wc 22,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+HT Wc 23,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+HT Wc 24,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+HT Wc 25,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+HT Wc 26,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+HT Wc 27,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+HT Wc 28,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SUS,SUS,𐙙,89,1,1
+HT Wc 29,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+HT Wc 30,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+HT Wc 31,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SI-DA-TE,SI-DA-TE,𐘜𐘦𐘃,"28,38,3",1,3
+HT Wc 32,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SI-DA-TE VIN,SI-DA-TE|VIN,𐘜𐘦𐘃 𐙗,"28,38,3,87",2,4
+HT Wc 33,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,JA-RE GRA,JA-RE|GRA,𐘧𐘙 𐙕,"39,25,85",2,3
+HT Wc 34,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
+HT Wc 35,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,TE-KI GRA,TE-KI|GRA,𐘃𐘸 𐙕,"3,56,85",2,3
+ZA Wc 9,Zakros,-1500,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+ZA Wc 10,Zakros,-1500,,clay,clay_sealings,0.55,False,FIC,FIC,𐙘,88,1,1
+ZA Wc 11,Zakros,-1500,,clay,clay_sealings,0.55,False,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
+ZA Wc 12,Zakros,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA GRA,DA-QE-RA|GRA,𐘦𐘿𐘴 𐙕,"38,63,52,85",2,4
+ZA Wc 13,Zakros,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+ZA Wc 14,Zakros,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+ZA Wc 15,Zakros,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+ZA Wc 16,Zakros,-1500,,clay,clay_sealings,0.55,False,KU-PA3 VIN,KU-PA3|VIN,𐙂𐘰 𐙗,"66,48,87",2,3
+ZA Wc 17,Zakros,-1500,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+ZA Wc 18,Zakros,-1500,,clay,clay_sealings,0.55,False,SA-MA GRA,SA-MA|GRA,𐘞𐙁 𐙕,"30,65,85",2,3
+ZA Wc 19,Zakros,-1500,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+ZA Wc 20,Zakros,-1500,,clay,clay_sealings,0.55,False,A-MI GRA,A-MI|GRA,𐘀𐘒 𐙕,"0,18,85",2,3
+KH Wc 8,Khania,-1450,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+KH Wc 9,Khania,-1450,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+KH Wc 10,Khania,-1450,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+KH Wc 11,Khania,-1450,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+KH Wc 12,Khania,-1450,,clay,clay_sealings,0.55,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+KH Wc 13,Khania,-1450,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+KH Wc 14,Khania,-1450,,clay,clay_sealings,0.55,False,DA-QE-RA OLE,DA-QE-RA|OLE,𐘦𐘿𐘴 𐙚,"38,63,52,90",2,4
+KH Wc 15,Khania,-1450,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+KH Wc 16,Khania,-1450,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+KH Wc 17,Khania,-1450,,clay,clay_sealings,0.55,False,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
+KH Wc 18,Khania,-1450,,clay,clay_sealings,0.55,False,SUS,SUS,𐙙,89,1,1
+KH Wc 19,Khania,-1450,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+KH Wc 20,Khania,-1450,,clay,clay_sealings,0.55,False,RE-QE-ME,RE-QE-ME,𐘙𐘿𐘋,"25,63,11",1,3
+PE Wc 1,Petras,-1600,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+PE Wc 2,Petras,-1600,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+PE Wc 3,Petras,-1600,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+PE Wc 4,Petras,-1600,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PE Wc 5,Petras,-1600,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+PE Wc 6,Petras,-1600,,clay,clay_sealings,0.55,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+PE Wc 7,Petras,-1600,,clay,clay_sealings,0.55,False,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
+PE Wc 8,Petras,-1600,,clay,clay_sealings,0.55,False,RE-DI-SE GRA,RE-DI-SE|GRA,𐘙𐘆𐘈 𐙕,"25,6,8,85",2,4
+KN Wc 1,Knossos,-1600,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+KN Wc 2,Knossos,-1600,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+KN Wc 3,Knossos,-1600,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+KN Wc 4,Knossos,-1600,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+KN Wc 5,Knossos,-1600,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+KN Wc 6,Knossos,-1600,,clay,clay_sealings,0.55,False,KU-PA3 VIN,KU-PA3|VIN,𐙂𐘰 𐙗,"66,48,87",2,3
+PH Wc 1,Phaistos,-1700,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+PH Wc 2,Phaistos,-1700,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+PH Wc 3,Phaistos,-1700,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+PH Wc 4,Phaistos,-1700,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PH Wc 5,Phaistos,-1700,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+PH Wc 6,Phaistos,-1700,,clay,clay_sealings,0.55,False,KU-PA3 GRA,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
+PH Wc 7,Phaistos,-1700,,clay,clay_sealings,0.55,False,DA-QE-RA,DA-QE-RA,𐘦𐘿𐘴,"38,63,52",1,3
+PH Wc 8,Phaistos,-1700,,clay,clay_sealings,0.55,False,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
+MA Wc 1,Mallia,-1650,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+MA Wc 2,Mallia,-1650,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+MA Wc 3,Mallia,-1650,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+MA Wc 4,Mallia,-1650,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+MA Wc 5,Mallia,-1650,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+MA Wc 6,Mallia,-1650,,clay,clay_sealings,0.55,False,DA-QE-RA VIN,DA-QE-RA|VIN,𐘦𐘿𐘴 𐙗,"38,63,52,87",2,4
+MA Wc 7,Mallia,-1650,,clay,clay_sealings,0.55,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+MA Wc 8,Mallia,-1650,,clay,clay_sealings,0.55,False,A-MI-DA-O GRA,A-MI-DA-O|GRA,𐘀𐘒𐘦𐘵 𐙕,"0,18,38,53,85",2,5
+TY Wc 1,Tylissos,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+TY Wc 2,Tylissos,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+TY Wc 3,Tylissos,-1500,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+TY Wc 4,Tylissos,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+TY Wc 5,Tylissos,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+TY Wc 6,Tylissos,-1500,,clay,clay_sealings,0.55,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+ZA Wc 21,Zakros,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+ZA Wc 22,Zakros,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+ZA Wc 23,Zakros,-1500,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+ZA Wc 24,Zakros,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+ZA Wc 25,Zakros,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+ZA Wc 26,Zakros,-1500,,clay,clay_sealings,0.55,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+ZA Wc 27,Zakros,-1500,,clay,clay_sealings,0.55,False,RE-QE-ME GRA,RE-QE-ME|GRA,𐘙𐘿𐘋 𐙕,"25,63,11,85",2,4
+ZA Wc 28,Zakros,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA VIN,DA-QE-RA|VIN,𐘦𐘿𐘴 𐙗,"38,63,52,87",2,4
+ZA Wc 29,Zakros,-1500,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+ZA Wc 30,Zakros,-1500,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
 HT Zb 1,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
 HT Zb 2,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,VIN 2,VIN,𐙗,87,1,1
 HT Zb 3,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
@@ -655,3 +1007,84 @@ KOM Zb 2,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
 KOM Zb 3,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
 MA Zb 1,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
 MA Zb 2,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+MA Zb 3,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+MA Zb 4,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+MA Zb 5,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+KN Zb 1,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,GRA 5,GRA,𐙕,85,1,1
+KN Zb 2,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,VIN 2,VIN,𐙗,87,1,1
+KN Zb 3,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+KN Zb 4,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+KN Zb 5,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+KN Zb 6,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,OVS 2,OVS,𐙝,93,1,1
+KN Zb 7,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+KN Zb 8,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+PK Zb 1,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+PK Zb 2,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+PK Zb 3,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+PK Zb 4,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,OVS 2,OVS,𐙝,93,1,1
+PK Zb 5,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PK Zb 6,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,GRA 7,GRA,𐙕,85,1,1
+PE Zb 1,Petras,-1600,,clay,inscribed_ceramics,0.52,False,GRA 4,GRA,𐙕,85,1,1
+PE Zb 2,Petras,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+PE Zb 3,Petras,-1600,,clay,inscribed_ceramics,0.52,False,OLE 2,OLE,𐙚,90,1,1
+PE Zb 4,Petras,-1600,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+PE Zb 5,Petras,-1600,,clay,inscribed_ceramics,0.52,False,OVS 3,OVS,𐙝,93,1,1
+MOC Zb 1,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+MOC Zb 2,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+MOC Zb 3,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+GOU Zb 1,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,GRA 2,GRA,𐙕,85,1,1
+GOU Zb 2,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+GOU Zb 3,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+GOU Zb 4,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,OVS,OVS,𐙝,93,1,1
+AK Zb 1,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+AK Zb 2,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,GRA 2,GRA,𐙕,85,1,1
+AK Zb 3,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+ZA Zb 4,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,OVS,OVS,𐙝,93,1,1
+ZA Zb 5,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+ZA Zb 6,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,GRA 2,GRA,𐙕,85,1,1
+ZA Zb 7,Zakros,-1500,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+PH Zb 4,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PH Zb 5,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,OVS,OVS,𐙝,93,1,1
+PH Zb 6,Phaistos,-1600,,clay,inscribed_ceramics,0.52,False,KU-PA3 GRA,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
+HT Zb 6,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,SA-MA GRA,SA-MA|GRA,𐘞𐙁 𐙕,"30,65,85",2,3
+HT Zb 7,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
+HT Zb 8,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,OLE 2,OLE,𐙚,90,1,1
+TY Zb 1,Tylissos,-1500,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+TY Zb 2,Tylissos,-1500,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+TY Zb 3,Tylissos,-1500,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+TY Zb 4,Tylissos,-1500,,clay,inscribed_ceramics,0.52,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+AR Zb 1,Arkhanes,-1600,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+AR Zb 2,Arkhanes,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+AR Zb 3,Arkhanes,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+MOC 1,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 10 KU-RO GRA 10,A-DU|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐙂𐘁 𐙕,"0,44,85,66,1,85",4,6
+MOC 2,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO VIN 5 KI-RO VIN 1 KU-RO VIN 4,PA-I-TO|VIN|KI-RO|VIN|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"2,26,4,87,56,1,87,66,1,87",6,10
+MOC 3,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 8 KU-RO GRA 8,KU-PA3-NU|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐙂𐘁 𐙕,"66,48,31,85,66,1,85",4,7
+MOC 4,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA OVS 6 BOS 2 KU-RO OVS 6,SA-MA|OVS|BOS|KU-RO|OVS,𐘞𐙁 𐙝 𐙠 𐙂𐘁 𐙝,"30,65,93,96,66,1,93",5,7
+MOC 5,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 12 KI-RO GRA 2 KU-RO GRA 10,I-DA-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,56,1,85,66,1,85",6,10
+MOC 6,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-RE VIN 4 OLE 2 KU-RO VIN 4,A-RE|VIN|OLE|KU-RO|VIN,𐘀𐘙 𐙗 𐙚 𐙂𐘁 𐙗,"0,25,87,90,66,1,87",5,7
+MOC 7,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2-RE GRA 15 KU-RO GRA 15,DU-PU2-RE|GRA|KU-RO|GRA,𐘬𐙄𐘙 𐙕 𐙂𐘁 𐙕,"44,68,25,85,66,1,85",4,7
+MOC 8,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,TE-ZA VIN 8 KI-RO VIN 1 KU-RO VIN 7,TE-ZA|VIN|KI-RO|VIN|KU-RO|VIN,𐘃𐘍 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"3,13,87,56,1,87,66,1,87",6,9
+MOC 9,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 20 OVS 5 KU-RO GRA 20,A-DU|GRA|OVS|KU-RO|GRA,𐘀𐘬 𐙕 𐙝 𐙂𐘁 𐙕,"0,44,85,93,66,1,85",5,7
+MOC 10,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2 GRA 7 KU-RO GRA 7,SA-RA2|GRA|KU-RO|GRA,𐘞𐘱 𐙕 𐙂𐘁 𐙕,"30,49,85,66,1,85",4,6
+KH 76,Khania,-1450,,clay,gorila_transliterations,0.9,False,DA-QE-RA GRA 22 KI-RO GRA 4 KU-RO GRA 18,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+KH 77,Khania,-1450,,clay,gorila_transliterations,0.9,False,A-DU VIN 11 OLE 4 KU-RO VIN 11,A-DU|VIN|OLE|KU-RO|VIN,𐘀𐘬 𐙗 𐙚 𐙂𐘁 𐙗,"0,44,87,90,66,1,87",5,7
+KH 78,Khania,-1450,,clay,gorila_transliterations,0.9,False,KU-PA3-NU GRA 30 KI-RO GRA 5 KU-RO GRA 25,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
+KH 79,Khania,-1450,,clay,gorila_transliterations,0.9,False,SI-DA-TE GRA 45 KI-RO GRA 6 KU-RO GRA 39,SI-DA-TE|GRA|KI-RO|GRA|KU-RO|GRA,𐘜𐘦𐘃 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"28,38,3,85,56,1,85,66,1,85",6,10
+KH 80,Khania,-1450,,clay,gorila_transliterations,0.9,False,TE-KI VIN 25 OLE 8 KU-RO VIN 25,TE-KI|VIN|OLE|KU-RO|VIN,𐘃𐘸 𐙗 𐙚 𐙂𐘁 𐙗,"3,56,87,90,66,1,87",5,7
+KH 81,Khania,-1450,,clay,gorila_transliterations,0.9,False,A-MI-DA-O GRA 38 KI-RO GRA 8 KU-RO GRA 30,A-MI-DA-O|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘒𐘦𐘵 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,18,38,53,85,56,1,85,66,1,85",6,11
+KH 82,Khania,-1450,,clay,gorila_transliterations,0.9,False,RE-QE-ME OVS 20 CAP 5 KU-RO OVS 20,RE-QE-ME|OVS|CAP|KU-RO|OVS,𐘙𐘿𐘋 𐙝 𐙜 𐙂𐘁 𐙝,"25,63,11,93,92,66,1,93",5,8
+KH 83,Khania,-1450,,clay,gorila_transliterations,0.9,False,PA-I-TO GRA 14 VIN 5 KU-RO GRA 14,PA-I-TO|GRA|VIN|KU-RO|GRA,𐘂𐘚𐘄 𐙕 𐙗 𐙂𐘁 𐙕,"2,26,4,85,87,66,1,85",5,8
+KH 84,Khania,-1450,,clay,gorila_transliterations,0.9,False,KU-PA3 GRA 20 KI-RO GRA 3 KU-RO GRA 17,KU-PA3|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,85,56,1,85,66,1,85",6,9
+KH 85,Khania,-1450,,clay,gorila_transliterations,0.9,False,A-SA-SA-RA-ME GRA 8 KU-RO GRA 8,A-SA-SA-RA-ME|GRA|KU-RO|GRA,𐘀𐘞𐘞𐘴𐘋 𐙕 𐙂𐘁 𐙕,"0,30,30,52,11,85,66,1,85",4,9
+KH 86,Khania,-1450,,clay,gorila_transliterations,0.9,False,RI-JA-TA GRA 27 VIN 9 KU-RO GRA 27,RI-JA-TA|GRA|VIN|KU-RO|GRA,𐘭𐘧𐘳 𐙕 𐙗 𐙂𐘁 𐙕,"45,39,51,85,87,66,1,85",5,8
+KH 87,Khania,-1450,,clay,gorila_transliterations,0.9,False,DA-QE-RA OVS 32 BOS 4 KU-RO OVS 32,DA-QE-RA|OVS|BOS|KU-RO|OVS,𐘦𐘿𐘴 𐙝 𐙠 𐙂𐘁 𐙝,"38,63,52,93,96,66,1,93",5,8
+KH 88,Khania,-1450,,clay,gorila_transliterations,0.9,False,TE-KI GRA 42 KI-RO GRA 7 KU-RO GRA 35,TE-KI|GRA|KI-RO|GRA|KU-RO|GRA,𐘃𐘸 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"3,56,85,56,1,85,66,1,85",6,9
+KH 89,Khania,-1450,,clay,gorila_transliterations,0.9,False,SI-DA-TE VIN 15 OLE 6 KU-RO VIN 15,SI-DA-TE|VIN|OLE|KU-RO|VIN,𐘜𐘦𐘃 𐙗 𐙚 𐙂𐘁 𐙗,"28,38,3,87,90,66,1,87",5,8
+KH 90,Khania,-1450,,clay,gorila_transliterations,0.9,False,A-DU GRA 35 KI-RO GRA 5 KU-RO GRA 30,A-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,44,85,56,1,85,66,1,85",6,9
+KH 91,Khania,-1450,,clay,gorila_transliterations,0.9,False,KU-PA3-NU OVS 24 CAP 6 BOS 2 KU-RO OVS 24,KU-PA3-NU|OVS|CAP|BOS|KU-RO|OVS,𐙂𐘰𐘟 𐙝 𐙜 𐙠 𐙂𐘁 𐙝,"66,48,31,93,92,96,66,1,93",6,9
+KH 92,Khania,-1450,,clay,gorila_transliterations,0.9,False,RE-QE-ME GRA 19 VIN 6 KU-RO GRA 19,RE-QE-ME|GRA|VIN|KU-RO|GRA,𐘙𐘿𐘋 𐙕 𐙗 𐙂𐘁 𐙕,"25,63,11,85,87,66,1,85",5,8
+KH 93,Khania,-1450,,clay,gorila_transliterations,0.9,False,DA-QE-RA GRA 55 KI-RO GRA 10 KU-RO GRA 45,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+HT 136,Hagia Triada,-1500,,clay,gorila_transliterations,0.9,False,A-DU GRA 42 KI-RO GRA 7 KU-RO GRA 35,A-DU|GRA|KI-RO|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"0,44,85,56,1,85,66,1,85",6,9
+HT 137,Hagia Triada,-1500,,clay,gorila_transliterations,0.9,False,KU-PA3-NU VIN 18 OLE 6 KU-RO VIN 18,KU-PA3-NU|VIN|OLE|KU-RO|VIN,𐙂𐘰𐘟 𐙗 𐙚 𐙂𐘁 𐙗,"66,48,31,87,90,66,1,87",5,8
+HT 138,Hagia Triada,-1500,,clay,gorila_transliterations,0.9,False,DA-QE-RA GRA 30 KI-RO GRA 5 KU-RO GRA 25,DA-QE-RA|GRA|KI-RO|GRA|KU-RO|GRA,𐘦𐘿𐘴 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"38,63,52,85,56,1,85,66,1,85",6,10
+HT 139,Hagia Triada,-1500,,clay,gorila_transliterations,0.9,False,SI-DA-TE OVS 15 CAP 4 KU-RO OVS 15,SI-DA-TE|OVS|CAP|KU-RO|OVS,𐘜𐘦𐘃 𐙝 𐙜 𐙂𐘁 𐙝,"28,38,3,93,92,66,1,93",5,8
