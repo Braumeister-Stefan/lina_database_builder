@@ -2,7 +2,7 @@
 
 This project creates a structured database of **Linear A** artefacts from Bronze Age Crete.
 
-The database is at `data/lina_database_clean.csv` and contains **1,089 tablets** drawn from **341 Unicode signs** — covering **~72.6 %** of all known Linear A inscriptions.
+The database is at `data/lina_database_clean.csv` and contains **1,089 tablets** based on **341 unique signs** — covering **~72.6 %** of all known Linear A inscriptions.
 
 # Devnote 12/4
 
