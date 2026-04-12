@@ -785,20 +785,20 @@ def _tbl_catalog_overview(catalog: list) -> Tuple[str, str, str]:
     total = len(catalog)
     headers = ["Category", "Sign Count", "% of Total", "Description"]
     desc = {
-        "syllabic":         "Phonetic syllabograms (AB series) used to spell words",
-        "logographic":      "Logograms / ideograms (A series) denoting objects",
-        "numeric_fraction": "Fractional / numeric notation signs",
+        "syllabic":         "Phonetic (AB-series) — spell words/names",
+        "logographic":      "Ideograms (A-series) — commodities & objects",
+        "numeric_fraction": "Numeric & fractional notation",
         "other":            "Unclassified or variant signs",
     }
     rows = []
     for cat, cnt in sorted(cats.items(), key=lambda x: -x[1]):
         rows.append([cat.replace("_", " ").title(), cnt, f"{100*cnt/total:.0f}%",
                      desc.get(cat, "")])
-    rows.append(["TOTAL", total, "100%", "Unicode block U+10600–U+1077F"])
+    rows.append(["TOTAL", total, "100%", "Unicode Linear A block U+10600–U+1077F"])
     return _save_table_png(
         "Sign Catalog", "Linear A – Sign Catalog Overview",
         headers, rows, "tbl_01_catalog_overview.png",
-        col_widths=[0.18, 0.12, 0.12, 0.58], fig_h=3.5,
+        col_widths=[0.20, 0.13, 0.12, 0.55], fig_h=3.5,
     )
 
 
@@ -914,9 +914,7 @@ def _fig_sign_group_frequencies(df: pd.DataFrame) -> Tuple[str, str, str]:
     ax.set_yticklabels(labels, fontsize=10)
     ax.invert_yaxis()
     ax.set_xlabel("Occurrences in corpus", fontsize=11)
-    ax.set_title("Top 15 Sign Groups by Frequency\n"
-                 "Colour: ■ Accounting term  ■ Commodity logogram  "
-                 "■ Libation formula  ■ Syllabic word",
+    ax.set_title("Top 15 Sign Groups by Frequency",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.set_xlim(0, max(counts) * 1.18)
 
@@ -944,7 +942,6 @@ def _tbl_corpus_overview(df: pd.DataFrame) -> Tuple[str, str, str]:
     total = len(df)
     n_sites = df["site"].nunique()
     dated = int(df["date_est"].notna().sum())
-    lo, hi = int(abs(df["date_est"].min())), int(abs(df["date_est"].max()))
     clay  = int((df["material"] == "clay").sum())
     stone = int((df["material"] == "stone").sum())
     all_g: List[str] = []
@@ -953,26 +950,37 @@ def _tbl_corpus_overview(df: pd.DataFrame) -> Tuple[str, str, str]:
     gf = Counter(all_g)
     sc = df["sign_count"]
 
+    # Unique individual signs (tokens within groups)
+    total_signs = int(sc.sum())
+    all_sign_tokens: List[str] = []
+    for sg in df["sign_groups"].dropna():
+        for group in sg.split("|"):
+            all_sign_tokens.extend(t for t in group.split("-") if t)
+    unique_signs = len(set(all_sign_tokens))
+
     headers = ["Metric", "Value"]
     rows = [
-        ["Total tablets",               str(total)],
-        ["Find-sites",                  str(n_sites)],
-        ["Dated tablets",               f"{dated} (all tablets have estimates)"],
-        ["Date range (approx. BCE)",    f"{hi} – {lo}"],
-        ["Clay tablets",                str(clay)],
-        ["Stone tablets / vessels",     str(stone)],
-        ["Total sign groups in corpus", str(len(all_g))],
-        ["Unique sign groups",          str(len(gf))],
-        ["Signs per tablet (mean)",     f"{sc.mean():.1f}"],
-        ["Signs per tablet (range)",    f"{int(sc.min())} – {int(sc.max())}"],
-        ["Most frequent sign group",    f"{gf.most_common(1)[0][0]}  "
-                                        f"({gf.most_common(1)[0][1]} occurrences, "
-                                        f"{100*gf.most_common(1)[0][1]/len(all_g):.0f}%)"],
+        ["Total tablets",                    str(total)],
+        ["Find-sites",                       str(n_sites)],
+        ["Dated tablets",                    f"{dated} (all tablets have estimates)"],
+        ["Date range (approx.)",             f"1700 – 1300 BCE"],
+        ["Clay tablets",                     str(clay)],
+        ["Stone tablets / vessels",          str(stone)],
+        ["Total signs in corpus",            str(total_signs)],
+        ["Unique signs",                     str(unique_signs)],
+        ["Total sign groups in corpus",      str(len(all_g))],
+        ["Unique sign groups",               str(len(gf))],
+        ["Signs per tablet (mean)",          f"{sc.mean():.1f}"],
+        ["Sign groups per tablet (mean)",    f"{df['sign_group_count'].mean():.1f}"],
+        ["Signs per tablet (range)",         f"{int(sc.min())} – {int(sc.max())}"],
+        ["Most frequent sign group",         f"{gf.most_common(1)[0][0]}  "
+                                             f"({gf.most_common(1)[0][1]} occurrences, "
+                                             f"{100*gf.most_common(1)[0][1]/len(all_g):.0f}%)"],
     ]
     return _save_table_png(
         "Corpus Stats", "Linear A Corpus – Overview Statistics",
         headers, rows, "tbl_03_corpus_overview.png",
-        col_widths=[0.38, 0.62], fig_h=5.0,
+        col_widths=[0.38, 0.62], fig_h=6.5,
     )
 
 
@@ -1061,7 +1069,6 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
             xytext=(row["lon"] + ox, row["lat"] + oy),
             fontsize=8.5, color="#2C3E50", zorder=6,
             ha=ha, va=va,
-            bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.75),
         )
 
     # Island / sea labels
@@ -1077,9 +1084,7 @@ def _fig_site_map(df: pd.DataFrame) -> Tuple[str, str, str]:
 
     ax.set_xlabel("Longitude (°E)", fontsize=10)
     ax.set_ylabel("Latitude (°N)", fontsize=10)
-    ax.set_title("Linear A Tablet Find-Sites – Crete and Aegean\n"
-                 "Circle size proportional to tablet count.  "
-                 "Real coastlines from Natural Earth 50 m.",
+    ax.set_title("Linear A Tablet Find-Sites – Crete and Aegean",
                  fontsize=_TITLE_FONTSIZE, fontweight="bold")
     ax.grid(linestyle="--", alpha=0.25, zorder=1)
 
@@ -1179,8 +1184,6 @@ def _fig_signs_per_tablet(df: pd.DataFrame) -> Tuple[str, str, str]:
 
     ax.axvline(sc.mean(),   color="#C44E52", linestyle="--",
                linewidth=1.5, label=f"Mean = {sc.mean():.1f}")
-    ax.axvline(sc.median(), color="#55A868", linestyle=":",
-               linewidth=1.5, label=f"Median = {sc.median():.1f}")
 
     ax.set_xlabel("Number of recognised signs per tablet", fontsize=11)
     ax.set_ylabel("Number of tablets", fontsize=11)
@@ -1206,10 +1209,11 @@ def _fig_corpus_coverage(df: pd.DataFrame) -> Tuple[str, str, str]:
     # Build per-site counts
     db_counts = df["site"].value_counts().to_dict()
 
+    # Sort ascending so matplotlib places largest bar at the top (highest y index)
     sites_ordered = sorted(
         KNOWN_SITE_TOTALS.keys(),
         key=lambda s: KNOWN_SITE_TOTALS[s],
-        reverse=True,
+        reverse=False,
     )
 
     labels: List[str] = []
@@ -1223,7 +1227,7 @@ def _fig_corpus_coverage(df: pd.DataFrame) -> Tuple[str, str, str]:
         in_db.append(in_db_n)
         remain.append(max(0, known - in_db_n))
 
-    # Summary row: totals
+    # Summary row: totals (appended last so it sits at the very top)
     total_in_db   = len(df)
     total_remain  = max(0, TOTAL_KNOWN_INSCRIPTIONS - total_in_db)
     labels.append("TOTAL CORPUS")
@@ -1251,8 +1255,7 @@ def _fig_corpus_coverage(df: pd.DataFrame) -> Tuple[str, str, str]:
         ax.text(total + total * 0.01, i, f"{n} / {total}",
                 va="center", ha="left", fontsize=8, color="#444444")
 
-    # Highlight the TOTAL row
-    ax.get_children()  # force render order
+    # Highlight the TOTAL row with a dashed separator just below it
     ax.axhline(len(labels) - 1.5, color="#888888", linewidth=0.8, linestyle="--")
 
     ax.set_yticks(y)
@@ -1343,8 +1346,7 @@ def _fig_quality_confidence() -> Tuple[str, str, str]:
         f"Linear A Source Quality Confidence Scores\n"
         f"Inclusion threshold QCS ≥ {QCS_INCLUSION_THRESHOLD:.2f}  |  "
         f"Achievable coverage at threshold: ~{achievable} / {TOTAL_KNOWN_INSCRIPTIONS} "
-        f"({achievable_pct:.0f}%)\n"
-        f"■ In DB   ■ Recommended   ■ Below threshold   ■ Excluded",
+        f"({achievable_pct:.0f}%)",
         fontsize=_TITLE_FONTSIZE, fontweight="bold",
     )
 
