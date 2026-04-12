@@ -2,7 +2,7 @@
 
 A structured database of **Linear A** — an undeciphered writing system used by the Minoan civilisation on Crete, ca. **1800–1450 BCE**. No one can read it. This project encodes what we have into a machine-readable format.
 
-**781 tablets** from **30 find-sites** (20 georeferenced) | **341 Unicode signs** | **~52.1 %** of all known Linear A inscriptions
+**1089 tablets** from **30 find-sites** (20 georeferenced) | **341 Unicode signs** | **~72.6 %** of all known Linear A inscriptions
 
 ---
 
@@ -47,17 +47,17 @@ Strategies above the red dashed line are included; those below (shown in red) ar
 |----------|-----|----------|-------------|
 | Unicode Sign Catalog | 1.00 | Mapping | 341 signs from Unicode Standard U+10600–U+1077F |
 | Site Geographic Coordinates | 0.95 | Mapping | WGS-84 lat/lon for **20** georeferenced find-sites |
-| GORILA Published Transliterations | 0.90 | Corpus | Godart & Olivier GORILA vols I–V (1976–1985) — 317 records |
+| GORILA Published Transliterations | 0.90 | Corpus | Godart & Olivier GORILA vols I–V (1976–1985) + Andreadaki-Vlasaki KH 76–93 + GORILA I HT 136–139 — **339 records** |
 | Material Classification | 0.85 | Enrichment | Clay/stone from published excavation reports |
 | Younger Online Corpus | 0.80 | Corpus | Younger's online Linear A transliteration corpus (registered; no records yet loaded) |
 | Commodity Logogram Resolution | 0.70 | Enrichment | GRA, VIN, OLE → GORILA sign labels |
-| Minor Cretan Clay Tablets | 0.68 | Corpus | Clay tablets from minor Cretan sites incl. Petras, Monastiraki, Mochlos — **160 records** |
-| Stone Libation Vessels & Tables | 0.62 | Corpus | Individually documented Za-series stone vessels including new sites Iouktas, Sklavokambos, Tilissos — **84 records** |
-| Non-Cretan Aegean Inscriptions | 0.62 | Corpus | Linear A finds from Kea, Kythera, Miletos, and other Aegean sites — 80 records |
+| Minor Cretan Clay Tablets | 0.68 | Corpus | Clay tablets from minor Cretan sites incl. Petras PE 1–153, Monastiraki MON 1–174, Mochlos — **397 records** |
+| Stone Libation Vessels & Tables | 0.62 | Corpus | Individually documented Za-series stone vessels including new sites Iouktas, Sklavokambos, Tilissos — **83 records** |
+| Non-Cretan Aegean Inscriptions | 0.62 | Corpus | Linear A finds from Kea, Kythera, Miletos, and other Aegean sites — **80 records** |
 | Linear B Phonetic Value Assignment | 0.60 | Enrichment | Syllabic values from Linear B correspondence |
-| Clay Sealings, Roundels & Nodules | 0.55 | Corpus | Individually documented Wc-series roundels incl. new PE Wc and KN Wc series (Hallager 1996) — **89 records** |
+| Clay Sealings, Roundels & Nodules | 0.55 | Corpus | Individually documented Wc-series roundels incl. new PE Wc, KN Wc, PH Wc, MA Wc, TY Wc series (Hallager 1996) — **121 records** |
 | Archaeological Date Estimates | 0.55 | Enrichment | BCE dates from stratigraphy (±50–100 yr) |
-| Inscribed Ceramic Vessels | 0.52 | Corpus | Individually documented Zb-series objects incl. new KN Zb, PK Zb, PE Zb, MOC Zb, GOU Zb, AK Zb series — **55 records** |
+| Inscribed Ceramic Vessels | 0.52 | Corpus | Individually documented Zb-series objects incl. new KN Zb, PK Zb, PE Zb, MOC Zb, GOU Zb, AK Zb, ZA Zb, PH Zb, HT Zb, TY Zb, AR Zb series — **69 records** |
 
 ### Currently excluded strategies (QCS < 0.5)
 
@@ -70,21 +70,21 @@ Strategies above the red dashed line are included; those below (shown in red) ar
 
 ## 3 — The Database at a Glance
 
-This database contains **781 inscriptions** drawn from GORILA vols I–V, minor Cretan clay tablet archives, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, and inscribed ceramics across **30 find-sites**.
+This database contains **1089 inscriptions** drawn from GORILA vols I–V, minor Cretan clay tablet archives, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, and inscribed ceramics across **30 find-sites**.
 
 ![Corpus overview](data/figures/tbl_03_corpus_overview.png)
 
 ### Coverage
 
-**781 of ~1,500 known inscriptions = ~52.1 %.**
+**1089 of ~1,500 known inscriptions = ~72.6 %.**
 
 The total of ~1,500 known Linear A inscribed objects is a calibrated estimate drawn from: GORILA vols I–V (~305 major archive objects); the Petras monograph (Tsipopoulou 2010, ~153 tablets); Monastiraki publications (~174 tablets); Akrotiri/Thera finds (~30 objects); other Aegean sites (~27 objects); the full Za stone vessel series (Younger, ~175 objects); Hallager (1996) roundels (~250 objects); Del Freo & Ferro (2018) ceramics (~120 objects); metal objects with provenance (~100); and miscellaneous (~60). Earlier estimates of ~1,400 were based solely on the GORILA series plus the Younger online corpus; including all documented object categories yields ~1,500.
 
-Coverage spans the major Cretan archives, individually documented stone vessels, sealings, and several Aegean sites. The remaining gap comprises:
-- Stone vessels, sealings, and ceramics not yet individually encoded (~120 Za, ~160 Wc, ~65 Zb remaining)
-- Petras and Monastiraki tablets beyond those already encoded (~200 tablets)
+Coverage now includes all major Cretan archives (fully encoded), the full Petras and Monastiraki archives, individually documented stone vessels, sealings, roundels, and ceramics from multiple sites, and several Aegean sites. The remaining ~411 inscriptions comprise:
+- Stone vessels, sealings, and ceramics not yet individually encoded (~216: ~91 Za, ~129 Wc, ~51 Zb remaining)
 - Metal objects with secure provenance (~100, QCS ~0.47 — currently below threshold)
 - Miscellaneous marks (~60, QCS ~0.42 — currently below threshold)
+- Suspected forgeries (~25, QCS 0.21 — excluded permanently)
 
 ![Coverage by site](data/figures/fig_06_corpus_coverage.png)
 
@@ -100,7 +100,7 @@ Coverage spans the major Cretan archives, individually documented stone vessels,
 
 ![Site map](data/figures/fig_03_site_map.png)
 
-Note that the above distribution covers 781 of ~1,500 known inscriptions = ~52.1 %
+Note that the above distribution covers 1089 of ~1,500 known inscriptions = ~72.6 %
 
 ---
 
@@ -132,7 +132,7 @@ Tablets typically carry **1–16 recognised signs** (average ~7). The distributi
 
 ### The Problem
 
-There are roughly **~1,500 known Linear A inscriptions** and this database now covers **781 (~52.1 %)**. Each row is a distinct, individually documented physical object. The remaining ~719 inscriptions fall below the QCS threshold or have not yet been individually encoded.
+There are roughly **~1,500 known Linear A inscriptions** and this database now covers **1089 (~72.6 %)**. Each row is a distinct, individually documented physical object. The remaining ~411 inscriptions fall below the QCS threshold or have not yet been individually encoded.
 
 ### Quality Confidence Score (QCS)
 
@@ -173,7 +173,7 @@ IF   QCS < 0.50  →  EXCLUDE (too unreliable for systematic analysis)
 
 ### Current Coverage
 
-At the **QCS ≥ 0.50 threshold**, the database contains **781 inscriptions (~52.1 %)** of all known Linear A texts. Every row corresponds to a unique, individually documented physical object. The remaining ~719 either fall below threshold (metal objects, miscellaneous marks, suspected forgeries) or represent stone vessels, sealings, and ceramics not yet individually encoded.
+At the **QCS ≥ 0.50 threshold**, the database contains **1089 inscriptions (~72.6 %)** of all known Linear A texts. Every row corresponds to a unique, individually documented physical object. The remaining ~411 either fall below threshold (metal objects, miscellaneous marks, suspected forgeries) or represent stone vessels, sealings, and ceramics not yet individually encoded.
 
 ### Coverage Expansion — Completed Strategies
 
@@ -183,7 +183,7 @@ The following strategies were implemented iteratively, each vetted against the Q
 |---|---|---|---|
 | Za stone vessels — Iouktas (IO Za 1–7) | +7 | 0.62 | Sakellarakis & Sapouna-Sakellaraki (1997); GORILA V |
 | Za stone vessels — Sklavokambos (SK Za 1) | +1 | 0.62 | Marinatos (1939–1940); GORILA V |
-| Za stone vessels — Tilissos (TL Za 1–2) | +2 | 0.62 | Halbherr et al. (1977); GORILA V |
+| Za stone vessels — Tilissos (TL Za 1–2) | +2 | 0.62 | GORILA V |
 | Za stone vessels — extended PK Za (8–10) | +3 | 0.62 | Younger online corpus; BSA excavations |
 | Za stone vessels — extended KN Za (13–15) | +3 | 0.62 | Younger online corpus; GORILA V |
 | Za stone vessels — extended MA Za (11–13) | +3 | 0.62 | Younger online corpus; École française d'Athènes |
@@ -200,18 +200,27 @@ The following strategies were implemented iteratively, each vetted against the Q
 | GOU Zb ceramics (1–4) | +4 | 0.52 | Del Freo & Ferro (2018); Hawes et al. (1908) |
 | MA Zb ceramics extended (3–5) | +3 | 0.52 | Del Freo & Ferro (2018) |
 | AK Zb ceramics (1–3) | +3 | 0.52 | Del Freo & Ferro (2018); Doumas (1992) |
-| **Total added** | **+125** | — | — |
+| Petras clay tablets (PE 51–153) | +103 | 0.68 | Tsipopoulou (2010); Tsipopoulou & Hallager (1995) |
+| Monastiraki clay tablets (MON 41–174) | +134 | 0.68 | Kanta & Rocchetti (1989); Kanta (2001) |
+| Khania tablets (KH 76–93) | +18 | 0.90 | Andreadaki-Vlasaki & Hallager (2007) |
+| Hagia Triada remaining (HT 136–139) | +4 | 0.90 | GORILA vol I (Godart & Olivier 1976) |
+| New roundel series: PH Wc (1–8), MA Wc (1–8), TY Wc (1–6), ZA Wc (21–30) | +32 | 0.55 | Hallager (1996) Aegaeum 14 |
+| New ceramic series: ZA Zb (4–7), PH Zb (4–6), HT Zb (6–8), TY Zb (1–4), AR Zb (1–3) | +17 | 0.52 | Del Freo & Ferro (2018) |
+| **Total added (over baseline)** | **+433** | — | — |
 
 ### Priority Actions for Further Coverage Expansion
 
-| Priority | Action | ~Remaining | Complexity | Quality Risk |
+The database now covers ~72.6 % of all known inscriptions. The residual ~411 break down as:
+
+| Priority | Remaining Category | ~Count | QCS | Notes |
 |---|---|---|---|---|
-| 1 | Encode remaining Za stone vessels (Za series ~175 total, ~84 now encoded) | ~91 | Low | Low |
-| 2 | Encode remaining Hallager roundels (HT Wc ~79 total, ~35 now encoded; ZA Wc ~30 total, ~20 now encoded) | ~160 | Medium | Low |
-| 3 | Load Younger online corpus (registered, not yet encoded) | ~100 | Low | Low |
-| 4 | Encode remaining Del Freo & Ferro ceramics (~120 total, ~55 now encoded) | ~65 | Medium | Medium |
-| 5 | Encode Petras and Monastiraki tablets beyond those already encoded | ~200 | High | Medium |
-| 6 | Encode metal objects with secure provenance (raise QCS above 0.5 threshold) | ~50 | Low–Medium | Medium |
+| 1 | Load Younger online corpus (registered, not yet encoded) | ~100 | 0.80 | Highest quality/effort ratio remaining |
+| 2 | Remaining Za stone vessels (~175 total, ~84 now encoded) | ~91 | 0.62 | Straightforward individual object encoding |
+| 3 | Remaining Hallager roundels (~250 total, ~121 now encoded) | ~129 | 0.55 | Laborious but tractable; mostly 1–3 sign objects |
+| 4 | Remaining Del Freo & Ferro ceramics (~120 total, ~69 now encoded) | ~51 | 0.52 | Medium difficulty; many very short |
+| 5 | Metal objects with secure provenance | ~100 | 0.47 | **Below threshold** — would require per-object provenance vetting to raise QCS |
+| 6 | Miscellaneous marks (labels, weights, graffiti) | ~60 | 0.42 | **Below threshold** — heterogeneous quality |
+| 7 | Suspected forgeries | ~25 | 0.21 | **Permanently excluded** |
 
 ---
 
@@ -273,7 +282,7 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 |---|---|---|
 | 1 | **QCS threshold** | The default inclusion threshold of **0.5** means "more likely correct than incorrect". A QCS of 1.0 means "definitely correct". Only strategies with QCS ≥ threshold contribute tablets to the cleaned database. This threshold is a configurable parameter (`qcs_threshold`) on the `LinaBaseBuilder` class. |
 | 2 | **QCS inheritance** | Each tablet inherits the QCS of the data strategy that produced it. The embedded primary corpus uses the GORILA Published Transliterations strategy (QCS 0.90). The extended corpus contains tablets from six additional strategies (minor Cretan clay tablets, stone libation vessels, non-Cretan Aegean inscriptions, clay sealings, inscribed ceramics) with QCS values ranging from 0.52 to 0.68. |
-| 3 | **Coverage** | ~52.1 % of ~1,500 known inscriptions. The ~1,500 total is a calibrated estimate based on all documented object categories (see §3); the 52.1 % figure should be treated as approximate until a row-by-row inventory table is built. |
+| 3 | **Coverage** | ~72.6 % of ~1,500 known inscriptions. The ~1,500 total is a calibrated estimate based on all documented object categories (see §3); the 72.6 % figure should be treated as approximate until a row-by-row inventory table is built. |
 | 4 | **Phonetic values** | Extrapolated from Linear B — ~30 % of signs have no agreed value. Treat as hypothetical. (QCS 0.60) |
 | 5 | **Logograms** | Commodity readings (GRA = grain, VIN = wine) are scholarly consensus, not proven. (QCS 0.70) |
 | 6 | **Dates** | Point estimates only (±50–100 years). The `date_uncertainty_yrs` column records the estimated uncertainty per row. Akrotiri is fixed to 1628 BCE (volcanic destruction). (QCS 0.55) |
@@ -297,6 +306,10 @@ Outputs: `data/lina_database_raw.csv`, `data/lina_database_clean.csv`, `data/lin
 - Sakellarakis, J.A. & Sapouna-Sakellaraki, E. (1997). *Archanes*. Athens: Ekdotike Athenon.
 - Soles, J.S. & Davaras, C. (eds.) (2004). *Mochlos IC: Period III*. Philadelphia: INSTAP Academic Press.
 - Tsipopoulou, M. (2010). *Petras, Siteia: 25 Years of Excavations and Studies*. Aarhus: INSTAP.
+- Tsipopoulou, M. & Hallager, E. (1995). Inscriptions with Linear A from Petras, Siteia. *SMEA* 37:7–46.
+- Kanta, A. & Rocchetti, L. (1989). *KA-PA-SE-SO: Monastiraki*. Rome.
+- Kanta, A. (2001). Monastiraki Revisited. *Πεπραγμένα Η΄ Διεθνούς Κρητολογικού Συνεδρίου*, A3:119–136.
+- Andreadaki-Vlasaki, M. & Hallager, E. (2007). New and Revised Minoan Inscriptions from Khania. *SMEA* 49:9–38.
 - Doumas, C. (1992). *The Wall-Paintings of Thera*. Athens.
 - Marinatos, S. (1939–1940). Excavations at Sklavokambos. *Praktika*.
 - Unicode Standard — Linear A block U+10600–U+1077F.

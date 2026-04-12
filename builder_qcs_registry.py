@@ -51,7 +51,7 @@ DATA_STRATEGIES: List[Dict] = [
     {
         "key":         "site_coordinates",
         "label":       "Site Geographic Coordinates",
-        "description": "WGS-84 lat/lon for 14 archaeological find-sites from published sources",
+        "description": "WGS-84 lat/lon for 20 archaeological find-sites from published sources",
         "qcs":         0.95,
         "category":    "mapping",
     },
