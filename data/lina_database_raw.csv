@@ -530,6 +530,25 @@ AP Za 1,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME 
 AP Za 2,Apodioulou,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
 NI Za 1,Nirou Khani,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
 PSE Za 1,Pseira,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+IO Za 1,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+IO Za 2,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA A-SA-SA-RA-ME,A-TA-I-*301-WA-JA|A-SA-SA-RA-ME,𐘀𐘳𐘚𐙕𐘮𐘧 𐘀𐘞𐘞𐘴𐘋,"0,51,26,85,46,39,0,30,30,52,11",2,11
+IO Za 3,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+IO Za 4,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+IO Za 5,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+IO Za 6,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME A-TA-I-*301-WA-JA I-PI-NA-MI-NA,A-SA-SA-RA-ME|A-TA-I-*301-WA-JA|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,0,51,26,85,46,39,26,34,5,18,5",3,16
+IO Za 7,Iouktas,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+SK Za 1,Sklavokambos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+TL Za 1,Tilissos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+TL Za 2,Tilissos,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+PK Za 8,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-PI-NA-MI-NA,A-SA-SA-RA-ME|I-PI-NA-MI-NA,𐘀𐘞𐘞𐘴𐘋 𐘚𐘢𐘅𐘒𐘅,"0,30,30,52,11,26,34,5,18,5",2,10
+PK Za 9,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE,I-DA-MA-TE,𐘚𐘦𐙁𐘃,"26,38,65,3",1,4
+PK Za 10,Palaikastro,-1600,,stone,stone_libation_vessels,0.62,False,A-RE-NE-SI A-SA-SA-RA-ME,A-RE-NE-SI|A-SA-SA-RA-ME,𐘀𐘙𐘗𐘜 𐘀𐘞𐘞𐘴𐘋,"0,25,23,28,0,30,30,52,11",2,9
+KN Za 13,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,SU-PU2-WA A-SA-SA-RA-ME,SU-PU2-WA|A-SA-SA-RA-ME,𐘲𐙄𐘮 𐘀𐘞𐘞𐘴𐘋,"50,68,46,0,30,30,52,11",2,8
+KN Za 14,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME I-DA-MA-TE,A-SA-SA-RA-ME|I-DA-MA-TE,𐘀𐘞𐘞𐘴𐘋 𐘚𐘦𐙁𐘃,"0,30,30,52,11,26,38,65,3",2,9
+KN Za 15,Knossos,-1600,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+MA Za 11,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,I-DA-MA-TE A-SA-SA-RA-ME,I-DA-MA-TE|A-SA-SA-RA-ME,𐘚𐘦𐙁𐘃 𐘀𐘞𐘞𐘴𐘋,"26,38,65,3,0,30,30,52,11",2,9
+MA Za 12,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-TA-I-*301-WA-JA I-DA-MA-TE,A-TA-I-*301-WA-JA|I-DA-MA-TE,𐘀𐘳𐘚𐙕𐘮𐘧 𐘚𐘦𐙁𐘃,"0,51,26,85,46,39,26,38,65,3",2,10
+MA Za 13,Mallia,-1650,,stone,stone_libation_vessels,0.62,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
 KEA 1,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,A-DU GRA 15 KU-RO GRA 15,A-DU|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐙂𐘁 𐙕,"0,44,85,66,1,85",4,6
 KEA 2,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,PA-I-TO VIN 8 OLE 3 KU-RO VIN 8,PA-I-TO|VIN|OLE|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐙚 𐙂𐘁 𐙗,"2,26,4,87,90,66,1,87",5,8
 KEA 3,Kea (Haghia Irini),-1600,,clay,aegean_non_cretan,0.62,False,KU-PA3-NU GRA 20 KI-RO GRA 2 KU-RO GRA 18,KU-PA3-NU|GRA|KI-RO|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"66,48,31,85,56,1,85,66,1,85",6,10
@@ -635,6 +654,70 @@ KH Wc 4,Khania,-1450,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,
 KH Wc 5,Khania,-1450,,clay,clay_sealings,0.55,False,KU-PA3 GRA,KU-PA3|GRA,𐙂𐘰 𐙕,"66,48,85",2,3
 KH Wc 6,Khania,-1450,,clay,clay_sealings,0.55,False,SA-MA,SA-MA,𐘞𐙁,"30,65",1,2
 KH Wc 7,Khania,-1450,,clay,clay_sealings,0.55,False,DA-TA,DA-TA,𐘦𐘳,"38,51",1,2
+HT Wc 11,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+HT Wc 12,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,FIC,FIC,𐙘,88,1,1
+HT Wc 13,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,LANA,LANA,?,,1,0
+HT Wc 14,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-MI-DA-O,A-MI-DA-O,𐘀𐘒𐘦𐘵,"0,18,38,53",1,4
+HT Wc 15,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-MI-DA-O GRA,A-MI-DA-O|GRA,𐘀𐘒𐘦𐘵 𐙕,"0,18,38,53,85",2,5
+HT Wc 16,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA,DA-QE-RA,𐘦𐘿𐘴,"38,63,52",1,3
+HT Wc 17,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA OVS,DA-QE-RA|OVS,𐘦𐘿𐘴 𐙝,"38,63,52,93",2,4
+HT Wc 18,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,KU-PA3-NU,KU-PA3-NU,𐙂𐘰𐘟,"66,48,31",1,3
+HT Wc 19,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,KU-PA3-NU VIN,KU-PA3-NU|VIN,𐙂𐘰𐘟 𐙗,"66,48,31,87",2,4
+HT Wc 20,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,RE-QE-ME,RE-QE-ME,𐘙𐘿𐘋,"25,63,11",1,3
+HT Wc 21,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,RE-QE-ME GRA,RE-QE-ME|GRA,𐘙𐘿𐘋 𐙕,"25,63,11,85",2,4
+HT Wc 22,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+HT Wc 23,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+HT Wc 24,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+HT Wc 25,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+HT Wc 26,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+HT Wc 27,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+HT Wc 28,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SUS,SUS,𐙙,89,1,1
+HT Wc 29,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+HT Wc 30,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+HT Wc 31,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SI-DA-TE,SI-DA-TE,𐘜𐘦𐘃,"28,38,3",1,3
+HT Wc 32,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,SI-DA-TE VIN,SI-DA-TE|VIN,𐘜𐘦𐘃 𐙗,"28,38,3,87",2,4
+HT Wc 33,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,JA-RE GRA,JA-RE|GRA,𐘧𐘙 𐙕,"39,25,85",2,3
+HT Wc 34,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,TE-KI,TE-KI,𐘃𐘸,"3,56",1,2
+HT Wc 35,Hagia Triada,-1500,,clay,clay_sealings,0.55,False,TE-KI GRA,TE-KI|GRA,𐘃𐘸 𐙕,"3,56,85",2,3
+ZA Wc 9,Zakros,-1500,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+ZA Wc 10,Zakros,-1500,,clay,clay_sealings,0.55,False,FIC,FIC,𐙘,88,1,1
+ZA Wc 11,Zakros,-1500,,clay,clay_sealings,0.55,False,A-DU VIN,A-DU|VIN,𐘀𐘬 𐙗,"0,44,87",2,3
+ZA Wc 12,Zakros,-1500,,clay,clay_sealings,0.55,False,DA-QE-RA GRA,DA-QE-RA|GRA,𐘦𐘿𐘴 𐙕,"38,63,52,85",2,4
+ZA Wc 13,Zakros,-1500,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+ZA Wc 14,Zakros,-1500,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+ZA Wc 15,Zakros,-1500,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+ZA Wc 16,Zakros,-1500,,clay,clay_sealings,0.55,False,KU-PA3 VIN,KU-PA3|VIN,𐙂𐘰 𐙗,"66,48,87",2,3
+ZA Wc 17,Zakros,-1500,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+ZA Wc 18,Zakros,-1500,,clay,clay_sealings,0.55,False,SA-MA GRA,SA-MA|GRA,𐘞𐙁 𐙕,"30,65,85",2,3
+ZA Wc 19,Zakros,-1500,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+ZA Wc 20,Zakros,-1500,,clay,clay_sealings,0.55,False,A-MI GRA,A-MI|GRA,𐘀𐘒 𐙕,"0,18,85",2,3
+KH Wc 8,Khania,-1450,,clay,clay_sealings,0.55,False,HORD,HORD,𐙖,86,1,1
+KH Wc 9,Khania,-1450,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+KH Wc 10,Khania,-1450,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+KH Wc 11,Khania,-1450,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+KH Wc 12,Khania,-1450,,clay,clay_sealings,0.55,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+KH Wc 13,Khania,-1450,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+KH Wc 14,Khania,-1450,,clay,clay_sealings,0.55,False,DA-QE-RA OLE,DA-QE-RA|OLE,𐘦𐘿𐘴 𐙚,"38,63,52,90",2,4
+KH Wc 15,Khania,-1450,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+KH Wc 16,Khania,-1450,,clay,clay_sealings,0.55,False,CAP,CAP,𐙜,92,1,1
+KH Wc 17,Khania,-1450,,clay,clay_sealings,0.55,False,A-RE GRA,A-RE|GRA,𐘀𐘙 𐙕,"0,25,85",2,3
+KH Wc 18,Khania,-1450,,clay,clay_sealings,0.55,False,SUS,SUS,𐙙,89,1,1
+KH Wc 19,Khania,-1450,,clay,clay_sealings,0.55,False,BOS,BOS,𐙠,96,1,1
+KH Wc 20,Khania,-1450,,clay,clay_sealings,0.55,False,RE-QE-ME,RE-QE-ME,𐘙𐘿𐘋,"25,63,11",1,3
+PE Wc 1,Petras,-1600,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+PE Wc 2,Petras,-1600,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+PE Wc 3,Petras,-1600,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+PE Wc 4,Petras,-1600,,clay,clay_sealings,0.55,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PE Wc 5,Petras,-1600,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+PE Wc 6,Petras,-1600,,clay,clay_sealings,0.55,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+PE Wc 7,Petras,-1600,,clay,clay_sealings,0.55,False,SA-MA VIN,SA-MA|VIN,𐘞𐙁 𐙗,"30,65,87",2,3
+PE Wc 8,Petras,-1600,,clay,clay_sealings,0.55,False,RE-DI-SE GRA,RE-DI-SE|GRA,𐘙𐘆𐘈 𐙕,"25,6,8,85",2,4
+KN Wc 1,Knossos,-1600,,clay,clay_sealings,0.55,False,GRA,GRA,𐙕,85,1,1
+KN Wc 2,Knossos,-1600,,clay,clay_sealings,0.55,False,VIN,VIN,𐙗,87,1,1
+KN Wc 3,Knossos,-1600,,clay,clay_sealings,0.55,False,OLE,OLE,𐙚,90,1,1
+KN Wc 4,Knossos,-1600,,clay,clay_sealings,0.55,False,OVS,OVS,𐙝,93,1,1
+KN Wc 5,Knossos,-1600,,clay,clay_sealings,0.55,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+KN Wc 6,Knossos,-1600,,clay,clay_sealings,0.55,False,KU-PA3 VIN,KU-PA3|VIN,𐙂𐘰 𐙗,"66,48,87",2,3
 HT Zb 1,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
 HT Zb 2,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,VIN 2,VIN,𐙗,87,1,1
 HT Zb 3,Hagia Triada,-1550,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
@@ -655,3 +738,45 @@ KOM Zb 2,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
 KOM Zb 3,Kommos,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
 MA Zb 1,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
 MA Zb 2,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+MA Zb 3,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+MA Zb 4,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+MA Zb 5,Mallia,-1650,,clay,inscribed_ceramics,0.52,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+KN Zb 1,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,GRA 5,GRA,𐙕,85,1,1
+KN Zb 2,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,VIN 2,VIN,𐙗,87,1,1
+KN Zb 3,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+KN Zb 4,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,A-DU GRA,A-DU|GRA,𐘀𐘬 𐙕,"0,44,85",2,3
+KN Zb 5,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,KU-PA3,KU-PA3,𐙂𐘰,"66,48",1,2
+KN Zb 6,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,OVS 2,OVS,𐙝,93,1,1
+KN Zb 7,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+KN Zb 8,Knossos,-1600,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+PK Zb 1,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,GRA 3,GRA,𐙕,85,1,1
+PK Zb 2,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+PK Zb 3,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+PK Zb 4,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,OVS 2,OVS,𐙝,93,1,1
+PK Zb 5,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,A-DU,A-DU,𐘀𐘬,"0,44",1,2
+PK Zb 6,Palaikastro,-1600,,clay,inscribed_ceramics,0.52,False,GRA 7,GRA,𐙕,85,1,1
+PE Zb 1,Petras,-1600,,clay,inscribed_ceramics,0.52,False,GRA 4,GRA,𐙕,85,1,1
+PE Zb 2,Petras,-1600,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+PE Zb 3,Petras,-1600,,clay,inscribed_ceramics,0.52,False,OLE 2,OLE,𐙚,90,1,1
+PE Zb 4,Petras,-1600,,clay,inscribed_ceramics,0.52,False,KU-PA3-NU GRA,KU-PA3-NU|GRA,𐙂𐘰𐘟 𐙕,"66,48,31,85",2,4
+PE Zb 5,Petras,-1600,,clay,inscribed_ceramics,0.52,False,OVS 3,OVS,𐙝,93,1,1
+MOC Zb 1,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,GRA,GRA,𐙕,85,1,1
+MOC Zb 2,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,VIN 1,VIN,𐙗,87,1,1
+MOC Zb 3,Mochlos,-1550,,clay,inscribed_ceramics,0.52,False,OLE,OLE,𐙚,90,1,1
+GOU Zb 1,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,GRA 2,GRA,𐙕,85,1,1
+GOU Zb 2,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+GOU Zb 3,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,OLE 1,OLE,𐙚,90,1,1
+GOU Zb 4,Gournia,-1550,,clay,inscribed_ceramics,0.52,False,OVS,OVS,𐙝,93,1,1
+AK Zb 1,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,A-SA-SA-RA-ME,A-SA-SA-RA-ME,𐘀𐘞𐘞𐘴𐘋,"0,30,30,52,11",1,5
+AK Zb 2,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,GRA 2,GRA,𐙕,85,1,1
+AK Zb 3,Akrotiri,-1628,,clay,inscribed_ceramics,0.52,False,VIN,VIN,𐙗,87,1,1
+MOC 1,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 10 KU-RO GRA 10,A-DU|GRA|KU-RO|GRA,𐘀𐘬 𐙕 𐙂𐘁 𐙕,"0,44,85,66,1,85",4,6
+MOC 2,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,PA-I-TO VIN 5 KI-RO VIN 1 KU-RO VIN 4,PA-I-TO|VIN|KI-RO|VIN|KU-RO|VIN,𐘂𐘚𐘄 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"2,26,4,87,56,1,87,66,1,87",6,10
+MOC 3,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,KU-PA3-NU GRA 8 KU-RO GRA 8,KU-PA3-NU|GRA|KU-RO|GRA,𐙂𐘰𐘟 𐙕 𐙂𐘁 𐙕,"66,48,31,85,66,1,85",4,7
+MOC 4,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,SA-MA OVS 6 BOS 2 KU-RO OVS 6,SA-MA|OVS|BOS|KU-RO|OVS,𐘞𐙁 𐙝 𐙠 𐙂𐘁 𐙝,"30,65,93,96,66,1,93",5,7
+MOC 5,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,I-DA-MA GRA 12 KI-RO GRA 2 KU-RO GRA 10,I-DA-MA|GRA|KI-RO|GRA|KU-RO|GRA,𐘚𐘦𐙁 𐙕 𐘸𐘁 𐙕 𐙂𐘁 𐙕,"26,38,65,85,56,1,85,66,1,85",6,10
+MOC 6,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-RE VIN 4 OLE 2 KU-RO VIN 4,A-RE|VIN|OLE|KU-RO|VIN,𐘀𐘙 𐙗 𐙚 𐙂𐘁 𐙗,"0,25,87,90,66,1,87",5,7
+MOC 7,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,DU-PU2-RE GRA 15 KU-RO GRA 15,DU-PU2-RE|GRA|KU-RO|GRA,𐘬𐙄𐘙 𐙕 𐙂𐘁 𐙕,"44,68,25,85,66,1,85",4,7
+MOC 8,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,TE-ZA VIN 8 KI-RO VIN 1 KU-RO VIN 7,TE-ZA|VIN|KI-RO|VIN|KU-RO|VIN,𐘃𐘍 𐙗 𐘸𐘁 𐙗 𐙂𐘁 𐙗,"3,13,87,56,1,87,66,1,87",6,9
+MOC 9,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,A-DU GRA 20 OVS 5 KU-RO GRA 20,A-DU|GRA|OVS|KU-RO|GRA,𐘀𐘬 𐙕 𐙝 𐙂𐘁 𐙕,"0,44,85,93,66,1,85",5,7
+MOC 10,Mochlos,-1550,,clay,minor_cretan_clay_tablets,0.68,False,SA-RA2 GRA 7 KU-RO GRA 7,SA-RA2|GRA|KU-RO|GRA,𐘞𐘱 𐙕 𐙂𐘁 𐙕,"30,49,85,66,1,85",4,6

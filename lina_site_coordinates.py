@@ -8,6 +8,8 @@ Coordinates are WGS-84 decimal degrees (lat N, lon E).
 Sources
 -------
   Godart & Olivier GORILA (1976-1985), site provenances.
+  Sakellarakis & Sapouna-Sakellaraki (1997). Archanes.
+  Soles & Davaras (2004). Mochlos IC.
   Standard geographic references for Cretan Bronze Age sites.
 """
 
@@ -35,6 +37,13 @@ SITE_COORDINATES: Dict[str, Dict[str, Any]] = {
     "Nirou Khani":  {"lat": 35.333, "lon": 25.344, "island": "Crete"},
     "Myrtos":       {"lat": 34.935, "lon": 25.641, "island": "Crete"},
     "Apodioulou":   {"lat": 35.179, "lon": 24.634, "island": "Crete"},
+    # New sites added in coverage expansion
+    "Iouktas":      {"lat": 35.178, "lon": 25.157, "island": "Crete"},
+    "Mochlos":      {"lat": 35.178, "lon": 25.876, "island": "Crete"},
+    "Tilissos":     {"lat": 35.307, "lon": 25.010, "island": "Crete"},
+    "Sklavokambos": {"lat": 35.269, "lon": 24.949, "island": "Crete"},
+    "Petras":       {"lat": 35.202, "lon": 26.098, "island": "Crete"},
+    "Monastiraki":  {"lat": 35.242, "lon": 24.663, "island": "Crete"},
 }
 
 # Simplified coastline polygon for Crete (lon, lat order for matplotlib).

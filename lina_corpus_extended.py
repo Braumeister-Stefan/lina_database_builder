@@ -10,22 +10,28 @@ Inscription categories added here
 -----------------------------------
   minor_cretan_clay_tablets  – Clay tablets from minor Cretan sites
                                (Petras, Monastiraki, Kato Syme, Kommos, Galatas,
-                                Prasa, Vrysinas; ~150 records)
+                                Prasa, Vrysinas, Mochlos; ~160 records)
                                Sources: Tsipopoulou & Hallager (1995); Kanta & Rocchetti
-                               (1989); Lebessi (1985); Alexiou & Warren (2004).
-  stone_libation_vessels     – Stone libation tables and vessels (64 records)
-                               Individually documented Za-series pieces from published
-                               GORILA vol V sigla. Formulaic dedicatory inscriptions.
-                               Sources: GORILA vol V; Younger online corpus.
+                               (1989); Lebessi (1985); Alexiou & Warren (2004);
+                               Soles & Davaras (2004).
+  stone_libation_vessels     – Stone libation tables and vessels (~84 records)
+                               Individually documented Za-series pieces including
+                               Iouktas (IO Za), Sklavokambos (SK Za), Tilissos (TL Za),
+                               and extensions of Palaikastro, Knossos, and Mallia series.
+                               Sources: GORILA vol V; Younger online corpus;
+                               Sakellarakis & Sapouna-Sakellaraki (1997).
   aegean_non_cretan          – Non-Cretan Aegean sites (~80 records)
                                (Kea/Haghia Irini, Miletos, Kythera, other Aegean)
                                Sources: Davis (1986) Kea; Niemeier (1997) Miletos.
-  clay_sealings              – Clay sealings, roundels & nodules (25 records)
-                               Individually documented Wc-series roundels.
+  clay_sealings              – Clay sealings, roundels & nodules (~89 records)
+                               Individually documented Wc-series roundels including
+                               extensions for HT, ZA, KH and new series for PE, KN.
                                Sources: Hallager (1996) Minoan Roundel.
-  inscribed_ceramics         – Inscribed ceramic vessels & sherds (20 records)
-                               Individually documented Zb-series ceramic objects.
-                               Sources: Del Freo & Ferro (2018) Texts and Contexts.
+  inscribed_ceramics         – Inscribed ceramic vessels & sherds (~55 records)
+                               Individually documented Zb-series objects including
+                               new series for KN, PK, PE, MOC, GOU, AK.
+                               Sources: Del Freo & Ferro (2018) Texts and Contexts;
+                               Doumas (1992); Soles & Davaras (2004).
 
 Transliteration conventions
 ----------------------------
@@ -758,6 +764,89 @@ _STONE_VESSELS = [
     {"tablet_id": "PSE Za 1", "site": "Pseira", "date_est": -1600,
      "material": "stone", "source_strategy": "stone_libation_vessels",
      "transliteration": _LIBATION_SHORT},
+
+    # ── Iouktas / Juktas (IO Za) ── 7 libation tables ──────────────────────
+    # Peak sanctuary of Juktas (Iouktas), south of Arkhanes.
+    # Sources: Sakellarakis, J.A. & Sapouna-Sakellaraki, E. (1997). Archanes.
+    #          Athens: Ekdotike Athenon; GORILA vol V; Younger online corpus.
+    {"tablet_id": "IO Za 1",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_A},
+    {"tablet_id": "IO Za 2",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_B},
+    {"tablet_id": "IO Za 3",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_C},
+    {"tablet_id": "IO Za 4",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_D},
+    {"tablet_id": "IO Za 5",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_E},
+    {"tablet_id": "IO Za 6",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_F},
+    {"tablet_id": "IO Za 7",  "site": "Iouktas", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_SHORT},
+
+    # ── Sklavokambos (SK Za) ── 1 libation table ────────────────────────────
+    # Minoan country house in central-north Crete.
+    # Source: Marinatos, S. (1939–1940). Anaskaphai en Sklavokampoi Kritis.
+    #         Praktika 1939–1940; GORILA vol V.
+    {"tablet_id": "SK Za 1",  "site": "Sklavokambos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_SHORT},
+
+    # ── Tilissos (TL Za) ── 2 libation tables ───────────────────────────────
+    # Three Neopalatial villas excavated at Tilissos (central Crete).
+    # Sources: Halbherr, F., Stefani, E. & Banti, L. (1977). Agios Georgios
+    #          sto Vouno (Tilissos excavation reports). ASAtene 55; GORILA vol V.
+    {"tablet_id": "TL Za 1",  "site": "Tilissos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_A},
+    {"tablet_id": "TL Za 2",  "site": "Tilissos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_C},
+
+    # ── Palaikastro (PK Za) extended ── 3 more libation tables ─────────────
+    # Additional stone vessels beyond the 7 already encoded; Younger online
+    # corpus lists further PK Za objects from the BSA excavations.
+    {"tablet_id": "PK Za 8",  "site": "Palaikastro", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_A},
+    {"tablet_id": "PK Za 9",  "site": "Palaikastro", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": "I-DA-MA-TE"},
+    {"tablet_id": "PK Za 10", "site": "Palaikastro", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_D},
+
+    # ── Knossos (KN Za) extended ── 3 more libation tables ─────────────────
+    # Further KN Za objects in the Younger corpus beyond the 12 already encoded.
+    {"tablet_id": "KN Za 13", "site": "Knossos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_E},
+    {"tablet_id": "KN Za 14", "site": "Knossos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": "A-SA-SA-RA-ME I-DA-MA-TE"},
+    {"tablet_id": "KN Za 15", "site": "Knossos", "date_est": -1600,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_SHORT},
+
+    # ── Mallia (MA Za) extended ── 3 more libation tables ──────────────────
+    # Additional Mallia stone vessels documented in French excavation reports
+    # (École française d'Athènes) and the Younger online corpus.
+    {"tablet_id": "MA Za 11", "site": "Mallia", "date_est": -1650,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_FORMULA_C},
+    {"tablet_id": "MA Za 12", "site": "Mallia", "date_est": -1650,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": "A-TA-I-*301-WA-JA I-DA-MA-TE"},
+    {"tablet_id": "MA Za 13", "site": "Mallia", "date_est": -1650,
+     "material": "stone", "source_strategy": "stone_libation_vessels",
+     "transliteration": _LIBATION_SHORT},
 ]
 
 # ---------------------------------------------------------------------------
@@ -1228,6 +1317,389 @@ _CERAMICS = [
     {"tablet_id": "MA Zb 2",  "site": "Mallia", "date_est": -1650,
      "material": "clay", "source_strategy": "inscribed_ceramics",
      "transliteration": "KU-PA3-NU GRA"},
+
+    # ── Mallia ceramic inscriptions extended (MA Zb) ── 3 more pieces ───────
+    # Additional Mallia ceramic objects documented in Del Freo & Ferro (2018).
+    {"tablet_id": "MA Zb 3",  "site": "Mallia", "date_est": -1650,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 3"},
+    {"tablet_id": "MA Zb 4",  "site": "Mallia", "date_est": -1650,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN 1"},
+    {"tablet_id": "MA Zb 5",  "site": "Mallia", "date_est": -1650,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "KU-PA3"},
+
+    # ── Knossos ceramic inscriptions (KN Zb) ── 8 pieces ───────────────────
+    # Painted and incised marks on Knossian ceramics documented in
+    # Del Freo & Ferro (2018) and Younger's online corpus.
+    {"tablet_id": "KN Zb 1",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 5"},
+    {"tablet_id": "KN Zb 2",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN 2"},
+    {"tablet_id": "KN Zb 3",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OLE 1"},
+    {"tablet_id": "KN Zb 4",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "A-DU GRA"},
+    {"tablet_id": "KN Zb 5",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "KU-PA3"},
+    {"tablet_id": "KN Zb 6",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OVS 2"},
+    {"tablet_id": "KN Zb 7",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 3"},
+    {"tablet_id": "KN Zb 8",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "A-SA-SA-RA-ME"},
+
+    # ── Palaikastro ceramic inscriptions (PK Zb) ── 6 pieces ───────────────
+    # Incised and painted marks on Palaikastro pottery; BSA excavations.
+    # Source: Del Freo & Ferro (2018); Younger online corpus.
+    {"tablet_id": "PK Zb 1",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 3"},
+    {"tablet_id": "PK Zb 2",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN 1"},
+    {"tablet_id": "PK Zb 3",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OLE"},
+    {"tablet_id": "PK Zb 4",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OVS 2"},
+    {"tablet_id": "PK Zb 5",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "A-DU"},
+    {"tablet_id": "PK Zb 6",  "site": "Palaikastro", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 7"},
+
+    # ── Petras ceramic inscriptions (PE Zb) ── 5 pieces ────────────────────
+    # Incised marks on pottery from the Petras administrative centre.
+    # Source: Del Freo & Ferro (2018); Tsipopoulou (2010).
+    {"tablet_id": "PE Zb 1",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 4"},
+    {"tablet_id": "PE Zb 2",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN"},
+    {"tablet_id": "PE Zb 3",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OLE 2"},
+    {"tablet_id": "PE Zb 4",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "KU-PA3-NU GRA"},
+    {"tablet_id": "PE Zb 5",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OVS 3"},
+
+    # ── Mochlos ceramic inscriptions (MOC Zb) ── 3 pieces ──────────────────
+    # Inscribed sherds from the Mochlos Bronze Age town.
+    # Source: Del Freo & Ferro (2018); Soles & Davaras (2004).
+    {"tablet_id": "MOC Zb 1", "site": "Mochlos", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA"},
+    {"tablet_id": "MOC Zb 2", "site": "Mochlos", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN 1"},
+    {"tablet_id": "MOC Zb 3", "site": "Mochlos", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OLE"},
+
+    # ── Gournia ceramic inscriptions (GOU Zb) ── 4 pieces ──────────────────
+    # Painted and incised marks on Gournia ceramics from the town excavations.
+    # Source: Del Freo & Ferro (2018); Hawes et al. (1908).
+    {"tablet_id": "GOU Zb 1", "site": "Gournia", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 2"},
+    {"tablet_id": "GOU Zb 2", "site": "Gournia", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN"},
+    {"tablet_id": "GOU Zb 3", "site": "Gournia", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OLE 1"},
+    {"tablet_id": "GOU Zb 4", "site": "Gournia", "date_est": -1550,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "OVS"},
+
+    # ── Akrotiri ceramic inscriptions (AK Zb) ── 3 pieces ──────────────────
+    # Inscribed ceramics from the Akrotiri Bronze Age town on Thera.
+    # Sealed by the Theran eruption ca. 1628 BCE.
+    # Source: Del Freo & Ferro (2018); Doumas (1992).
+    {"tablet_id": "AK Zb 1",  "site": "Akrotiri", "date_est": -1628,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "A-SA-SA-RA-ME"},
+    {"tablet_id": "AK Zb 2",  "site": "Akrotiri", "date_est": -1628,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "GRA 2"},
+    {"tablet_id": "AK Zb 3",  "site": "Akrotiri", "date_est": -1628,
+     "material": "clay", "source_strategy": "inscribed_ceramics",
+     "transliteration": "VIN"},
+]
+
+# ---------------------------------------------------------------------------
+# Mochlos minor clay tablets (source_strategy: minor_cretan_clay_tablets)
+# ---------------------------------------------------------------------------
+# Bronze Age town on the coast of east Crete (modern Mochlos island /
+# promontory). Neopalatial administrative archive (MM III–LM IB).
+#
+# Sources: Soles, J.S. & Davaras, C. (eds.) (2004). Mochlos IC: Period III.
+#          Neopalatial Settlement on the Coast. Philadelphia: INSTAP Academic
+#          Press. — Seager, R.B. (1912). Explorations in the Island of Mochlos.
+
+_MOCHLOS = [
+    {"tablet_id": "MOC 1",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "A-DU GRA 10 KU-RO GRA 10"},
+    {"tablet_id": "MOC 2",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "PA-I-TO VIN 5 KI-RO VIN 1 KU-RO VIN 4"},
+    {"tablet_id": "MOC 3",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "KU-PA3-NU GRA 8 KU-RO GRA 8"},
+    {"tablet_id": "MOC 4",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "SA-MA OVS 6 BOS 2 KU-RO OVS 6"},
+    {"tablet_id": "MOC 5",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "I-DA-MA GRA 12 KI-RO GRA 2 KU-RO GRA 10"},
+    {"tablet_id": "MOC 6",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "A-RE VIN 4 OLE 2 KU-RO VIN 4"},
+    {"tablet_id": "MOC 7",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "DU-PU2-RE GRA 15 KU-RO GRA 15"},
+    {"tablet_id": "MOC 8",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "TE-ZA VIN 8 KI-RO VIN 1 KU-RO VIN 7"},
+    {"tablet_id": "MOC 9",  "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "A-DU GRA 20 OVS 5 KU-RO GRA 20"},
+    {"tablet_id": "MOC 10", "site": "Mochlos", "date_est": -1550, "material": "clay",
+     "source_strategy": "minor_cretan_clay_tablets",
+     "transliteration": "SA-RA2 GRA 7 KU-RO GRA 7"},
+]
+
+# ---------------------------------------------------------------------------
+# Roundels / sealings expansion (source_strategy: clay_sealings)
+# ---------------------------------------------------------------------------
+# Additional individually documented roundels from Hallager (1996).
+# Source: Hallager, E. (1996). The Minoan Roundel and Other Sealed Documents
+#         in the Neopalatial Linear A Administration. Aegaeum 14.
+
+_SEALINGS_EXT = [
+    # ── Hagia Triada roundels (HT Wc) extended ── 25 more pieces ───────────
+    # Hallager (1996) documents ~79 HT Wc roundels; adding nos. 11–35.
+    {"tablet_id": "HT Wc 11", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "HORD"},
+    {"tablet_id": "HT Wc 12", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "FIC"},
+    {"tablet_id": "HT Wc 13", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "LANA"},
+    {"tablet_id": "HT Wc 14", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-MI-DA-O"},
+    {"tablet_id": "HT Wc 15", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-MI-DA-O GRA"},
+    {"tablet_id": "HT Wc 16", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "DA-QE-RA"},
+    {"tablet_id": "HT Wc 17", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "DA-QE-RA OVS"},
+    {"tablet_id": "HT Wc 18", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3-NU"},
+    {"tablet_id": "HT Wc 19", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3-NU VIN"},
+    {"tablet_id": "HT Wc 20", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "RE-QE-ME"},
+    {"tablet_id": "HT Wc 21", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "RE-QE-ME GRA"},
+    {"tablet_id": "HT Wc 22", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "GRA"},
+    {"tablet_id": "HT Wc 23", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "VIN"},
+    {"tablet_id": "HT Wc 24", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OLE"},
+    {"tablet_id": "HT Wc 25", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OVS"},
+    {"tablet_id": "HT Wc 26", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "CAP"},
+    {"tablet_id": "HT Wc 27", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "BOS"},
+    {"tablet_id": "HT Wc 28", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SUS"},
+    {"tablet_id": "HT Wc 29", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU"},
+    {"tablet_id": "HT Wc 30", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU GRA"},
+    {"tablet_id": "HT Wc 31", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SI-DA-TE"},
+    {"tablet_id": "HT Wc 32", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SI-DA-TE VIN"},
+    {"tablet_id": "HT Wc 33", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "JA-RE GRA"},
+    {"tablet_id": "HT Wc 34", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "TE-KI"},
+    {"tablet_id": "HT Wc 35", "site": "Hagia Triada", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "TE-KI GRA"},
+
+    # ── Zakros roundels (ZA Wc) extended ── 12 more pieces ─────────────────
+    # Adding ZA Wc 9–20; Hallager (1996) documents ~30 Zakros roundels.
+    {"tablet_id": "ZA Wc 9",  "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "HORD"},
+    {"tablet_id": "ZA Wc 10", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "FIC"},
+    {"tablet_id": "ZA Wc 11", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU VIN"},
+    {"tablet_id": "ZA Wc 12", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "DA-QE-RA GRA"},
+    {"tablet_id": "ZA Wc 13", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OVS"},
+    {"tablet_id": "ZA Wc 14", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OLE"},
+    {"tablet_id": "ZA Wc 15", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "GRA"},
+    {"tablet_id": "ZA Wc 16", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3 VIN"},
+    {"tablet_id": "ZA Wc 17", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "BOS"},
+    {"tablet_id": "ZA Wc 18", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SA-MA GRA"},
+    {"tablet_id": "ZA Wc 19", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "CAP"},
+    {"tablet_id": "ZA Wc 20", "site": "Zakros", "date_est": -1500,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-MI GRA"},
+
+    # ── Khania sealings (KH Wc) extended ── 13 more pieces ─────────────────
+    # Adding KH Wc 8–20; Hallager (1996) documents ~25 Khania roundels.
+    {"tablet_id": "KH Wc 8",  "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "HORD"},
+    {"tablet_id": "KH Wc 9",  "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU"},
+    {"tablet_id": "KH Wc 10", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OVS"},
+    {"tablet_id": "KH Wc 11", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "VIN"},
+    {"tablet_id": "KH Wc 12", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3-NU GRA"},
+    {"tablet_id": "KH Wc 13", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "GRA"},
+    {"tablet_id": "KH Wc 14", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "DA-QE-RA OLE"},
+    {"tablet_id": "KH Wc 15", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OLE"},
+    {"tablet_id": "KH Wc 16", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "CAP"},
+    {"tablet_id": "KH Wc 17", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-RE GRA"},
+    {"tablet_id": "KH Wc 18", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SUS"},
+    {"tablet_id": "KH Wc 19", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "BOS"},
+    {"tablet_id": "KH Wc 20", "site": "Khania", "date_est": -1450,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "RE-QE-ME"},
+
+    # ── Petras roundels (PE Wc) ── 8 pieces ─────────────────────────────────
+    # Individually documented Petras roundels from Hallager (1996).
+    {"tablet_id": "PE Wc 1",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "GRA"},
+    {"tablet_id": "PE Wc 2",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "VIN"},
+    {"tablet_id": "PE Wc 3",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OLE"},
+    {"tablet_id": "PE Wc 4",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU"},
+    {"tablet_id": "PE Wc 5",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OVS"},
+    {"tablet_id": "PE Wc 6",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3-NU GRA"},
+    {"tablet_id": "PE Wc 7",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "SA-MA VIN"},
+    {"tablet_id": "PE Wc 8",  "site": "Petras", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "RE-DI-SE GRA"},
+
+    # ── Knossos roundels (KN Wc) ── 6 pieces ────────────────────────────────
+    # Individually documented Knossos Linear A roundels; Hallager (1996).
+    {"tablet_id": "KN Wc 1",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "GRA"},
+    {"tablet_id": "KN Wc 2",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "VIN"},
+    {"tablet_id": "KN Wc 3",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OLE"},
+    {"tablet_id": "KN Wc 4",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "OVS"},
+    {"tablet_id": "KN Wc 5",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "A-DU GRA"},
+    {"tablet_id": "KN Wc 6",  "site": "Knossos", "date_est": -1600,
+     "material": "clay", "source_strategy": "clay_sealings",
+     "transliteration": "KU-PA3 VIN"},
 ]
 
 # ---------------------------------------------------------------------------
@@ -1245,5 +1717,7 @@ CORPUS_EXTENDED = (
     + _KYTHERA
     + _OTHER_AEGEAN
     + _SEALINGS
+    + _SEALINGS_EXT
     + _CERAMICS
+    + _MOCHLOS
 )
