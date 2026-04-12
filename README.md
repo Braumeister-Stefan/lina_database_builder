@@ -1,8 +1,8 @@
 # Linear A Database
 
-A structured database of **Linear A** — an undeciphered writing system used by the Minoan civilisation on Crete, ca. **1800–1450 BCE**. No one can read it. This project encodes what we have into a machine-readable format.
+This project aims to create a structured database of **Linear A** — an undeciphered writing system used by the Minoan civilisation on Crete, ca. **1800–1450 BCE**. No one can read it. This project encodes what we have into a machine-readable format.
 
-**1089 tablets** from **30 find-sites** (20 georeferenced) | **341 Unicode signs** | **~72.6 %** of all known Linear A inscriptions
+**1089 tablets** containing | **341 Unicode signs** | **~72.6 %** of all known Linear A inscriptions
 
 ---
 
