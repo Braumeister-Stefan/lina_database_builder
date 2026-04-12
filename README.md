@@ -89,6 +89,8 @@ This database contains **1089 inscriptions** drawn from GORILA vols I–V, minor
 
 The total of ~1,500 known Linear A inscribed objects is a calibrated estimate drawn from: GORILA vols I–V (~305 major archive objects); the Petras monograph (Tsipopoulou 2010, ~153 tablets); Monastiraki publications (~174 tablets); Akrotiri/Thera finds (~30 objects); other Aegean sites (~27 objects); the full Za stone vessel series (Younger, ~175 objects); Hallager (1996) roundels (~250 objects); Del Freo & Ferro (2018) ceramics (~120 objects); metal objects with provenance (~100); and miscellaneous (~60). 
 
+![Coverage by site](data/figures/fig_06_corpus_coverage.png)
+
 
 ---
 
@@ -97,8 +99,6 @@ The total of ~1,500 known Linear A inscribed objects is a calibrated estimate dr
 30 find-sites across Crete, Santorini (Akrotiri/Thera), and other Aegean locations (Kea, Kythera, Miletos) — shown on a real geographic map using Natural Earth 50 m coastline data via geopandas. Hagia Triada remains the largest single archive with ~24 % of the corpus.
 
 > **Note:** The site map plots the **20 sites** that have confirmed WGS-84 coordinates in the coordinate registry (including new additions: Iouktas, Mochlos, Tilissos, Sklavokambos, Petras, Monastiraki). Many other site labels in the corpus are administrative groupings without independent coordinates.
-
-![Site breakdown](data/figures/tbl_04_site_breakdown.png)
 
 ![Site map](data/figures/fig_03_site_map.png)
 
