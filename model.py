@@ -75,6 +75,7 @@ class LinaBaseBuilder:
 
         # 1b. Validate raw data
         raw_findings = validate_dataframe(raw_df, label="raw")
+        self._check_for_errors(raw_findings, "raw")
 
         # 2. Clean data (passthrough placeholder)
         clean_df = clean_data(raw_df)
@@ -84,6 +85,7 @@ class LinaBaseBuilder:
 
         # 3b. Validate cleaned & filtered data
         clean_findings = validate_dataframe(clean_df, label="clean")
+        self._check_for_errors(clean_findings, "clean")
 
         # 4. Summary statistics & generate PNG figures
         figures = report_stats(
@@ -104,6 +106,20 @@ class LinaBaseBuilder:
         print(f"    Raw CSV     : {RAW_CSV}  ({len(raw_df)} records)")
         print(f"    Clean CSV   : {CLEAN_CSV}  ({len(clean_df)} records)")
         print(f"    XLSX report : {REPORT_XLSX}")
+
+    # -----------------------------------------------------------------------
+    # Validation gate
+    # -----------------------------------------------------------------------
+
+    @staticmethod
+    def _check_for_errors(findings, label: str):
+        """Abort if any validation finding has severity 'error'."""
+        errors = [f for f in findings if f["severity"] == "error"]
+        if errors:
+            detail = "; ".join(f["message"] for f in errors)
+            raise RuntimeError(
+                f"Validation failed for '{label}' data: {detail}"
+            )
 
     # -----------------------------------------------------------------------
     # QCS filter

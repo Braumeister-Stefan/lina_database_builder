@@ -205,19 +205,17 @@ def _check_sign_count_consistency(
     if "sign_groups" not in df.columns or "sign_group_count" not in df.columns:
         return
 
-    mismatches: List[int] = []
-    for idx, row in df.iterrows():
-        groups_str = row["sign_groups"]
-        expected = len(groups_str.split("|")) if groups_str else 0
-        if row["sign_group_count"] != expected:
-            mismatches.append(idx)
-
-    if mismatches:
+    expected = df["sign_groups"].apply(
+        lambda s: len(s.split("|")) if s else 0
+    )
+    mismatch_mask = df["sign_group_count"] != expected
+    if mismatch_mask.any():
+        mismatched_indices = df.index[mismatch_mask].tolist()
         findings.append(_finding(
             "warning", "sign_group_count_mismatch",
-            f"{len(mismatches)} row(s) have sign_group_count that "
+            f"{mismatch_mask.sum()} row(s) have sign_group_count that "
             f"doesn't match the pipe-delimited sign_groups field.",
-            rows=mismatches[:20],
+            rows=mismatched_indices[:20],
         ))
 
 
