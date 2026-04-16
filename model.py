@@ -7,6 +7,7 @@ import os
 
 from builder_lina_loader import load_data
 from builder_lina_cleaner import clean_data
+from builder_lina_validator import validate_dataframe
 from builder_lina_stats import report_stats
 from builder_lina_saver import save_data, save_report
 from lina_sign_catalog import build_sign_catalog
@@ -72,11 +73,17 @@ class LinaBaseBuilder:
         # 1. Load / initialise raw data (all strategies, unfiltered)
         raw_df = load_data(DATA_DIR)
 
+        # 1b. Validate raw data
+        raw_findings = validate_dataframe(raw_df, label="raw")
+
         # 2. Clean data (passthrough placeholder)
         clean_df = clean_data(raw_df)
 
         # 3. Apply QCS threshold – keep only tablets from included strategies
         clean_df = self._apply_qcs_filter(clean_df)
+
+        # 3b. Validate cleaned & filtered data
+        clean_findings = validate_dataframe(clean_df, label="clean")
 
         # 4. Summary statistics & generate PNG figures
         figures = report_stats(
